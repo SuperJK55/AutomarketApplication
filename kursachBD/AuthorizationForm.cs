@@ -16,5 +16,35 @@ namespace kursachBD
         {
             InitializeComponent();
         }
+
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            if (isValidated())
+            {
+
+            }
+        }
+
+        private bool isValidated()
+        {
+            if(loginTextBox.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Поле с логином пустое!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                loginTextBox.Clear();
+                passwordTextBox.Clear();
+                loginTextBox.Focus();
+                return false;
+            }
+            if(passwordTextBox.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Поле с паролем пустое!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                passwordTextBox.Clear();
+                passwordTextBox.Focus();
+                return false;
+            }
+            return true;
+        }
+
+       
     }
 }

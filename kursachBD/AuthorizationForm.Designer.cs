@@ -28,32 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.loginRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.passwordRichTextBox = new System.Windows.Forms.RichTextBox();
             this.loginLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // loginRichTextBox
-            // 
-            this.loginRichTextBox.Location = new System.Drawing.Point(140, 119);
-            this.loginRichTextBox.Name = "loginRichTextBox";
-            this.loginRichTextBox.Size = new System.Drawing.Size(206, 33);
-            this.loginRichTextBox.TabIndex = 0;
-            this.loginRichTextBox.Text = "";
-            // 
-            // passwordRichTextBox
-            // 
-            this.passwordRichTextBox.Location = new System.Drawing.Point(140, 186);
-            this.passwordRichTextBox.Name = "passwordRichTextBox";
-            this.passwordRichTextBox.Size = new System.Drawing.Size(206, 33);
-            this.passwordRichTextBox.TabIndex = 1;
-            this.passwordRichTextBox.Text = "";
             // 
             // loginLabel
             // 
             this.loginLabel.AutoSize = true;
+            this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.loginLabel.Location = new System.Drawing.Point(38, 121);
             this.loginLabel.Name = "loginLabel";
@@ -65,6 +50,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.passwordLabel.Location = new System.Drawing.Point(18, 188);
             this.passwordLabel.Name = "passwordLabel";
@@ -77,36 +63,54 @@
             // signInButton
             // 
             this.signInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.signInButton.Location = new System.Drawing.Point(170, 264);
+            this.signInButton.Location = new System.Drawing.Point(140, 250);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(150, 40);
+            this.signInButton.Size = new System.Drawing.Size(210, 40);
             this.signInButton.TabIndex = 4;
             this.signInButton.Text = "Войти";
             this.signInButton.UseVisualStyleBackColor = true;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
+            // 
+            // loginTextBox
+            // 
+            this.loginTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox.Location = new System.Drawing.Point(140, 121);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(210, 38);
+            this.loginTextBox.TabIndex = 5;
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.Location = new System.Drawing.Point(140, 181);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = ' ';
+            this.passwordTextBox.Size = new System.Drawing.Size(210, 38);
+            this.passwordTextBox.TabIndex = 6;
             // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(441, 425);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.loginTextBox);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.loginLabel);
-            this.Controls.Add(this.passwordRichTextBox);
-            this.Controls.Add(this.loginRichTextBox);
             this.Name = "AuthorizationForm";
             this.Text = "AuthorizationForm";
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox loginRichTextBox;
-        private System.Windows.Forms.RichTextBox passwordRichTextBox;
         private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.TextBox loginTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
     }
 }
