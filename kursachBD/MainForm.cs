@@ -77,8 +77,8 @@ namespace kursachBD
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int bb = dataGridView1.CurrentCell.RowIndex;
-            partsBindingSource.Remove(bb);
+            DeletedForm deletedForm = new DeletedForm();
+            deletedForm.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
