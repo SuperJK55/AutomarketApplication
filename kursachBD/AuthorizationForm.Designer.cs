@@ -74,7 +74,7 @@
             // loginTextBox
             // 
             this.loginTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginTextBox.Location = new System.Drawing.Point(140, 121);
+            this.loginTextBox.Location = new System.Drawing.Point(140, 114);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(210, 38);
             this.loginTextBox.TabIndex = 5;
@@ -82,7 +82,7 @@
             // passwordTextBox
             // 
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordTextBox.Location = new System.Drawing.Point(140, 181);
+            this.passwordTextBox.Location = new System.Drawing.Point(140, 185);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = ' ';
             this.passwordTextBox.Size = new System.Drawing.Size(210, 38);
@@ -100,7 +100,6 @@
             this.Controls.Add(this.loginLabel);
             this.Name = "AuthorizationForm";
             this.Text = "AuthorizationForm";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 

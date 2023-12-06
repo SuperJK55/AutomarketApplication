@@ -92,5 +92,12 @@ namespace kursachBD
         {
 
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            AuthorizationForm authForm = new AuthorizationForm();
+            authForm.ShowDialog();
+        }
     }
 }
