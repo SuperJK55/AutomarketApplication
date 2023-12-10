@@ -48,6 +48,7 @@ namespace kursachBD
             cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
             cmd.ExecuteNonQuery();
             con.Close();
+
             MessageBox.Show("Запись успешно добавлена");
         }
         

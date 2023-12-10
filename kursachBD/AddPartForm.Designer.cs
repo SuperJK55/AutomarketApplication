@@ -302,7 +302,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddPartForm";
-            this.Text = "PartForm - Добавление запчасти";
+            this.Text = "PartForm - Добавление записи";
             this.Load += new System.EventHandler(this.AddPartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet1)).EndInit();

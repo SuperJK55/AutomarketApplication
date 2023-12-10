@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace kursachBD
         public MainForm()
         {
             InitializeComponent();
+        }
+        
+        public void UpdateTable()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Parts", con);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            this.dataGridView1.DataSource = dt;
         }
 
         private void PartsButton_Click(object sender, EventArgs e)
@@ -83,9 +95,8 @@ namespace kursachBD
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.partsBindingSource.EndEdit();
-            this.partsTableAdapter.Update(this.partShopDataSet.Parts);
+            UpdateForm updateForm = new UpdateForm();
+            updateForm.ShowDialog();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -98,6 +109,16 @@ namespace kursachBD
             Hide();
             AuthorizationForm authForm = new AuthorizationForm();
             authForm.ShowDialog();
+        }
+
+        private void updateTableButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable();
+        }
+
+        private void endProgramButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

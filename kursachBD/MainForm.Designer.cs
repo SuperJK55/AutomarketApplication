@@ -42,6 +42,7 @@
             this.BuyersButton = new System.Windows.Forms.Button();
             this.SellersButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.PartPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.codepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +60,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.updateTableButton = new System.Windows.Forms.Button();
             this.partsTableAdapter = new kursachBD.PartShopDataSetTableAdapters.PartsTableAdapter();
-            this.logoutButton = new System.Windows.Forms.Button();
+            this.endProgramButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.PartPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -181,12 +183,24 @@
             this.flowLayoutPanel1.Controls.Add(this.BuyersButton);
             this.flowLayoutPanel1.Controls.Add(this.SellersButton);
             this.flowLayoutPanel1.Controls.Add(this.logoutButton);
+            this.flowLayoutPanel1.Controls.Add(this.endProgramButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(287, 1041);
             this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.Location = new System.Drawing.Point(3, 561);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(259, 56);
+            this.logoutButton.TabIndex = 9;
+            this.logoutButton.Text = "Выход";
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // PartPanel
             // 
@@ -320,6 +334,7 @@
             this.flowLayoutPanel2.Controls.Add(this.button1);
             this.flowLayoutPanel2.Controls.Add(this.button2);
             this.flowLayoutPanel2.Controls.Add(this.button3);
+            this.flowLayoutPanel2.Controls.Add(this.updateTableButton);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -362,20 +377,32 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // updateTableButton
+            // 
+            this.updateTableButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateTableButton.Location = new System.Drawing.Point(381, 33);
+            this.updateTableButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.updateTableButton.Name = "updateTableButton";
+            this.updateTableButton.Size = new System.Drawing.Size(120, 34);
+            this.updateTableButton.TabIndex = 3;
+            this.updateTableButton.Text = "Обновить";
+            this.updateTableButton.UseVisualStyleBackColor = true;
+            this.updateTableButton.Click += new System.EventHandler(this.updateTableButton_Click);
+            // 
             // partsTableAdapter
             // 
             this.partsTableAdapter.ClearBeforeFill = true;
             // 
-            // logoutButton
+            // endProgramButton
             // 
-            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutButton.Location = new System.Drawing.Point(3, 561);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(259, 56);
-            this.logoutButton.TabIndex = 9;
-            this.logoutButton.Text = "Выход";
-            this.logoutButton.UseVisualStyleBackColor = true;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            this.endProgramButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endProgramButton.Location = new System.Drawing.Point(3, 623);
+            this.endProgramButton.Name = "endProgramButton";
+            this.endProgramButton.Size = new System.Drawing.Size(259, 56);
+            this.endProgramButton.TabIndex = 10;
+            this.endProgramButton.Text = "Завершить работу приложения";
+            this.endProgramButton.UseVisualStyleBackColor = true;
+            this.endProgramButton.Click += new System.EventHandler(this.endProgramButton_Click);
             // 
             // MainForm
             // 
@@ -432,5 +459,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Button updateTableButton;
+        private System.Windows.Forms.Button endProgramButton;
     }
 }

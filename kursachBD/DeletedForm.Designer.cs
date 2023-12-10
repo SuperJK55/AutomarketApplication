@@ -69,7 +69,7 @@
             this.Controls.Add(this.idForDelete_textBox);
             this.Controls.Add(this.idForDelete);
             this.Name = "DeletedForm";
-            this.Text = "DeletedForm";
+            this.Text = "PartForm - Удаление записи";
             this.ResumeLayout(false);
             this.PerformLayout();
 
