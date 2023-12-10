@@ -46,10 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPartForm.cs">
+    <Compile Include="CategoryPartsForm\AddCategoryPartsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPartForm.Designer.cs">
+    <Compile Include="CategoryPartsForm\AddCategoryPartsForm.Designer.cs">
+      <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryPartsForm\DeleteCategoryPartsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryPartsForm\DeleteCategoryPartsForm.Designer.cs">
+      <DependentUpon>DeleteCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.Designer.cs">
+      <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartForm\AddPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartForm\AddPartForm.Designer.cs">
       <DependentUpon>AddPartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AuthorizationForm.cs">
@@ -58,10 +76,10 @@
     <Compile Include="AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeletedForm.cs">
+    <Compile Include="PartForm\DeletedForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeletedForm.Designer.cs">
+    <Compile Include="PartForm\DeletedForm.Designer.cs">
       <DependentUpon>DeletedForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -93,19 +111,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateForm.cs">
+    <Compile Include="PartForm\UpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateForm.Designer.cs">
+    <Compile Include="PartForm\UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddPartForm.resx">
+    <EmbeddedResource Include="CategoryPartsForm\AddCategoryPartsForm.resx">
+      <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryPartsForm\DeleteCategoryPartsForm.resx">
+      <DependentUpon>DeleteCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryPartsForm\UpdateCategoryPartsForm.resx">
+      <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartForm\AddPartForm.resx">
       <DependentUpon>AddPartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeletedForm.resx">
+    <EmbeddedResource Include="PartForm\DeletedForm.resx">
       <DependentUpon>DeletedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -121,7 +148,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UpdateForm.resx">
+    <EmbeddedResource Include="PartForm\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PartShopDataSet.xsc">

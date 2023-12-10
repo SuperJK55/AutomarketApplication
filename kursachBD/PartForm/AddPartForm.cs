@@ -51,7 +51,5 @@ namespace kursachBD
 
             MessageBox.Show("Запись успешно добавлена");
         }
-        
-
     }
 }

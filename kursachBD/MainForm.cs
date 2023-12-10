@@ -1,4 +1,5 @@
-﻿using System;
+﻿using kursachBD.CategoryPartsForm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -167,6 +168,24 @@ namespace kursachBD
         private void updatePartsTableButton_Click(object sender, EventArgs e)
         {
             UpdateTable("Parts", dataGridView1);
+        }
+
+        private void AddCategoryButton_Click(object sender, EventArgs e)
+        {
+            AddCategoryPartsForm addCategoryPartsForm = new AddCategoryPartsForm();
+            addCategoryPartsForm.ShowDialog();
+        }
+
+        private void DeleteCategoryButton_Click(object sender, EventArgs e)
+        {
+            DeleteCategoryPartsForm deleteCategoryPartsForm = new DeleteCategoryPartsForm();
+            deleteCategoryPartsForm.ShowDialog();
+        }
+
+        private void UpdateCategoryButton_Click(object sender, EventArgs e)
+        {
+            UpdateCategoryPartsForm updateCategoryPartsForm = new UpdateCategoryPartsForm();
+            updateCategoryPartsForm.ShowDialog();
         }
     }
 }

@@ -102,86 +102,78 @@
             this.UpdateCategoryButton = new System.Windows.Forms.Button();
             this.UpdateTableCategoryButton = new System.Windows.Forms.Button();
             this.ManufacturersPanel = new System.Windows.Forms.Panel();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.codemanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namemanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressmanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumbermanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailmanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ManufacturersButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddManufacturerButton = new System.Windows.Forms.Button();
             this.DeleteManufacturerButton = new System.Windows.Forms.Button();
             this.UpdateManufacturerButton = new System.Windows.Forms.Button();
             this.UpdateTableManufacturerButton = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.manufacturerTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ManufacturerTableAdapter();
-            this.codemanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namemanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressmanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumbermanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailmanufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProvidersPanel = new System.Windows.Forms.Panel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.codeproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ProvidersButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddProvidersButton = new System.Windows.Forms.Button();
             this.DeleteProvidersButton = new System.Windows.Forms.Button();
             this.UpdateProvidersButton = new System.Windows.Forms.Button();
             this.UpdateTableProvidersButton = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.providerPartsTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ProviderPartsTableAdapter();
-            this.codeproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailproviderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockPanel = new System.Windows.Forms.Panel();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.codePartOnstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codepartDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.countpartsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StockButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddStockButton = new System.Windows.Forms.Button();
             this.DeleteStockButton = new System.Windows.Forms.Button();
             this.UpdateStockButton = new System.Windows.Forms.Button();
             this.UpdateTableStockButton = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.StockTableAdapter();
-            this.codePartOnstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codepartDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countpartsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalesPanel = new System.Windows.Forms.Panel();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.codesalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codebuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SalesButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddSalesButton = new System.Windows.Forms.Button();
             this.DeleteSalesButton = new System.Windows.Forms.Button();
             this.UpdateSalesButton = new System.Windows.Forms.Button();
             this.UpdateTableSalesButton = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.salesTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SalesTableAdapter();
-            this.codesalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codebuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChecksPanel = new System.Windows.Forms.Panel();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.codesalesItemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codesalesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codepartDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesItemListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChecksButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddChecksButton = new System.Windows.Forms.Button();
             this.DeleteChecksButton = new System.Windows.Forms.Button();
             this.UpdateChecksButton = new System.Windows.Forms.Button();
             this.UpdateTableChecksButton = new System.Windows.Forms.Button();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.salesItemListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.salesItemListTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SalesItemListTableAdapter();
-            this.codesalesItemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codesalesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codepartDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.partamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuyersPanel = new System.Windows.Forms.Panel();
-            this.BuyersButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.AddBuyersButton = new System.Windows.Forms.Button();
-            this.DeleteBuyersButton = new System.Windows.Forms.Button();
-            this.UpdateBuyersButton = new System.Windows.Forms.Button();
-            this.UpdateTableBuyersButton = new System.Windows.Forms.Button();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.buyersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buyersTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.BuyersTableAdapter();
             this.codebuyerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNamebuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNamebuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -189,20 +181,28 @@
             this.dateBirthdaybuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberPhonebuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailbuyerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BuyersButtonsPanel = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.AddBuyersButton = new System.Windows.Forms.Button();
+            this.DeleteBuyersButton = new System.Windows.Forms.Button();
+            this.UpdateBuyersButton = new System.Windows.Forms.Button();
+            this.UpdateTableBuyersButton = new System.Windows.Forms.Button();
+            this.buyersTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.BuyersTableAdapter();
             this.SellersPanel = new System.Windows.Forms.Panel();
+            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.codesellerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sellersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SellersButtonsPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddSellersButton = new System.Windows.Forms.Button();
             this.DeleteSellersButton = new System.Windows.Forms.Button();
             this.UpdateSellersButton = new System.Windows.Forms.Button();
             this.UpdateTableSellersButton = new System.Windows.Forms.Button();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.sellersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sellersTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SellersTableAdapter();
-            this.codesellerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleNamesellerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel1.SuspendLayout();
             this.PartPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -218,40 +218,40 @@
             this.CategoryButtonsPanel.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.ManufacturersPanel.SuspendLayout();
-            this.ManufacturersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).BeginInit();
+            this.ManufacturersButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             this.ProvidersPanel.SuspendLayout();
-            this.ProvidersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).BeginInit();
+            this.ProvidersButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
             this.StockPanel.SuspendLayout();
-            this.StockButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
+            this.StockButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
             this.SalesPanel.SuspendLayout();
-            this.SalesButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
+            this.SalesButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.ChecksPanel.SuspendLayout();
-            this.ChecksButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesItemListBindingSource)).BeginInit();
+            this.ChecksButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.BuyersPanel.SuspendLayout();
-            this.BuyersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyersBindingSource)).BeginInit();
+            this.BuyersButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel9.SuspendLayout();
             this.SellersPanel.SuspendLayout();
-            this.SellersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellersBindingSource)).BeginInit();
+            this.SellersButtonsPanel.SuspendLayout();
+            this.flowLayoutPanel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // PartsButton
@@ -703,6 +703,7 @@
             this.AddCategoryButton.TabIndex = 0;
             this.AddCategoryButton.Text = "Добавить";
             this.AddCategoryButton.UseVisualStyleBackColor = true;
+            this.AddCategoryButton.Click += new System.EventHandler(this.AddCategoryButton_Click);
             // 
             // DeleteCategoryButton
             // 
@@ -714,6 +715,7 @@
             this.DeleteCategoryButton.TabIndex = 1;
             this.DeleteCategoryButton.Text = "Удалить";
             this.DeleteCategoryButton.UseVisualStyleBackColor = true;
+            this.DeleteCategoryButton.Click += new System.EventHandler(this.DeleteCategoryButton_Click);
             // 
             // UpdateCategoryButton
             // 
@@ -725,6 +727,7 @@
             this.UpdateCategoryButton.TabIndex = 2;
             this.UpdateCategoryButton.Text = "Изменить";
             this.UpdateCategoryButton.UseVisualStyleBackColor = true;
+            this.UpdateCategoryButton.Click += new System.EventHandler(this.UpdateCategoryButton_Click);
             // 
             // UpdateTableCategoryButton
             // 
@@ -748,6 +751,85 @@
             this.ManufacturersPanel.Size = new System.Drawing.Size(1635, 1041);
             this.ManufacturersPanel.TabIndex = 3;
             this.ManufacturersPanel.Visible = false;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codemanufacturerDataGridViewTextBoxColumn,
+            this.namemanufacturerDataGridViewTextBoxColumn,
+            this.addressmanufacturerDataGridViewTextBoxColumn,
+            this.phoneNumbermanufacturerDataGridViewTextBoxColumn,
+            this.emailmanufacturerDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.manufacturerBindingSource;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView3.Name = "dataGridView3";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView3.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView3.TabIndex = 3;
+            // 
+            // codemanufacturerDataGridViewTextBoxColumn
+            // 
+            this.codemanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Code_manufacturer";
+            this.codemanufacturerDataGridViewTextBoxColumn.HeaderText = "Code_manufacturer";
+            this.codemanufacturerDataGridViewTextBoxColumn.Name = "codemanufacturerDataGridViewTextBoxColumn";
+            this.codemanufacturerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // namemanufacturerDataGridViewTextBoxColumn
+            // 
+            this.namemanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Name_manufacturer";
+            this.namemanufacturerDataGridViewTextBoxColumn.HeaderText = "Name_manufacturer";
+            this.namemanufacturerDataGridViewTextBoxColumn.Name = "namemanufacturerDataGridViewTextBoxColumn";
+            // 
+            // addressmanufacturerDataGridViewTextBoxColumn
+            // 
+            this.addressmanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Address_manufacturer";
+            this.addressmanufacturerDataGridViewTextBoxColumn.HeaderText = "Address_manufacturer";
+            this.addressmanufacturerDataGridViewTextBoxColumn.Name = "addressmanufacturerDataGridViewTextBoxColumn";
+            // 
+            // phoneNumbermanufacturerDataGridViewTextBoxColumn
+            // 
+            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber_manufacturer";
+            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.HeaderText = "PhoneNumber_manufacturer";
+            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.Name = "phoneNumbermanufacturerDataGridViewTextBoxColumn";
+            // 
+            // emailmanufacturerDataGridViewTextBoxColumn
+            // 
+            this.emailmanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Email_manufacturer";
+            this.emailmanufacturerDataGridViewTextBoxColumn.HeaderText = "Email_manufacturer";
+            this.emailmanufacturerDataGridViewTextBoxColumn.Name = "emailmanufacturerDataGridViewTextBoxColumn";
+            // 
+            // manufacturerBindingSource
+            // 
+            this.manufacturerBindingSource.DataMember = "Manufacturer";
+            this.manufacturerBindingSource.DataSource = this.partShopDataSet3;
             // 
             // ManufacturersButtonsPanel
             // 
@@ -815,88 +897,9 @@
             this.UpdateTableManufacturerButton.Text = "Обновить";
             this.UpdateTableManufacturerButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codemanufacturerDataGridViewTextBoxColumn,
-            this.namemanufacturerDataGridViewTextBoxColumn,
-            this.addressmanufacturerDataGridViewTextBoxColumn,
-            this.phoneNumbermanufacturerDataGridViewTextBoxColumn,
-            this.emailmanufacturerDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.manufacturerBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView3.Name = "dataGridView3";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView3.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView3.TabIndex = 3;
-            // 
-            // manufacturerBindingSource
-            // 
-            this.manufacturerBindingSource.DataMember = "Manufacturer";
-            this.manufacturerBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // manufacturerTableAdapter
             // 
             this.manufacturerTableAdapter.ClearBeforeFill = true;
-            // 
-            // codemanufacturerDataGridViewTextBoxColumn
-            // 
-            this.codemanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Code_manufacturer";
-            this.codemanufacturerDataGridViewTextBoxColumn.HeaderText = "Code_manufacturer";
-            this.codemanufacturerDataGridViewTextBoxColumn.Name = "codemanufacturerDataGridViewTextBoxColumn";
-            this.codemanufacturerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namemanufacturerDataGridViewTextBoxColumn
-            // 
-            this.namemanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Name_manufacturer";
-            this.namemanufacturerDataGridViewTextBoxColumn.HeaderText = "Name_manufacturer";
-            this.namemanufacturerDataGridViewTextBoxColumn.Name = "namemanufacturerDataGridViewTextBoxColumn";
-            // 
-            // addressmanufacturerDataGridViewTextBoxColumn
-            // 
-            this.addressmanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Address_manufacturer";
-            this.addressmanufacturerDataGridViewTextBoxColumn.HeaderText = "Address_manufacturer";
-            this.addressmanufacturerDataGridViewTextBoxColumn.Name = "addressmanufacturerDataGridViewTextBoxColumn";
-            // 
-            // phoneNumbermanufacturerDataGridViewTextBoxColumn
-            // 
-            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber_manufacturer";
-            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.HeaderText = "PhoneNumber_manufacturer";
-            this.phoneNumbermanufacturerDataGridViewTextBoxColumn.Name = "phoneNumbermanufacturerDataGridViewTextBoxColumn";
-            // 
-            // emailmanufacturerDataGridViewTextBoxColumn
-            // 
-            this.emailmanufacturerDataGridViewTextBoxColumn.DataPropertyName = "Email_manufacturer";
-            this.emailmanufacturerDataGridViewTextBoxColumn.HeaderText = "Email_manufacturer";
-            this.emailmanufacturerDataGridViewTextBoxColumn.Name = "emailmanufacturerDataGridViewTextBoxColumn";
             // 
             // ProvidersPanel
             // 
@@ -908,6 +911,85 @@
             this.ProvidersPanel.Size = new System.Drawing.Size(1635, 1041);
             this.ProvidersPanel.TabIndex = 4;
             this.ProvidersPanel.Visible = false;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codeproviderDataGridViewTextBoxColumn,
+            this.nameproviderDataGridViewTextBoxColumn,
+            this.addressproviderDataGridViewTextBoxColumn,
+            this.phoneNumberproviderDataGridViewTextBoxColumn,
+            this.emailproviderDataGridViewTextBoxColumn});
+            this.dataGridView4.DataSource = this.providerPartsBindingSource;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView4.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView4.Name = "dataGridView4";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridView4.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView4.TabIndex = 4;
+            // 
+            // codeproviderDataGridViewTextBoxColumn
+            // 
+            this.codeproviderDataGridViewTextBoxColumn.DataPropertyName = "Code_provider";
+            this.codeproviderDataGridViewTextBoxColumn.HeaderText = "Code_provider";
+            this.codeproviderDataGridViewTextBoxColumn.Name = "codeproviderDataGridViewTextBoxColumn";
+            this.codeproviderDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameproviderDataGridViewTextBoxColumn
+            // 
+            this.nameproviderDataGridViewTextBoxColumn.DataPropertyName = "Name_provider";
+            this.nameproviderDataGridViewTextBoxColumn.HeaderText = "Name_provider";
+            this.nameproviderDataGridViewTextBoxColumn.Name = "nameproviderDataGridViewTextBoxColumn";
+            // 
+            // addressproviderDataGridViewTextBoxColumn
+            // 
+            this.addressproviderDataGridViewTextBoxColumn.DataPropertyName = "Address_provider";
+            this.addressproviderDataGridViewTextBoxColumn.HeaderText = "Address_provider";
+            this.addressproviderDataGridViewTextBoxColumn.Name = "addressproviderDataGridViewTextBoxColumn";
+            // 
+            // phoneNumberproviderDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberproviderDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber_provider";
+            this.phoneNumberproviderDataGridViewTextBoxColumn.HeaderText = "PhoneNumber_provider";
+            this.phoneNumberproviderDataGridViewTextBoxColumn.Name = "phoneNumberproviderDataGridViewTextBoxColumn";
+            // 
+            // emailproviderDataGridViewTextBoxColumn
+            // 
+            this.emailproviderDataGridViewTextBoxColumn.DataPropertyName = "Email_provider";
+            this.emailproviderDataGridViewTextBoxColumn.HeaderText = "Email_provider";
+            this.emailproviderDataGridViewTextBoxColumn.Name = "emailproviderDataGridViewTextBoxColumn";
+            // 
+            // providerPartsBindingSource
+            // 
+            this.providerPartsBindingSource.DataMember = "ProviderParts";
+            this.providerPartsBindingSource.DataSource = this.partShopDataSet3;
             // 
             // ProvidersButtonsPanel
             // 
@@ -975,88 +1057,9 @@
             this.UpdateTableProvidersButton.Text = "Обновить";
             this.UpdateTableProvidersButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codeproviderDataGridViewTextBoxColumn,
-            this.nameproviderDataGridViewTextBoxColumn,
-            this.addressproviderDataGridViewTextBoxColumn,
-            this.phoneNumberproviderDataGridViewTextBoxColumn,
-            this.emailproviderDataGridViewTextBoxColumn});
-            this.dataGridView4.DataSource = this.providerPartsBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView4.Name = "dataGridView4";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView4.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView4.TabIndex = 4;
-            // 
-            // providerPartsBindingSource
-            // 
-            this.providerPartsBindingSource.DataMember = "ProviderParts";
-            this.providerPartsBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // providerPartsTableAdapter
             // 
             this.providerPartsTableAdapter.ClearBeforeFill = true;
-            // 
-            // codeproviderDataGridViewTextBoxColumn
-            // 
-            this.codeproviderDataGridViewTextBoxColumn.DataPropertyName = "Code_provider";
-            this.codeproviderDataGridViewTextBoxColumn.HeaderText = "Code_provider";
-            this.codeproviderDataGridViewTextBoxColumn.Name = "codeproviderDataGridViewTextBoxColumn";
-            this.codeproviderDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameproviderDataGridViewTextBoxColumn
-            // 
-            this.nameproviderDataGridViewTextBoxColumn.DataPropertyName = "Name_provider";
-            this.nameproviderDataGridViewTextBoxColumn.HeaderText = "Name_provider";
-            this.nameproviderDataGridViewTextBoxColumn.Name = "nameproviderDataGridViewTextBoxColumn";
-            // 
-            // addressproviderDataGridViewTextBoxColumn
-            // 
-            this.addressproviderDataGridViewTextBoxColumn.DataPropertyName = "Address_provider";
-            this.addressproviderDataGridViewTextBoxColumn.HeaderText = "Address_provider";
-            this.addressproviderDataGridViewTextBoxColumn.Name = "addressproviderDataGridViewTextBoxColumn";
-            // 
-            // phoneNumberproviderDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberproviderDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber_provider";
-            this.phoneNumberproviderDataGridViewTextBoxColumn.HeaderText = "PhoneNumber_provider";
-            this.phoneNumberproviderDataGridViewTextBoxColumn.Name = "phoneNumberproviderDataGridViewTextBoxColumn";
-            // 
-            // emailproviderDataGridViewTextBoxColumn
-            // 
-            this.emailproviderDataGridViewTextBoxColumn.DataPropertyName = "Email_provider";
-            this.emailproviderDataGridViewTextBoxColumn.HeaderText = "Email_provider";
-            this.emailproviderDataGridViewTextBoxColumn.Name = "emailproviderDataGridViewTextBoxColumn";
             // 
             // StockPanel
             // 
@@ -1068,6 +1071,71 @@
             this.StockPanel.Size = new System.Drawing.Size(1635, 1041);
             this.StockPanel.TabIndex = 5;
             this.StockPanel.Visible = false;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codePartOnstockDataGridViewTextBoxColumn,
+            this.codepartDataGridViewTextBoxColumn1,
+            this.countpartsDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.stockBindingSource;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView5.Name = "dataGridView5";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridView5.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView5.TabIndex = 5;
+            // 
+            // codePartOnstockDataGridViewTextBoxColumn
+            // 
+            this.codePartOnstockDataGridViewTextBoxColumn.DataPropertyName = "CodePartOn_stock";
+            this.codePartOnstockDataGridViewTextBoxColumn.HeaderText = "CodePartOn_stock";
+            this.codePartOnstockDataGridViewTextBoxColumn.Name = "codePartOnstockDataGridViewTextBoxColumn";
+            this.codePartOnstockDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codepartDataGridViewTextBoxColumn1
+            // 
+            this.codepartDataGridViewTextBoxColumn1.DataPropertyName = "Code_part";
+            this.codepartDataGridViewTextBoxColumn1.HeaderText = "Code_part";
+            this.codepartDataGridViewTextBoxColumn1.Name = "codepartDataGridViewTextBoxColumn1";
+            // 
+            // countpartsDataGridViewTextBoxColumn
+            // 
+            this.countpartsDataGridViewTextBoxColumn.DataPropertyName = "Count_parts";
+            this.countpartsDataGridViewTextBoxColumn.HeaderText = "Count_parts";
+            this.countpartsDataGridViewTextBoxColumn.Name = "countpartsDataGridViewTextBoxColumn";
+            // 
+            // stockBindingSource
+            // 
+            this.stockBindingSource.DataMember = "Stock";
+            this.stockBindingSource.DataSource = this.partShopDataSet3;
             // 
             // StockButtonsPanel
             // 
@@ -1135,74 +1203,9 @@
             this.UpdateTableStockButton.Text = "Обновить";
             this.UpdateTableStockButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codePartOnstockDataGridViewTextBoxColumn,
-            this.codepartDataGridViewTextBoxColumn1,
-            this.countpartsDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.stockBindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView5.Name = "dataGridView5";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridView5.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView5.TabIndex = 5;
-            // 
-            // stockBindingSource
-            // 
-            this.stockBindingSource.DataMember = "Stock";
-            this.stockBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // stockTableAdapter
             // 
             this.stockTableAdapter.ClearBeforeFill = true;
-            // 
-            // codePartOnstockDataGridViewTextBoxColumn
-            // 
-            this.codePartOnstockDataGridViewTextBoxColumn.DataPropertyName = "CodePartOn_stock";
-            this.codePartOnstockDataGridViewTextBoxColumn.HeaderText = "CodePartOn_stock";
-            this.codePartOnstockDataGridViewTextBoxColumn.Name = "codePartOnstockDataGridViewTextBoxColumn";
-            this.codePartOnstockDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codepartDataGridViewTextBoxColumn1
-            // 
-            this.codepartDataGridViewTextBoxColumn1.DataPropertyName = "Code_part";
-            this.codepartDataGridViewTextBoxColumn1.HeaderText = "Code_part";
-            this.codepartDataGridViewTextBoxColumn1.Name = "codepartDataGridViewTextBoxColumn1";
-            // 
-            // countpartsDataGridViewTextBoxColumn
-            // 
-            this.countpartsDataGridViewTextBoxColumn.DataPropertyName = "Count_parts";
-            this.countpartsDataGridViewTextBoxColumn.HeaderText = "Count_parts";
-            this.countpartsDataGridViewTextBoxColumn.Name = "countpartsDataGridViewTextBoxColumn";
             // 
             // SalesPanel
             // 
@@ -1214,6 +1217,78 @@
             this.SalesPanel.Size = new System.Drawing.Size(1635, 1041);
             this.SalesPanel.TabIndex = 6;
             this.SalesPanel.Visible = false;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.AutoGenerateColumns = false;
+            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView6.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codesalesDataGridViewTextBoxColumn,
+            this.salesdateDataGridViewTextBoxColumn,
+            this.codebuyerDataGridViewTextBoxColumn,
+            this.codesellerDataGridViewTextBoxColumn});
+            this.dataGridView6.DataSource = this.salesBindingSource;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView6.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView6.Name = "dataGridView6";
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridView6.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView6.TabIndex = 6;
+            // 
+            // codesalesDataGridViewTextBoxColumn
+            // 
+            this.codesalesDataGridViewTextBoxColumn.DataPropertyName = "Code_sales";
+            this.codesalesDataGridViewTextBoxColumn.HeaderText = "Code_sales";
+            this.codesalesDataGridViewTextBoxColumn.Name = "codesalesDataGridViewTextBoxColumn";
+            this.codesalesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // salesdateDataGridViewTextBoxColumn
+            // 
+            this.salesdateDataGridViewTextBoxColumn.DataPropertyName = "Sales_date";
+            this.salesdateDataGridViewTextBoxColumn.HeaderText = "Sales_date";
+            this.salesdateDataGridViewTextBoxColumn.Name = "salesdateDataGridViewTextBoxColumn";
+            // 
+            // codebuyerDataGridViewTextBoxColumn
+            // 
+            this.codebuyerDataGridViewTextBoxColumn.DataPropertyName = "Code_buyer";
+            this.codebuyerDataGridViewTextBoxColumn.HeaderText = "Code_buyer";
+            this.codebuyerDataGridViewTextBoxColumn.Name = "codebuyerDataGridViewTextBoxColumn";
+            // 
+            // codesellerDataGridViewTextBoxColumn
+            // 
+            this.codesellerDataGridViewTextBoxColumn.DataPropertyName = "Code_seller";
+            this.codesellerDataGridViewTextBoxColumn.HeaderText = "Code_seller";
+            this.codesellerDataGridViewTextBoxColumn.Name = "codesellerDataGridViewTextBoxColumn";
+            // 
+            // salesBindingSource
+            // 
+            this.salesBindingSource.DataMember = "Sales";
+            this.salesBindingSource.DataSource = this.partShopDataSet3;
             // 
             // SalesButtonsPanel
             // 
@@ -1281,81 +1356,9 @@
             this.UpdateTableSalesButton.Text = "Обновить";
             this.UpdateTableSalesButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView6
-            // 
-            this.dataGridView6.AutoGenerateColumns = false;
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codesalesDataGridViewTextBoxColumn,
-            this.salesdateDataGridViewTextBoxColumn,
-            this.codebuyerDataGridViewTextBoxColumn,
-            this.codesellerDataGridViewTextBoxColumn});
-            this.dataGridView6.DataSource = this.salesBindingSource;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle17;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView6.Name = "dataGridView6";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.dataGridView6.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView6.TabIndex = 6;
-            // 
-            // salesBindingSource
-            // 
-            this.salesBindingSource.DataMember = "Sales";
-            this.salesBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // salesTableAdapter
             // 
             this.salesTableAdapter.ClearBeforeFill = true;
-            // 
-            // codesalesDataGridViewTextBoxColumn
-            // 
-            this.codesalesDataGridViewTextBoxColumn.DataPropertyName = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn.HeaderText = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn.Name = "codesalesDataGridViewTextBoxColumn";
-            this.codesalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // salesdateDataGridViewTextBoxColumn
-            // 
-            this.salesdateDataGridViewTextBoxColumn.DataPropertyName = "Sales_date";
-            this.salesdateDataGridViewTextBoxColumn.HeaderText = "Sales_date";
-            this.salesdateDataGridViewTextBoxColumn.Name = "salesdateDataGridViewTextBoxColumn";
-            // 
-            // codebuyerDataGridViewTextBoxColumn
-            // 
-            this.codebuyerDataGridViewTextBoxColumn.DataPropertyName = "Code_buyer";
-            this.codebuyerDataGridViewTextBoxColumn.HeaderText = "Code_buyer";
-            this.codebuyerDataGridViewTextBoxColumn.Name = "codebuyerDataGridViewTextBoxColumn";
-            // 
-            // codesellerDataGridViewTextBoxColumn
-            // 
-            this.codesellerDataGridViewTextBoxColumn.DataPropertyName = "Code_seller";
-            this.codesellerDataGridViewTextBoxColumn.HeaderText = "Code_seller";
-            this.codesellerDataGridViewTextBoxColumn.Name = "codesellerDataGridViewTextBoxColumn";
             // 
             // ChecksPanel
             // 
@@ -1367,6 +1370,78 @@
             this.ChecksPanel.Size = new System.Drawing.Size(1635, 1041);
             this.ChecksPanel.TabIndex = 7;
             this.ChecksPanel.Visible = false;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.AutoGenerateColumns = false;
+            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView7.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codesalesItemDataGridViewTextBoxColumn,
+            this.codesalesDataGridViewTextBoxColumn1,
+            this.codepartDataGridViewTextBoxColumn2,
+            this.partamountDataGridViewTextBoxColumn});
+            this.dataGridView7.DataSource = this.salesItemListBindingSource;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView7.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView7.Name = "dataGridView7";
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridView7.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView7.TabIndex = 7;
+            // 
+            // codesalesItemDataGridViewTextBoxColumn
+            // 
+            this.codesalesItemDataGridViewTextBoxColumn.DataPropertyName = "Code_salesItem";
+            this.codesalesItemDataGridViewTextBoxColumn.HeaderText = "Code_salesItem";
+            this.codesalesItemDataGridViewTextBoxColumn.Name = "codesalesItemDataGridViewTextBoxColumn";
+            this.codesalesItemDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codesalesDataGridViewTextBoxColumn1
+            // 
+            this.codesalesDataGridViewTextBoxColumn1.DataPropertyName = "Code_sales";
+            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Code_sales";
+            this.codesalesDataGridViewTextBoxColumn1.Name = "codesalesDataGridViewTextBoxColumn1";
+            // 
+            // codepartDataGridViewTextBoxColumn2
+            // 
+            this.codepartDataGridViewTextBoxColumn2.DataPropertyName = "Code_part";
+            this.codepartDataGridViewTextBoxColumn2.HeaderText = "Code_part";
+            this.codepartDataGridViewTextBoxColumn2.Name = "codepartDataGridViewTextBoxColumn2";
+            // 
+            // partamountDataGridViewTextBoxColumn
+            // 
+            this.partamountDataGridViewTextBoxColumn.DataPropertyName = "Part_amount";
+            this.partamountDataGridViewTextBoxColumn.HeaderText = "Part_amount";
+            this.partamountDataGridViewTextBoxColumn.Name = "partamountDataGridViewTextBoxColumn";
+            // 
+            // salesItemListBindingSource
+            // 
+            this.salesItemListBindingSource.DataMember = "SalesItemList";
+            this.salesItemListBindingSource.DataSource = this.partShopDataSet3;
             // 
             // ChecksButtonsPanel
             // 
@@ -1434,81 +1509,9 @@
             this.UpdateTableChecksButton.Text = "Обновить";
             this.UpdateTableChecksButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView7
-            // 
-            this.dataGridView7.AutoGenerateColumns = false;
-            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView7.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codesalesItemDataGridViewTextBoxColumn,
-            this.codesalesDataGridViewTextBoxColumn1,
-            this.codepartDataGridViewTextBoxColumn2,
-            this.partamountDataGridViewTextBoxColumn});
-            this.dataGridView7.DataSource = this.salesItemListBindingSource;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView7.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView7.Name = "dataGridView7";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
-            this.dataGridView7.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView7.TabIndex = 7;
-            // 
-            // salesItemListBindingSource
-            // 
-            this.salesItemListBindingSource.DataMember = "SalesItemList";
-            this.salesItemListBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // salesItemListTableAdapter
             // 
             this.salesItemListTableAdapter.ClearBeforeFill = true;
-            // 
-            // codesalesItemDataGridViewTextBoxColumn
-            // 
-            this.codesalesItemDataGridViewTextBoxColumn.DataPropertyName = "Code_salesItem";
-            this.codesalesItemDataGridViewTextBoxColumn.HeaderText = "Code_salesItem";
-            this.codesalesItemDataGridViewTextBoxColumn.Name = "codesalesItemDataGridViewTextBoxColumn";
-            this.codesalesItemDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codesalesDataGridViewTextBoxColumn1
-            // 
-            this.codesalesDataGridViewTextBoxColumn1.DataPropertyName = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn1.Name = "codesalesDataGridViewTextBoxColumn1";
-            // 
-            // codepartDataGridViewTextBoxColumn2
-            // 
-            this.codepartDataGridViewTextBoxColumn2.DataPropertyName = "Code_part";
-            this.codepartDataGridViewTextBoxColumn2.HeaderText = "Code_part";
-            this.codepartDataGridViewTextBoxColumn2.Name = "codepartDataGridViewTextBoxColumn2";
-            // 
-            // partamountDataGridViewTextBoxColumn
-            // 
-            this.partamountDataGridViewTextBoxColumn.DataPropertyName = "Part_amount";
-            this.partamountDataGridViewTextBoxColumn.HeaderText = "Part_amount";
-            this.partamountDataGridViewTextBoxColumn.Name = "partamountDataGridViewTextBoxColumn";
             // 
             // BuyersPanel
             // 
@@ -1520,6 +1523,99 @@
             this.BuyersPanel.Size = new System.Drawing.Size(1635, 1041);
             this.BuyersPanel.TabIndex = 8;
             this.BuyersPanel.Visible = false;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.AutoGenerateColumns = false;
+            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView8.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView8.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codebuyerDataGridViewTextBoxColumn1,
+            this.lastNamebuyerDataGridViewTextBoxColumn,
+            this.firstNamebuyerDataGridViewTextBoxColumn,
+            this.middleNamebuyerDataGridViewTextBoxColumn,
+            this.dateBirthdaybuyerDataGridViewTextBoxColumn,
+            this.numberPhonebuyerDataGridViewTextBoxColumn,
+            this.emailbuyerDataGridViewTextBoxColumn});
+            this.dataGridView8.DataSource = this.buyersBindingSource;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle23;
+            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView8.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView8.Name = "dataGridView8";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView8.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.dataGridView8.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView8.TabIndex = 8;
+            // 
+            // codebuyerDataGridViewTextBoxColumn1
+            // 
+            this.codebuyerDataGridViewTextBoxColumn1.DataPropertyName = "Code_buyer";
+            this.codebuyerDataGridViewTextBoxColumn1.HeaderText = "Code_buyer";
+            this.codebuyerDataGridViewTextBoxColumn1.Name = "codebuyerDataGridViewTextBoxColumn1";
+            this.codebuyerDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lastNamebuyerDataGridViewTextBoxColumn
+            // 
+            this.lastNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "LastName_buyer";
+            this.lastNamebuyerDataGridViewTextBoxColumn.HeaderText = "LastName_buyer";
+            this.lastNamebuyerDataGridViewTextBoxColumn.Name = "lastNamebuyerDataGridViewTextBoxColumn";
+            // 
+            // firstNamebuyerDataGridViewTextBoxColumn
+            // 
+            this.firstNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "FirstName_buyer";
+            this.firstNamebuyerDataGridViewTextBoxColumn.HeaderText = "FirstName_buyer";
+            this.firstNamebuyerDataGridViewTextBoxColumn.Name = "firstNamebuyerDataGridViewTextBoxColumn";
+            // 
+            // middleNamebuyerDataGridViewTextBoxColumn
+            // 
+            this.middleNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "MiddleName_buyer";
+            this.middleNamebuyerDataGridViewTextBoxColumn.HeaderText = "MiddleName_buyer";
+            this.middleNamebuyerDataGridViewTextBoxColumn.Name = "middleNamebuyerDataGridViewTextBoxColumn";
+            // 
+            // dateBirthdaybuyerDataGridViewTextBoxColumn
+            // 
+            this.dateBirthdaybuyerDataGridViewTextBoxColumn.DataPropertyName = "DateBirthday_buyer";
+            this.dateBirthdaybuyerDataGridViewTextBoxColumn.HeaderText = "DateBirthday_buyer";
+            this.dateBirthdaybuyerDataGridViewTextBoxColumn.Name = "dateBirthdaybuyerDataGridViewTextBoxColumn";
+            // 
+            // numberPhonebuyerDataGridViewTextBoxColumn
+            // 
+            this.numberPhonebuyerDataGridViewTextBoxColumn.DataPropertyName = "NumberPhone_buyer";
+            this.numberPhonebuyerDataGridViewTextBoxColumn.HeaderText = "NumberPhone_buyer";
+            this.numberPhonebuyerDataGridViewTextBoxColumn.Name = "numberPhonebuyerDataGridViewTextBoxColumn";
+            // 
+            // emailbuyerDataGridViewTextBoxColumn
+            // 
+            this.emailbuyerDataGridViewTextBoxColumn.DataPropertyName = "Email_buyer";
+            this.emailbuyerDataGridViewTextBoxColumn.HeaderText = "Email_buyer";
+            this.emailbuyerDataGridViewTextBoxColumn.Name = "emailbuyerDataGridViewTextBoxColumn";
+            // 
+            // buyersBindingSource
+            // 
+            this.buyersBindingSource.DataMember = "Buyers";
+            this.buyersBindingSource.DataSource = this.partShopDataSet3;
             // 
             // BuyersButtonsPanel
             // 
@@ -1587,102 +1683,9 @@
             this.UpdateTableBuyersButton.Text = "Обновить";
             this.UpdateTableBuyersButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView8
-            // 
-            this.dataGridView8.AutoGenerateColumns = false;
-            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView8.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView8.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codebuyerDataGridViewTextBoxColumn1,
-            this.lastNamebuyerDataGridViewTextBoxColumn,
-            this.firstNamebuyerDataGridViewTextBoxColumn,
-            this.middleNamebuyerDataGridViewTextBoxColumn,
-            this.dateBirthdaybuyerDataGridViewTextBoxColumn,
-            this.numberPhonebuyerDataGridViewTextBoxColumn,
-            this.emailbuyerDataGridViewTextBoxColumn});
-            this.dataGridView8.DataSource = this.buyersBindingSource;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle23;
-            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView8.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView8.Name = "dataGridView8";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView8.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
-            this.dataGridView8.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView8.TabIndex = 8;
-            // 
-            // buyersBindingSource
-            // 
-            this.buyersBindingSource.DataMember = "Buyers";
-            this.buyersBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // buyersTableAdapter
             // 
             this.buyersTableAdapter.ClearBeforeFill = true;
-            // 
-            // codebuyerDataGridViewTextBoxColumn1
-            // 
-            this.codebuyerDataGridViewTextBoxColumn1.DataPropertyName = "Code_buyer";
-            this.codebuyerDataGridViewTextBoxColumn1.HeaderText = "Code_buyer";
-            this.codebuyerDataGridViewTextBoxColumn1.Name = "codebuyerDataGridViewTextBoxColumn1";
-            this.codebuyerDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // lastNamebuyerDataGridViewTextBoxColumn
-            // 
-            this.lastNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "LastName_buyer";
-            this.lastNamebuyerDataGridViewTextBoxColumn.HeaderText = "LastName_buyer";
-            this.lastNamebuyerDataGridViewTextBoxColumn.Name = "lastNamebuyerDataGridViewTextBoxColumn";
-            // 
-            // firstNamebuyerDataGridViewTextBoxColumn
-            // 
-            this.firstNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "FirstName_buyer";
-            this.firstNamebuyerDataGridViewTextBoxColumn.HeaderText = "FirstName_buyer";
-            this.firstNamebuyerDataGridViewTextBoxColumn.Name = "firstNamebuyerDataGridViewTextBoxColumn";
-            // 
-            // middleNamebuyerDataGridViewTextBoxColumn
-            // 
-            this.middleNamebuyerDataGridViewTextBoxColumn.DataPropertyName = "MiddleName_buyer";
-            this.middleNamebuyerDataGridViewTextBoxColumn.HeaderText = "MiddleName_buyer";
-            this.middleNamebuyerDataGridViewTextBoxColumn.Name = "middleNamebuyerDataGridViewTextBoxColumn";
-            // 
-            // dateBirthdaybuyerDataGridViewTextBoxColumn
-            // 
-            this.dateBirthdaybuyerDataGridViewTextBoxColumn.DataPropertyName = "DateBirthday_buyer";
-            this.dateBirthdaybuyerDataGridViewTextBoxColumn.HeaderText = "DateBirthday_buyer";
-            this.dateBirthdaybuyerDataGridViewTextBoxColumn.Name = "dateBirthdaybuyerDataGridViewTextBoxColumn";
-            // 
-            // numberPhonebuyerDataGridViewTextBoxColumn
-            // 
-            this.numberPhonebuyerDataGridViewTextBoxColumn.DataPropertyName = "NumberPhone_buyer";
-            this.numberPhonebuyerDataGridViewTextBoxColumn.HeaderText = "NumberPhone_buyer";
-            this.numberPhonebuyerDataGridViewTextBoxColumn.Name = "numberPhonebuyerDataGridViewTextBoxColumn";
-            // 
-            // emailbuyerDataGridViewTextBoxColumn
-            // 
-            this.emailbuyerDataGridViewTextBoxColumn.DataPropertyName = "Email_buyer";
-            this.emailbuyerDataGridViewTextBoxColumn.HeaderText = "Email_buyer";
-            this.emailbuyerDataGridViewTextBoxColumn.Name = "emailbuyerDataGridViewTextBoxColumn";
             // 
             // SellersPanel
             // 
@@ -1693,6 +1696,78 @@
             this.SellersPanel.Name = "SellersPanel";
             this.SellersPanel.Size = new System.Drawing.Size(1635, 1041);
             this.SellersPanel.TabIndex = 9;
+            // 
+            // dataGridView9
+            // 
+            this.dataGridView9.AutoGenerateColumns = false;
+            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView9.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView9.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codesellerDataGridViewTextBoxColumn1,
+            this.lastNamesellerDataGridViewTextBoxColumn,
+            this.firstNamesellerDataGridViewTextBoxColumn,
+            this.middleNamesellerDataGridViewTextBoxColumn});
+            this.dataGridView9.DataSource = this.sellersBindingSource;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView9.DefaultCellStyle = dataGridViewCellStyle26;
+            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView9.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView9.Name = "dataGridView9";
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView9.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            this.dataGridView9.Size = new System.Drawing.Size(1635, 941);
+            this.dataGridView9.TabIndex = 9;
+            // 
+            // codesellerDataGridViewTextBoxColumn1
+            // 
+            this.codesellerDataGridViewTextBoxColumn1.DataPropertyName = "Code_seller";
+            this.codesellerDataGridViewTextBoxColumn1.HeaderText = "Code_seller";
+            this.codesellerDataGridViewTextBoxColumn1.Name = "codesellerDataGridViewTextBoxColumn1";
+            this.codesellerDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lastNamesellerDataGridViewTextBoxColumn
+            // 
+            this.lastNamesellerDataGridViewTextBoxColumn.DataPropertyName = "LastName_seller";
+            this.lastNamesellerDataGridViewTextBoxColumn.HeaderText = "LastName_seller";
+            this.lastNamesellerDataGridViewTextBoxColumn.Name = "lastNamesellerDataGridViewTextBoxColumn";
+            // 
+            // firstNamesellerDataGridViewTextBoxColumn
+            // 
+            this.firstNamesellerDataGridViewTextBoxColumn.DataPropertyName = "FirstName_seller";
+            this.firstNamesellerDataGridViewTextBoxColumn.HeaderText = "FirstName_seller";
+            this.firstNamesellerDataGridViewTextBoxColumn.Name = "firstNamesellerDataGridViewTextBoxColumn";
+            // 
+            // middleNamesellerDataGridViewTextBoxColumn
+            // 
+            this.middleNamesellerDataGridViewTextBoxColumn.DataPropertyName = "MiddleName_seller";
+            this.middleNamesellerDataGridViewTextBoxColumn.HeaderText = "MiddleName_seller";
+            this.middleNamesellerDataGridViewTextBoxColumn.Name = "middleNamesellerDataGridViewTextBoxColumn";
+            // 
+            // sellersBindingSource
+            // 
+            this.sellersBindingSource.DataMember = "Sellers";
+            this.sellersBindingSource.DataSource = this.partShopDataSet3;
             // 
             // SellersButtonsPanel
             // 
@@ -1760,81 +1835,9 @@
             this.UpdateTableSellersButton.Text = "Обновить";
             this.UpdateTableSellersButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView9
-            // 
-            this.dataGridView9.AutoGenerateColumns = false;
-            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView9.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView9.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codesellerDataGridViewTextBoxColumn1,
-            this.lastNamesellerDataGridViewTextBoxColumn,
-            this.firstNamesellerDataGridViewTextBoxColumn,
-            this.middleNamesellerDataGridViewTextBoxColumn});
-            this.dataGridView9.DataSource = this.sellersBindingSource;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView9.DefaultCellStyle = dataGridViewCellStyle26;
-            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView9.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView9.Name = "dataGridView9";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView9.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
-            this.dataGridView9.Size = new System.Drawing.Size(1635, 941);
-            this.dataGridView9.TabIndex = 9;
-            // 
-            // sellersBindingSource
-            // 
-            this.sellersBindingSource.DataMember = "Sellers";
-            this.sellersBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // sellersTableAdapter
             // 
             this.sellersTableAdapter.ClearBeforeFill = true;
-            // 
-            // codesellerDataGridViewTextBoxColumn1
-            // 
-            this.codesellerDataGridViewTextBoxColumn1.DataPropertyName = "Code_seller";
-            this.codesellerDataGridViewTextBoxColumn1.HeaderText = "Code_seller";
-            this.codesellerDataGridViewTextBoxColumn1.Name = "codesellerDataGridViewTextBoxColumn1";
-            this.codesellerDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // lastNamesellerDataGridViewTextBoxColumn
-            // 
-            this.lastNamesellerDataGridViewTextBoxColumn.DataPropertyName = "LastName_seller";
-            this.lastNamesellerDataGridViewTextBoxColumn.HeaderText = "LastName_seller";
-            this.lastNamesellerDataGridViewTextBoxColumn.Name = "lastNamesellerDataGridViewTextBoxColumn";
-            // 
-            // firstNamesellerDataGridViewTextBoxColumn
-            // 
-            this.firstNamesellerDataGridViewTextBoxColumn.DataPropertyName = "FirstName_seller";
-            this.firstNamesellerDataGridViewTextBoxColumn.HeaderText = "FirstName_seller";
-            this.firstNamesellerDataGridViewTextBoxColumn.Name = "firstNamesellerDataGridViewTextBoxColumn";
-            // 
-            // middleNamesellerDataGridViewTextBoxColumn
-            // 
-            this.middleNamesellerDataGridViewTextBoxColumn.DataPropertyName = "MiddleName_seller";
-            this.middleNamesellerDataGridViewTextBoxColumn.HeaderText = "MiddleName_seller";
-            this.middleNamesellerDataGridViewTextBoxColumn.Name = "middleNamesellerDataGridViewTextBoxColumn";
             // 
             // MainForm
             // 
@@ -1872,40 +1875,40 @@
             this.CategoryButtonsPanel.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.ManufacturersPanel.ResumeLayout(false);
-            this.ManufacturersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).EndInit();
+            this.ManufacturersButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
             this.ProvidersPanel.ResumeLayout(false);
-            this.ProvidersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).EndInit();
+            this.ProvidersButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
             this.StockPanel.ResumeLayout(false);
-            this.StockButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).EndInit();
+            this.StockButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
             this.SalesPanel.ResumeLayout(false);
-            this.SalesButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
+            this.SalesButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.ChecksPanel.ResumeLayout(false);
-            this.ChecksButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesItemListBindingSource)).EndInit();
+            this.ChecksButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
             this.BuyersPanel.ResumeLayout(false);
-            this.BuyersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyersBindingSource)).EndInit();
+            this.BuyersButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel9.ResumeLayout(false);
             this.SellersPanel.ResumeLayout(false);
-            this.SellersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellersBindingSource)).EndInit();
+            this.SellersButtonsPanel.ResumeLayout(false);
+            this.flowLayoutPanel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
