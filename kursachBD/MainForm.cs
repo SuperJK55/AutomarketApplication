@@ -1,4 +1,5 @@
 ﻿using kursachBD.CategoryPartsForm;
+using kursachBD.ManufacturerForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -160,15 +161,23 @@ namespace kursachBD
             else this.Show();
             
         }
-
-        private void UpdateTableCategoryButton_Click(object sender, EventArgs e)
-        {
-            UpdateTable("CategoryParts", dataGridView2);
-        }
         private void updatePartsTableButton_Click(object sender, EventArgs e)
         {
             UpdateTable("Parts", dataGridView1);
         }
+        private void UpdateTableCategoryButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("CategoryParts", dataGridView2);
+        }
+        private void UpdateTableManufacturerButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("Manufacturer", dataGridView3);
+        }
+        private void UpdateTableSellersButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+        
 
         private void AddCategoryButton_Click(object sender, EventArgs e)
         {
@@ -186,6 +195,22 @@ namespace kursachBD
         {
             UpdateCategoryPartsForm updateCategoryPartsForm = new UpdateCategoryPartsForm();
             updateCategoryPartsForm.ShowDialog();
+        }
+
+        private void AddSellersButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddManufacturerButton_Click(object sender, EventArgs e)
+        {
+            AddManufacturerForm addManufacturerForm = new AddManufacturerForm();
+            addManufacturerForm.ShowDialog();
+        }
+
+        private void DeleteManufacturerButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

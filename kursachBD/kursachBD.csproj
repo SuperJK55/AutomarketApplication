@@ -64,6 +64,18 @@
     <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.Designer.cs">
       <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManufacturerForm\AddManufacturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturerForm\AddManufacturerForm.Designer.cs">
+      <DependentUpon>AddManufacturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturerForm\DeleteManufacturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturerForm\DeleteManufacturerForm.Designer.cs">
+      <DependentUpon>DeleteManufacturerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PartForm\AddPartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryPartsForm\UpdateCategoryPartsForm.resx">
       <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturerForm\AddManufacturerForm.resx">
+      <DependentUpon>AddManufacturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturerForm\DeleteManufacturerForm.resx">
+      <DependentUpon>DeleteManufacturerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PartForm\AddPartForm.resx">
       <DependentUpon>AddPartForm.cs</DependentUpon>
