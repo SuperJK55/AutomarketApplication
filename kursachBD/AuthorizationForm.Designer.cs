@@ -33,6 +33,7 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.clearTextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginLabel
@@ -40,7 +41,7 @@
             this.loginLabel.AutoSize = true;
             this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginLabel.Location = new System.Drawing.Point(38, 121);
+            this.loginLabel.Location = new System.Drawing.Point(18, 121);
             this.loginLabel.Name = "loginLabel";
             this.loginLabel.Size = new System.Drawing.Size(96, 31);
             this.loginLabel.TabIndex = 2;
@@ -63,9 +64,9 @@
             // signInButton
             // 
             this.signInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.signInButton.Location = new System.Drawing.Point(140, 250);
+            this.signInButton.Location = new System.Drawing.Point(24, 240);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(210, 40);
+            this.signInButton.Size = new System.Drawing.Size(326, 40);
             this.signInButton.TabIndex = 4;
             this.signInButton.Text = "Войти";
             this.signInButton.UseVisualStyleBackColor = true;
@@ -88,11 +89,23 @@
             this.passwordTextBox.Size = new System.Drawing.Size(210, 38);
             this.passwordTextBox.TabIndex = 6;
             // 
+            // clearTextButton
+            // 
+            this.clearTextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearTextButton.Location = new System.Drawing.Point(24, 286);
+            this.clearTextButton.Name = "clearTextButton";
+            this.clearTextButton.Size = new System.Drawing.Size(326, 40);
+            this.clearTextButton.TabIndex = 8;
+            this.clearTextButton.Text = "Отчистить";
+            this.clearTextButton.UseVisualStyleBackColor = true;
+            this.clearTextButton.Click += new System.EventHandler(this.clearTextButton_Click);
+            // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 425);
+            this.ClientSize = new System.Drawing.Size(378, 425);
+            this.Controls.Add(this.clearTextButton);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.loginTextBox);
             this.Controls.Add(this.signInButton);
@@ -111,5 +124,6 @@
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Button clearTextButton;
     }
 }

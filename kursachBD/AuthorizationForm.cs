@@ -34,7 +34,9 @@ namespace kursachBD
                 }
                 else
                 {
-                   MessageBox.Show("Неверная пара логин/пароль.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Неверная пара логин/пароль.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    passwordTextBox.Clear();
+                    passwordTextBox.Focus();
                 }
             }
         }
@@ -59,6 +61,11 @@ namespace kursachBD
             return true;
         }
 
-       
+        private void clearTextButton_Click(object sender, EventArgs e)
+        {
+            loginTextBox.Clear();
+            passwordTextBox.Clear();
+            loginTextBox.Focus();
+        }
     }
 }
