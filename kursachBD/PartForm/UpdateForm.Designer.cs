@@ -35,35 +35,36 @@
             this.typePart_textBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.categoryPart_comboBox = new System.Windows.Forms.ComboBox();
+            this.categoryPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.partShopDataSet3 = new kursachBD.PartShopDataSet3();
             this.label4 = new System.Windows.Forms.Label();
             this.costPart_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.manufacturerPart_comboBox = new System.Windows.Forms.ComboBox();
+            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.providerParts_comboBox = new System.Windows.Forms.ComboBox();
+            this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.descPart_textBox = new System.Windows.Forms.TextBox();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.ID_comboBox = new System.Windows.Forms.ComboBox();
-            this.partShopDataSet3 = new kursachBD.PartShopDataSet3();
             this.partsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partsTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.PartsTableAdapter();
             this.partsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.partsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.categoryPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryPartsTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.CategoryPartsTableAdapter();
-            this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.manufacturerTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ManufacturerTableAdapter();
-            this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.providerPartsTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ProviderPartsTableAdapter();
+            this.ClosedButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,6 +119,16 @@
             this.categoryPart_comboBox.TabIndex = 12;
             this.categoryPart_comboBox.ValueMember = "Code_category";
             // 
+            // categoryPartsBindingSource
+            // 
+            this.categoryPartsBindingSource.DataMember = "CategoryParts";
+            this.categoryPartsBindingSource.DataSource = this.partShopDataSet3;
+            // 
+            // partShopDataSet3
+            // 
+            this.partShopDataSet3.DataSetName = "PartShopDataSet3";
+            this.partShopDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -154,6 +165,11 @@
             this.manufacturerPart_comboBox.TabIndex = 16;
             this.manufacturerPart_comboBox.ValueMember = "Code_manufacturer";
             // 
+            // manufacturerBindingSource
+            // 
+            this.manufacturerBindingSource.DataMember = "Manufacturer";
+            this.manufacturerBindingSource.DataSource = this.partShopDataSet3;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -173,6 +189,11 @@
             this.providerParts_comboBox.Size = new System.Drawing.Size(256, 21);
             this.providerParts_comboBox.TabIndex = 18;
             this.providerParts_comboBox.ValueMember = "Code_provider";
+            // 
+            // providerPartsBindingSource
+            // 
+            this.providerPartsBindingSource.DataMember = "ProviderParts";
+            this.providerPartsBindingSource.DataSource = this.partShopDataSet3;
             // 
             // label7
             // 
@@ -221,11 +242,6 @@
             this.ID_comboBox.TabIndex = 23;
             this.ID_comboBox.ValueMember = "Code_part";
             // 
-            // partShopDataSet3
-            // 
-            this.partShopDataSet3.DataSetName = "PartShopDataSet3";
-            this.partShopDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // partsBindingSource
             // 
             this.partsBindingSource.DataMember = "Parts";
@@ -245,38 +261,34 @@
             this.partsBindingSource2.DataMember = "Parts";
             this.partsBindingSource2.DataSource = this.partShopDataSet3;
             // 
-            // categoryPartsBindingSource
-            // 
-            this.categoryPartsBindingSource.DataMember = "CategoryParts";
-            this.categoryPartsBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // categoryPartsTableAdapter
             // 
             this.categoryPartsTableAdapter.ClearBeforeFill = true;
-            // 
-            // manufacturerBindingSource
-            // 
-            this.manufacturerBindingSource.DataMember = "Manufacturer";
-            this.manufacturerBindingSource.DataSource = this.partShopDataSet3;
             // 
             // manufacturerTableAdapter
             // 
             this.manufacturerTableAdapter.ClearBeforeFill = true;
             // 
-            // providerPartsBindingSource
-            // 
-            this.providerPartsBindingSource.DataMember = "ProviderParts";
-            this.providerPartsBindingSource.DataSource = this.partShopDataSet3;
-            // 
             // providerPartsTableAdapter
             // 
             this.providerPartsTableAdapter.ClearBeforeFill = true;
+            // 
+            // ClosedButton
+            // 
+            this.ClosedButton.Location = new System.Drawing.Point(15, 241);
+            this.ClosedButton.Name = "ClosedButton";
+            this.ClosedButton.Size = new System.Drawing.Size(144, 25);
+            this.ClosedButton.TabIndex = 24;
+            this.ClosedButton.Text = "Закрыть";
+            this.ClosedButton.UseVisualStyleBackColor = true;
+            this.ClosedButton.Click += new System.EventHandler(this.ClosedButton_Click);
             // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 278);
+            this.Controls.Add(this.ClosedButton);
             this.Controls.Add(this.ID_comboBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.UpdateButton);
@@ -297,13 +309,13 @@
             this.Name = "UpdateForm";
             this.Text = "PartForm - Изменение записи";
             this.Load += new System.EventHandler(this.UpdateForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +351,6 @@
         private PartShopDataSet3TableAdapters.ManufacturerTableAdapter manufacturerTableAdapter;
         private System.Windows.Forms.BindingSource providerPartsBindingSource;
         private PartShopDataSet3TableAdapters.ProviderPartsTableAdapter providerPartsTableAdapter;
+        private System.Windows.Forms.Button ClosedButton;
     }
 }

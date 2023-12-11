@@ -32,16 +32,11 @@ namespace kursachBD
         
         public void UpdateTable(string nameTable, DataGridView dataGridView)
         {
-            
-            con.Open();
             cmd = new SqlCommand($"SELECT * FROM {nameTable}", con);
             adapt = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adapt.Fill(dt);
             dataGridView.DataSource = dt;
-
-            cmd.ExecuteNonQuery();
-            con.Close();
         }
 
         private void PartsButton_Click(object sender, EventArgs e)
@@ -135,8 +130,7 @@ namespace kursachBD
 
         private void button3_Click(object sender, EventArgs e)
         {
-            UpdateForm updateForm = new UpdateForm();
-            updateForm.ShowDialog();
+            
         }
 
        
@@ -211,6 +205,61 @@ namespace kursachBD
         private void DeleteManufacturerButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                int id;
+                
+                id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["codepartDataGridViewTextBoxColumn"].Value);
+                con.Open();
+                try
+                {
+                    string query = "DELETE FROM Parts WHERE Code_part = @id";
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    int result = cmd.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Данные удалены успешно");
+                        UpdateTable("Parts", dataGridView1);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Данные не удалены");
+                    }
+                    
+                }
+                catch (Exception ex) 
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+            if (dataGridView1.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id, category_part, manufacturer, provider;
+                double cost_part;
+                string name_part, type_part, description;
+
+                id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["codepartDataGridViewTextBoxColumn"].Value);
+                name_part = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells["namepartDataGridViewTextBoxColumn"].Value);
+                type_part = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells["typepartDataGridViewTextBoxColumn"].Value);
+                category_part = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["categorypartDataGridViewTextBoxColumn"].Value);
+                cost_part = Convert.ToDouble(dataGridView1.Rows[e.RowIndex].Cells["costpartDataGridViewTextBoxColumn"].Value);
+                manufacturer = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["manufacturerDataGridViewTextBoxColumn"].Value);
+                provider = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["providerpartsDataGridViewTextBoxColumn"].Value);
+                description = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells["descriptionpartDataGridViewTextBoxColumn"].Value);
+
+                UpdateForm updateForm = new UpdateForm(id, name_part, type_part, category_part, cost_part, manufacturer, provider, description, dataGridView1);
+                updateForm.ShowDialog();
+                UpdateTable("Parts", dataGridView1);
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace kursachBD
 {
     public partial class AddPartForm : Form
@@ -16,6 +17,7 @@ namespace kursachBD
         SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
+        MainForm mainForm = new MainForm();  
         public AddPartForm()
         {
             InitializeComponent();

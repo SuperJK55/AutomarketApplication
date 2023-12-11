@@ -16,9 +16,30 @@ namespace kursachBD
         SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
-        public UpdateForm()
+        MainForm mainForm = new MainForm();
+
+        int id, category_part, manufacturer, provider;
+        double cost_part;
+        string name_part, type_part, description;
+
+        private void ClosedButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        DataGridView dataGridView;
+        public UpdateForm(int id, string name_part, string type_part, int category_part, double cost_part, int manufacturer, int provider, string description, DataGridView dataGridView)
         {
             InitializeComponent();
+            this.id = id;
+            this.name_part = name_part;
+            this.type_part = type_part;
+            this.category_part = category_part;
+            this.cost_part = cost_part;
+            this.manufacturer = manufacturer;
+            this.provider = provider;
+            this.description = description;
+            this.dataGridView = dataGridView;
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -34,7 +55,8 @@ namespace kursachBD
             cmd.Parameters.AddWithValue("@provider_parts", providerParts_comboBox.SelectedIndex + 1);
             cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
             cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
-
+            
+            
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -53,6 +75,14 @@ namespace kursachBD
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Parts". При необходимости она может быть перемещена или удалена.
             this.partsTableAdapter.Fill(this.partShopDataSet3.Parts);
 
+            ID_comboBox.SelectedValue = id.ToString();
+            namePart_textBox.Text = name_part;
+            typePart_textBox.Text = type_part;
+            categoryPart_comboBox.SelectedValue = category_part.ToString();
+            costPart_textBox.Text = cost_part.ToString();
+            manufacturerPart_comboBox.SelectedValue = manufacturer.ToString();
+            providerParts_comboBox.SelectedValue = provider.ToString();
+            descPart_textBox.Text = description;
         }
     }
 }
