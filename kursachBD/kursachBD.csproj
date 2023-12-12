@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyersForm\AddBuyerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyersForm\AddBuyerForm.Designer.cs">
+      <DependentUpon>AddBuyerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyersForm\UpdateBuyerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyersForm\UpdateBuyerForm.Designer.cs">
+      <DependentUpon>UpdateBuyerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CategoryPartsForm\AddCategoryPartsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,18 @@
     </Compile>
     <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.Designer.cs">
       <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForm\AddChecksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForm\AddChecksForm.Designer.cs">
+      <DependentUpon>AddChecksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForm\UpdateChecksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForm\UpdateChecksForm.Designer.cs">
+      <DependentUpon>UpdateChecksForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManufacturerForm\AddManufacturerForm.cs">
       <SubType>Form</SubType>
@@ -147,6 +171,18 @@
     <Compile Include="ProviderForm\UpdateProviderForm.Designer.cs">
       <DependentUpon>UpdateProviderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesForm\AddSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm\AddSaleForm.Designer.cs">
+      <DependentUpon>AddSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesForm\UpdateSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm\UpdateSaleForm.Designer.cs">
+      <DependentUpon>UpdateSaleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StockForm\AddStockItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +195,9 @@
     <Compile Include="StockForm\UpdateStockItemForm.Designer.cs">
       <DependentUpon>UpdateStockItemForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuyersForm\UpdateBuyerForm.resx">
+      <DependentUpon>UpdateBuyerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CategoryPartsForm\AddCategoryPartsForm.resx">
       <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryPartsForm\UpdateCategoryPartsForm.resx">
       <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForm\UpdateChecksForm.resx">
+      <DependentUpon>UpdateChecksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManufacturerForm\AddManufacturerForm.resx">
       <DependentUpon>AddManufacturerForm.cs</DependentUpon>
@@ -204,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProviderForm\UpdateProviderForm.resx">
       <DependentUpon>UpdateProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm\UpdateSaleForm.resx">
+      <DependentUpon>UpdateSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\UpdateStockItemForm.resx">
+      <DependentUpon>UpdateStockItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PartShopDataSet.xsc">
       <DependentUpon>PartShopDataSet.xsd</DependentUpon>

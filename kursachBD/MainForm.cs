@@ -1,6 +1,10 @@
-﻿using kursachBD.CategoryPartsForm;
+﻿using kursachBD.BuyersForm;
+using kursachBD.CategoryPartsForm;
+using kursachBD.Check;
 using kursachBD.ManufacturerForm;
 using kursachBD.ProviderForm;
+using kursachBD.SalesForm;
+using kursachBD.StockForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -340,18 +344,15 @@ namespace kursachBD
             }
             if (dataGridView5.Columns[e.ColumnIndex].HeaderText == "Изменить")
             {
-                int id;
-                string name_provider, address_provider, phoneNumber_provider, email_provider;
+                int id, code_part, count_parts;
 
                 id = Convert.ToInt32(dataGridView5.Rows[e.RowIndex].Cells["codePartOnstockDataGridViewTextBoxColumn"].Value);
-                name_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["nameproviderDataGridViewTextBoxColumn"].Value);
-                address_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["addressproviderDataGridViewTextBoxColumn"].Value);
-                phoneNumber_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["phoneNumberproviderDataGridViewTextBoxColumn"].Value);
-                email_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["emailproviderDataGridViewTextBoxColumn"].Value);
-
-                UpdateProviderForm updateForm = new UpdateProviderForm(id, name_provider, address_provider, phoneNumber_provider, email_provider);
+                code_part = Convert.ToInt32(dataGridView5.Rows[e.RowIndex].Cells["codepartDataGridViewTextBoxColumn1"].Value);
+                count_parts = Convert.ToInt32(dataGridView5.Rows[e.RowIndex].Cells["countpartsDataGridViewTextBoxColumn"].Value);
+                
+                UpdateStockItemForm updateForm = new UpdateStockItemForm(id, code_part, count_parts);
                 updateForm.ShowDialog();
-                UpdateTable("ProviderParts", dataGridView5);
+                UpdateTable("Stock", dataGridView5);
             }
         }
 
@@ -361,6 +362,21 @@ namespace kursachBD
             {
                 DeleteButtonTable(e, "Sales", "codesalesDataGridViewTextBoxColumn", "Code_sales", dataGridView6);
             }
+            if (dataGridView6.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id, code_buyer, count_seller;
+                DateTime dateTime_sale;
+
+                id = Convert.ToInt32(dataGridView6.Rows[e.RowIndex].Cells["codePartOnstockDataGridViewTextBoxColumn"].Value);
+                dateTime_sale = Convert.ToDateTime(dataGridView6.Rows[e.RowIndex].Cells["salesdateDataGridViewTextBoxColumn"].Value);
+                code_buyer = Convert.ToInt32(dataGridView6.Rows[e.RowIndex].Cells["codebuyerDataGridViewTextBoxColumn"].Value);
+                count_seller = Convert.ToInt32(dataGridView6.Rows[e.RowIndex].Cells["codesellerDataGridViewTextBoxColumn"].Value);
+                
+
+                UpdateSaleForm updateForm = new UpdateSaleForm(id, code_buyer, count_seller, dateTime_sale);
+                updateForm.ShowDialog();
+                UpdateTable("Stock", dataGridView6);
+            }
         }
 
         private void dataGridView7_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -369,6 +385,20 @@ namespace kursachBD
             {
                 DeleteButtonTable(e, "SalesItemList", "codesalesItemDataGridViewTextBoxColumn", "Code_salesItem", dataGridView7);
             }
+            if (dataGridView7.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id, code_sales, code_part, part_amount;
+
+                id = Convert.ToInt32(dataGridView7.Rows[e.RowIndex].Cells["codesalesItemDataGridViewTextBoxColumn"].Value);
+                code_sales = Convert.ToInt32(dataGridView7.Rows[e.RowIndex].Cells["codesalesDataGridViewTextBoxColumn1"].Value);
+                code_part = Convert.ToInt32(dataGridView7.Rows[e.RowIndex].Cells["codepartDataGridViewTextBoxColumn2"].Value);
+                part_amount = Convert.ToInt32(dataGridView7.Rows[e.RowIndex].Cells["partamountDataGridViewTextBoxColumn"].Value);
+
+
+                UpdateChecksForm updateForm = new UpdateChecksForm(id, code_sales, code_part, part_amount);
+                updateForm.ShowDialog();
+                UpdateTable("SalesItemList", dataGridView7);
+            }
         }
 
         private void dataGridView8_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -376,6 +406,24 @@ namespace kursachBD
             if (dataGridView8.Columns[e.ColumnIndex].HeaderText == "Удалить")
             {
                 DeleteButtonTable(e, "SalesItemList", "codesalesItemDataGridViewTextBoxColumn", "Code_salesItem", dataGridView8);
+            }
+            if (dataGridView8.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string lastName_buyer, firstName_buyer, middleName_buyer, numberPhone_buyer, email_buyer;
+                DateTime dateBirthday;
+
+                id = Convert.ToInt32(dataGridView8.Rows[e.RowIndex].Cells["codebuyerDataGridViewTextBoxColumn1"].Value);
+                lastName_buyer = Convert.ToString(dataGridView8.Rows[e.RowIndex].Cells["lastNamebuyerDataGridViewTextBoxColumn"].Value);
+                firstName_buyer = Convert.ToString(dataGridView8.Rows[e.RowIndex].Cells["firstNamebuyerDataGridViewTextBoxColumn"].Value);
+                middleName_buyer = Convert.ToString(dataGridView8.Rows[e.RowIndex].Cells["middleNamebuyerDataGridViewTextBoxColumn"].Value);
+                dateBirthday = Convert.ToDateTime(dataGridView8.Rows[e.RowIndex].Cells["dateBirthdaybuyerDataGridViewTextBoxColumn"].Value);
+                numberPhone_buyer = Convert.ToString(dataGridView8.Rows[e.RowIndex].Cells["numberPhonebuyerDataGridViewTextBoxColumn"].Value);
+                email_buyer = Convert.ToString(dataGridView8.Rows[e.RowIndex].Cells["emailbuyerDataGridViewTextBoxColumn"].Value);
+
+                UpdateBuyerForm updateForm = new UpdateBuyerForm(id, lastName_buyer, firstName_buyer, middleName_buyer, numberPhone_buyer, email_buyer, dateBirthday);
+                updateForm.ShowDialog();
+                UpdateTable("Buyers", dataGridView8);
             }
         }
 
