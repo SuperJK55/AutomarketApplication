@@ -1,5 +1,6 @@
 ﻿using kursachBD.CategoryPartsForm;
 using kursachBD.ManufacturerForm;
+using kursachBD.ProviderForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,13 +31,45 @@ namespace kursachBD
 
         }
         
-        public void UpdateTable(string nameTable, DataGridView dataGridView)
+        private void UpdateTable(string nameTable, DataGridView dataGridView)
         {
             cmd = new SqlCommand($"SELECT * FROM {nameTable}", con);
             adapt = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adapt.Fill(dt);
             dataGridView.DataSource = dt;
+        }
+        private void DeleteButtonTable(DataGridViewCellEventArgs e, string table_name, string id_column_cell, string id_column_name, DataGridView dataGridView)
+        {
+                int id;
+                id = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells[id_column_cell].Value);
+                con.Open();
+                try
+                {
+                    string query = $"DELETE FROM {table_name} WHERE {id_column_name} = @id";
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    int result = cmd.ExecuteNonQuery();
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Данные удалены успешно");
+                        UpdateTable(table_name, dataGridView);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Данные не удалены");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            
         }
 
         private void PartsButton_Click(object sender, EventArgs e)
@@ -187,8 +220,7 @@ namespace kursachBD
 
         private void UpdateCategoryButton_Click(object sender, EventArgs e)
         {
-            UpdateCategoryPartsForm updateCategoryPartsForm = new UpdateCategoryPartsForm();
-            updateCategoryPartsForm.ShowDialog();
+            
         }
 
         private void AddSellersButton_Click(object sender, EventArgs e)
@@ -211,35 +243,7 @@ namespace kursachBD
         {
             if (dataGridView1.Columns[e.ColumnIndex].HeaderText == "Удалить")
             {
-                int id;
-                
-                id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["codepartDataGridViewTextBoxColumn"].Value);
-                con.Open();
-                try
-                {
-                    string query = "DELETE FROM Parts WHERE Code_part = @id";
-                    cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    int result = cmd.ExecuteNonQuery();
-                    if (result > 0)
-                    {
-                        MessageBox.Show("Данные удалены успешно");
-                        UpdateTable("Parts", dataGridView1);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Данные не удалены");
-                    }
-                    
-                }
-                catch (Exception ex) 
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    con.Close();
-                }
+                DeleteButtonTable(e, "Parts", "codepartDataGridViewTextBoxColumn", "Code_part", dataGridView1);
             }
             if (dataGridView1.Columns[e.ColumnIndex].HeaderText == "Изменить")
             {
@@ -256,9 +260,130 @@ namespace kursachBD
                 provider = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["providerpartsDataGridViewTextBoxColumn"].Value);
                 description = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells["descriptionpartDataGridViewTextBoxColumn"].Value);
 
-                UpdateForm updateForm = new UpdateForm(id, name_part, type_part, category_part, cost_part, manufacturer, provider, description, dataGridView1);
+                UpdateForm updateForm = new UpdateForm(id, name_part, type_part, category_part, cost_part, manufacturer, provider, description);
                 updateForm.ShowDialog();
                 UpdateTable("Parts", dataGridView1);
+            }
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "CategoryParts", "codecategoryDataGridViewTextBoxColumn", "Code_category", dataGridView2);
+            }
+            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string name_category;
+
+                id = Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells["codecategoryDataGridViewTextBoxColumn"].Value);
+                name_category = Convert.ToString(dataGridView2.Rows[e.RowIndex].Cells["namecategoryDataGridViewTextBoxColumn"].Value);
+
+                UpdateCategoryPartsForm updateForm = new UpdateCategoryPartsForm(id, name_category);
+                updateForm.ShowDialog();
+                UpdateTable("CategoryParts", dataGridView2);
+            }
+        }
+
+        private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView3.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "Manufacturer", "codemanufacturerDataGridViewTextBoxColumn", "Code_manufacturer", dataGridView3);
+            }
+            if (dataGridView3.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string name_manufacturer, address_manufacturer, phoneNumber_manufacturer, email_manufacturer;
+
+                id = Convert.ToInt32(dataGridView3.Rows[e.RowIndex].Cells["codemanufacturerDataGridViewTextBoxColumn"].Value);
+                name_manufacturer = Convert.ToString(dataGridView3.Rows[e.RowIndex].Cells["namemanufacturerDataGridViewTextBoxColumn"].Value);
+                address_manufacturer = Convert.ToString(dataGridView3.Rows[e.RowIndex].Cells["addressmanufacturerDataGridViewTextBoxColumn"].Value);
+                phoneNumber_manufacturer = Convert.ToString(dataGridView3.Rows[e.RowIndex].Cells["phoneNumbermanufacturerDataGridViewTextBoxColumn"].Value);
+                email_manufacturer = Convert.ToString(dataGridView3.Rows[e.RowIndex].Cells["emailmanufacturerDataGridViewTextBoxColumn"].Value);
+
+                UpdateManufacturerForm updateForm = new UpdateManufacturerForm(id, name_manufacturer, address_manufacturer, phoneNumber_manufacturer, email_manufacturer);
+                updateForm.ShowDialog();
+                UpdateTable("Manufacturer", dataGridView3);
+            }
+        }
+
+        private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView4.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "ProviderParts", "codeproviderDataGridViewTextBoxColumn", "Code_provider", dataGridView4);
+            }
+            if (dataGridView4.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string name_provider, address_provider, phoneNumber_provider, email_provider;
+
+                id = Convert.ToInt32(dataGridView4.Rows[e.RowIndex].Cells["codeproviderDataGridViewTextBoxColumn"].Value);
+                name_provider = Convert.ToString(dataGridView4.Rows[e.RowIndex].Cells["nameproviderDataGridViewTextBoxColumn"].Value);
+                address_provider = Convert.ToString(dataGridView4.Rows[e.RowIndex].Cells["addressproviderDataGridViewTextBoxColumn"].Value);
+                phoneNumber_provider = Convert.ToString(dataGridView4.Rows[e.RowIndex].Cells["phoneNumberproviderDataGridViewTextBoxColumn"].Value);
+                email_provider = Convert.ToString(dataGridView4.Rows[e.RowIndex].Cells["emailproviderDataGridViewTextBoxColumn"].Value);
+
+                UpdateProviderForm updateForm = new UpdateProviderForm(id, name_provider, address_provider, phoneNumber_provider, email_provider);
+                updateForm.ShowDialog();
+                UpdateTable("ProviderParts", dataGridView4);
+            }
+        }
+
+        private void dataGridView5_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView5.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "Stock", "codePartOnstockDataGridViewTextBoxColumn", "CodePartOn_stock", dataGridView5);
+            }
+            if (dataGridView5.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string name_provider, address_provider, phoneNumber_provider, email_provider;
+
+                id = Convert.ToInt32(dataGridView5.Rows[e.RowIndex].Cells["codePartOnstockDataGridViewTextBoxColumn"].Value);
+                name_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["nameproviderDataGridViewTextBoxColumn"].Value);
+                address_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["addressproviderDataGridViewTextBoxColumn"].Value);
+                phoneNumber_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["phoneNumberproviderDataGridViewTextBoxColumn"].Value);
+                email_provider = Convert.ToString(dataGridView5.Rows[e.RowIndex].Cells["emailproviderDataGridViewTextBoxColumn"].Value);
+
+                UpdateProviderForm updateForm = new UpdateProviderForm(id, name_provider, address_provider, phoneNumber_provider, email_provider);
+                updateForm.ShowDialog();
+                UpdateTable("ProviderParts", dataGridView5);
+            }
+        }
+
+        private void dataGridView6_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView6.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "Sales", "codesalesDataGridViewTextBoxColumn", "Code_sales", dataGridView6);
+            }
+        }
+
+        private void dataGridView7_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView7.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "SalesItemList", "codesalesItemDataGridViewTextBoxColumn", "Code_salesItem", dataGridView7);
+            }
+        }
+
+        private void dataGridView8_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView8.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "SalesItemList", "codesalesItemDataGridViewTextBoxColumn", "Code_salesItem", dataGridView8);
+            }
+        }
+
+        private void dataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView9.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "Sellers", "codesellerDataGridViewTextBoxColumn1", "Code_seller", dataGridView9);
             }
         }
     }

@@ -15,8 +15,6 @@ namespace kursachBD
     {
         SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         SqlCommand cmd;
-        SqlDataAdapter adapt;
-        MainForm mainForm = new MainForm();
 
         int id, category_part, manufacturer, provider;
         double cost_part;
@@ -28,7 +26,7 @@ namespace kursachBD
         }
 
         DataGridView dataGridView;
-        public UpdateForm(int id, string name_part, string type_part, int category_part, double cost_part, int manufacturer, int provider, string description, DataGridView dataGridView)
+        public UpdateForm(int id, string name_part, string type_part, int category_part, double cost_part, int manufacturer, int provider, string description)
         {
             InitializeComponent();
             this.id = id;
@@ -39,7 +37,6 @@ namespace kursachBD
             this.manufacturer = manufacturer;
             this.provider = provider;
             this.description = description;
-            this.dataGridView = dataGridView;
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -47,6 +44,7 @@ namespace kursachBD
             cmd = new SqlCommand("UPDATE Parts SET Name_part = @name_part, Type_part = @type_part, Category_part = @category_part, Cost_part = @cost_part, Manufacturer = @manufacturer, Provider_parts = @provider_parts, Description_part = @desc_part " +
                 "WHERE Code_part = @id", con);
             con.Open();
+
             cmd.Parameters.AddWithValue("@name_part", namePart_textBox.Text);
             cmd.Parameters.AddWithValue("@type_part", typePart_textBox.Text);
             cmd.Parameters.AddWithValue("@category_part", categoryPart_comboBox.SelectedIndex + 1);
@@ -55,7 +53,6 @@ namespace kursachBD
             cmd.Parameters.AddWithValue("@provider_parts", providerParts_comboBox.SelectedIndex + 1);
             cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
             cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
-            
             
             cmd.ExecuteNonQuery();
             con.Close();
