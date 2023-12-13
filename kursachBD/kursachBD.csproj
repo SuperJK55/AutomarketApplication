@@ -64,12 +64,6 @@
     <Compile Include="CategoryPartsForm\AddCategoryPartsForm.Designer.cs">
       <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CategoryPartsForm\DeleteCategoryPartsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CategoryPartsForm\DeleteCategoryPartsForm.Designer.cs">
-      <DependentUpon>DeleteCategoryPartsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +88,6 @@
     <Compile Include="ManufacturerForm\AddManufacturerForm.Designer.cs">
       <DependentUpon>AddManufacturerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManufacturerForm\DeleteManufacturerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManufacturerForm\DeleteManufacturerForm.Designer.cs">
-      <DependentUpon>DeleteManufacturerForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ManufacturerForm\UpdateManufacturerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,12 +105,6 @@
     </Compile>
     <Compile Include="AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PartForm\DeletedForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PartForm\DeletedForm.Designer.cs">
-      <DependentUpon>DeletedForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -183,6 +165,18 @@
     <Compile Include="SalesForm\UpdateSaleForm.Designer.cs">
       <DependentUpon>UpdateSaleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SellerForm\AddSellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerForm\AddSellerForm.Designer.cs">
+      <DependentUpon>AddSellerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerForm\UpdateSellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerForm\UpdateSellerForm.Designer.cs">
+      <DependentUpon>UpdateSellerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StockForm\AddStockItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,26 +189,26 @@
     <Compile Include="StockForm\UpdateStockItemForm.Designer.cs">
       <DependentUpon>UpdateStockItemForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuyersForm\AddBuyerForm.resx">
+      <DependentUpon>AddBuyerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyersForm\UpdateBuyerForm.resx">
       <DependentUpon>UpdateBuyerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryPartsForm\AddCategoryPartsForm.resx">
       <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CategoryPartsForm\DeleteCategoryPartsForm.resx">
-      <DependentUpon>DeleteCategoryPartsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CategoryPartsForm\UpdateCategoryPartsForm.resx">
       <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForm\AddChecksForm.resx">
+      <DependentUpon>AddChecksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckForm\UpdateChecksForm.resx">
       <DependentUpon>UpdateChecksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManufacturerForm\AddManufacturerForm.resx">
       <DependentUpon>AddManufacturerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManufacturerForm\DeleteManufacturerForm.resx">
-      <DependentUpon>DeleteManufacturerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManufacturerForm\UpdateManufacturerForm.resx">
       <DependentUpon>UpdateManufacturerForm.cs</DependentUpon>
@@ -224,9 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PartForm\DeletedForm.resx">
-      <DependentUpon>DeletedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -244,11 +235,26 @@
     <EmbeddedResource Include="PartForm\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProviderForm\AddProviderForm.resx">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProviderForm\UpdateProviderForm.resx">
       <DependentUpon>UpdateProviderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm\AddSaleForm.resx">
+      <DependentUpon>AddSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SalesForm\UpdateSaleForm.resx">
       <DependentUpon>UpdateSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerForm\AddSellerForm.resx">
+      <DependentUpon>AddSellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerForm\UpdateSellerForm.resx">
+      <DependentUpon>UpdateSellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\AddStockItemForm.resx">
+      <DependentUpon>AddStockItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockForm\UpdateStockItemForm.resx">
       <DependentUpon>UpdateStockItemForm.cs</DependentUpon>

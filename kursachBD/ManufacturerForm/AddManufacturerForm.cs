@@ -22,7 +22,7 @@ namespace kursachBD.ManufacturerForm
 
         private void InsertButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer)" +
+            cmd = new SqlCommand("INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) " +
                 "VALUES (@name_manufacturer, @address_manufacturer, @phone_manufacturer, @email_manufacturer)", con);
             con.Open();
             cmd.Parameters.AddWithValue("@name_manufacturer", nameManufacturer_textBox.Text);

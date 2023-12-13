@@ -49,15 +49,16 @@ namespace kursachBD.SalesForm
             MessageBox.Show("Запись успешно изменена");
         }
 
-        
-
         private void UpdateSaleForm_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Sellers". При необходимости она может быть перемещена или удалена.
             this.sellersTableAdapter.Fill(this.partShopDataSet3.Sellers);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Buyers". При необходимости она может быть перемещена или удалена.
             this.buyersTableAdapter.Fill(this.partShopDataSet3.Buyers);
-
+            IdSale_textBox.Text = id.ToString();
+            dateSale_dateTimePicker.Value = dateTime;
+            codeBuyer_comboBox.SelectedValue = code_buyer;
+            codeSeller_comboBox.SelectedValue = code_seller;
 
         }
     }

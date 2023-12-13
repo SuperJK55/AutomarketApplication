@@ -18,6 +18,7 @@ namespace kursachBD.BuyersForm
 
         int id;
         string lastName_buyer, firstName_buyer, middleName_buyer, numberPhone_buyer, email_buyer;
+        DateTime dateBirthday;
 
         private void UpdateBuyerForm_Load(object sender, EventArgs e)
         {
@@ -36,7 +37,6 @@ namespace kursachBD.BuyersForm
             Close();
         }
 
-        DateTime dateBirthday;
         public UpdateBuyerForm(int id, string lastName_buyer, string firstName_buyer, string middleName_buyer, string numberPhone_buyer, string email_buyer, DateTime dateBirthday)
         {
             InitializeComponent();
@@ -47,14 +47,12 @@ namespace kursachBD.BuyersForm
             this.numberPhone_buyer = numberPhone_buyer;
             this.email_buyer = email_buyer;
             this.dateBirthday = dateBirthday;
-
-
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand("UPDATE Buyers SET LastName_buyer = @lastName_buyer, FirstName_buyer = @firstName_buyer, MiddleName_buyer = @middleName_buyer, DateBirthday_buyer = @dateBirthday_buyer, NumberPhone_buyer = @numberPhone_buyer, Email_buyer = @email_buyer " +
-                "WHERE Code_saleItem = @id", con);
+                "WHERE Code_buyer = @id", con);
             con.Open();
 
             cmd.Parameters.AddWithValue("@id", IdBuyer_textBox.Text);

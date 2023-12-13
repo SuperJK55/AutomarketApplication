@@ -29,8 +29,8 @@ namespace kursachBD
                 sda.Fill(dt);
                 if (dt.Rows[0][0].ToString() == "1")
                 {
-                    Hide();
-                    new MainForm().Show();
+                    new MainForm().ShowDialog();
+                    this.Close();
                 }
                 else
                 {

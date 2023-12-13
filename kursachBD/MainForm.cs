@@ -4,6 +4,7 @@ using kursachBD.Check;
 using kursachBD.ManufacturerForm;
 using kursachBD.ProviderForm;
 using kursachBD.SalesForm;
+using kursachBD.SellerForm;
 using kursachBD.StockForm;
 using System;
 using System.Collections.Generic;
@@ -24,13 +25,12 @@ namespace kursachBD
         SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
-
         PanelControl panelControl;
         List<Panel> panels;
         public MainForm()
         {
             InitializeComponent();
-            panels = new List<Panel> { PartPanel, CategoryPanel, ManufacturersPanel, ProvidersPanel, StockPanel, SalesPanel, ChecksPanel, BuyersPanel, SellersPanel };
+            panels = new List<Panel> { PartPanel, CategoryPanel, ManufacturersPanel, ProvidersPanel, StockPanel, SalesPanel, ChecksPanel, BuyersPanel, SellersPanel, SettingsPanel };
             panelControl = new PanelControl(panels);
 
         }
@@ -129,9 +129,17 @@ namespace kursachBD
             panelControl.HidePanels();
             SellersPanel.Visible = true;
         }
+        private void SettingsButton_Click(object sender, EventArgs e)
+        {
+            panelControl.HidePanels();
+            SettingsPanel.Visible = true;
+        }
+
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Parts". При необходимости она может быть перемещена или удалена.
+            this.partsTableAdapter1.Fill(this.partShopDataSet3.Parts);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Sellers". При необходимости она может быть перемещена или удалена.
             this.sellersTableAdapter.Fill(this.partShopDataSet3.Sellers);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Buyers". При необходимости она может быть перемещена или удалена.
@@ -153,33 +161,12 @@ namespace kursachBD
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AddPartForm addPartForm = new AddPartForm();
-            addPartForm.ShowDialog();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            DeletedForm deletedForm = new DeletedForm();
-            deletedForm.ShowDialog();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-       
-
         private void logoutButton_Click(object sender, EventArgs e)
         {
             Hide();
             AuthorizationForm authForm = new AuthorizationForm();
             authForm.ShowDialog();
         }
-
-        
 
         private void endProgramButton_Click(object sender, EventArgs e)
         {
@@ -191,56 +178,6 @@ namespace kursachBD
             }
             else this.Show();
             
-        }
-        private void updatePartsTableButton_Click(object sender, EventArgs e)
-        {
-            UpdateTable("Parts", dataGridView1);
-        }
-        private void UpdateTableCategoryButton_Click(object sender, EventArgs e)
-        {
-            UpdateTable("CategoryParts", dataGridView2);
-        }
-        private void UpdateTableManufacturerButton_Click(object sender, EventArgs e)
-        {
-            UpdateTable("Manufacturer", dataGridView3);
-        }
-        private void UpdateTableSellersButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-        
-
-        private void AddCategoryButton_Click(object sender, EventArgs e)
-        {
-            AddCategoryPartsForm addCategoryPartsForm = new AddCategoryPartsForm();
-            addCategoryPartsForm.ShowDialog();
-        }
-
-        private void DeleteCategoryButton_Click(object sender, EventArgs e)
-        {
-            DeleteCategoryPartsForm deleteCategoryPartsForm = new DeleteCategoryPartsForm();
-            deleteCategoryPartsForm.ShowDialog();
-        }
-
-        private void UpdateCategoryButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void AddSellersButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddManufacturerButton_Click(object sender, EventArgs e)
-        {
-            AddManufacturerForm addManufacturerForm = new AddManufacturerForm();
-            addManufacturerForm.ShowDialog();
-        }
-
-        private void DeleteManufacturerButton_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -269,6 +206,12 @@ namespace kursachBD
                 UpdateTable("Parts", dataGridView1);
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddPartForm addPartForm = new AddPartForm();
+            addPartForm.ShowDialog();
+            UpdateTable("Parts", dataGridView1);
+        }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -289,7 +232,12 @@ namespace kursachBD
                 UpdateTable("CategoryParts", dataGridView2);
             }
         }
-
+        private void AddCategoryButton_Click(object sender, EventArgs e)
+        {
+            AddCategoryPartsForm addCategoryPartsForm = new AddCategoryPartsForm();
+            addCategoryPartsForm.ShowDialog();
+            UpdateTable("CategoryParts", dataGridView2);
+        }
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView3.Columns[e.ColumnIndex].HeaderText == "Удалить")
@@ -311,6 +259,12 @@ namespace kursachBD
                 updateForm.ShowDialog();
                 UpdateTable("Manufacturer", dataGridView3);
             }
+        }
+        private void AddManufacturerButton_Click(object sender, EventArgs e)
+        {
+            AddManufacturerForm addManufacturerForm = new AddManufacturerForm();
+            addManufacturerForm.ShowDialog();
+            UpdateTable("Manufacturer", dataGridView3);
         }
 
         private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -335,7 +289,12 @@ namespace kursachBD
                 UpdateTable("ProviderParts", dataGridView4);
             }
         }
-
+        private void AddProvidersButton_Click(object sender, EventArgs e)
+        {
+            AddProviderForm addProviderForm = new AddProviderForm();
+            addProviderForm.ShowDialog();
+            UpdateTable("ProviderParts", dataGridView4);
+        }
         private void dataGridView5_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView5.Columns[e.ColumnIndex].HeaderText == "Удалить")
@@ -354,6 +313,12 @@ namespace kursachBD
                 updateForm.ShowDialog();
                 UpdateTable("Stock", dataGridView5);
             }
+        }
+        private void AddStockButton_Click(object sender, EventArgs e)
+        {
+            AddStockItemForm addStockItemForm = new AddStockItemForm();
+            addStockItemForm.ShowDialog();
+            UpdateTable("Stock", dataGridView5);
         }
 
         private void dataGridView6_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -375,8 +340,14 @@ namespace kursachBD
 
                 UpdateSaleForm updateForm = new UpdateSaleForm(id, code_buyer, count_seller, dateTime_sale);
                 updateForm.ShowDialog();
-                UpdateTable("Stock", dataGridView6);
+                UpdateTable("Sales", dataGridView6);
             }
+        }
+        private void AddSalesButton_Click(object sender, EventArgs e)
+        {
+            AddSaleForm addSaleForm = new AddSaleForm();
+            addSaleForm.ShowDialog();
+            UpdateTable("Sales", dataGridView6);
         }
 
         private void dataGridView7_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -399,6 +370,12 @@ namespace kursachBD
                 updateForm.ShowDialog();
                 UpdateTable("SalesItemList", dataGridView7);
             }
+        }
+        private void AddChecksButton_Click(object sender, EventArgs e)
+        {
+            AddChecksForm addChecksForm = new AddChecksForm();
+            addChecksForm.ShowDialog();
+            UpdateTable("SalesItemList", dataGridView7);
         }
 
         private void dataGridView8_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -426,6 +403,12 @@ namespace kursachBD
                 UpdateTable("Buyers", dataGridView8);
             }
         }
+        private void AddBuyersButton_Click(object sender, EventArgs e)
+        {
+            AddBuyerForm addBuyerForm = new AddBuyerForm();
+            addBuyerForm.ShowDialog();
+            UpdateTable("Buyers", dataGridView8);
+        }
 
         private void dataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -433,6 +416,30 @@ namespace kursachBD
             {
                 DeleteButtonTable(e, "Sellers", "codesellerDataGridViewTextBoxColumn1", "Code_seller", dataGridView9);
             }
+            if (dataGridView9.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string lastName_seller, firstName_seller, middleName_seller;
+
+                id = Convert.ToInt32(dataGridView9.Rows[e.RowIndex].Cells["codesellerDataGridViewTextBoxColumn1"].Value);
+                lastName_seller = Convert.ToString(dataGridView9.Rows[e.RowIndex].Cells["lastNamesellerDataGridViewTextBoxColumn"].Value);
+                firstName_seller = Convert.ToString(dataGridView9.Rows[e.RowIndex].Cells["firstNamesellerDataGridViewTextBoxColumn"].Value);
+                middleName_seller = Convert.ToString(dataGridView9.Rows[e.RowIndex].Cells["middleNamesellerDataGridViewTextBoxColumn"].Value);
+               
+
+                UpdateSellerForm updateForm = new UpdateSellerForm(id, lastName_seller, firstName_seller, middleName_seller);
+                updateForm.ShowDialog();
+                UpdateTable("Sellers", dataGridView9);
+            }
         }
+        private void AddSellersButton_Click(object sender, EventArgs e)
+        {
+            AddSellerForm addSellerForm = new AddSellerForm();
+            addSellerForm.ShowDialog();
+            UpdateTable("Sellers", dataGridView9);
+
+        }
+
+        
     }
 }
