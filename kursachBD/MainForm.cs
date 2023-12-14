@@ -6,6 +6,7 @@ using kursachBD.ProviderForm;
 using kursachBD.SalesForm;
 using kursachBD.SellerForm;
 using kursachBD.StockForm;
+using kursachBD.UserLoginForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,19 +32,30 @@ namespace kursachBD
         public MainForm()
         {
             InitializeComponent();
-            panels = new List<Panel> { PartPanel, CategoryPanel, ManufacturersPanel, ProvidersPanel, StockPanel, SalesPanel, ChecksPanel, BuyersPanel, SellersPanel, SettingsPanel };
+            panels = new List<Panel> { PartPanel, CategoryPanel, ManufacturersPanel, ProvidersPanel, StockPanel, SalesPanel, ChecksPanel, BuyersPanel, SellersPanel, SettingsPanel, UserLoginPanel };
             panelControl = new PanelControl(panels);
             
             //= new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;")
         }
         
+
+
+
+
         private void UpdateTable(string nameTable, DataGridView dataGridView)
         {
-            cmd = new SqlCommand($"SELECT * FROM {nameTable}", con);
-            adapt = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            adapt.Fill(dt);
-            dataGridView.DataSource = dt;
+            try
+            {
+                cmd = new SqlCommand($"SELECT * FROM {nameTable}", con);
+                adapt = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView.DataSource = dt;
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"Ошибка подключения к бд. Подробности:{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void DeleteButtonTable(DataGridViewCellEventArgs e, string table_name, string id_column_cell, string id_column_name, DataGridView dataGridView)
         {
@@ -136,10 +148,16 @@ namespace kursachBD
             panelControl.HidePanels();
             SettingsPanel.Visible = true;
         }
-
+        private void UserLoginButton_Click(object sender, EventArgs e)
+        {
+            panelControl.HidePanels();
+            UserLoginPanel.Visible = true;
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.UserAuthorization". При необходимости она может быть перемещена или удалена.
+            this.userAuthorizationTableAdapter.Fill(this.partShopDataSet4.UserAuthorization);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Parts". При необходимости она может быть перемещена или удалена.
             this.partsTableAdapter1.Fill(this.partShopDataSet3.Parts);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Sellers". При необходимости она может быть перемещена или удалена.
@@ -446,6 +464,36 @@ namespace kursachBD
             
             connectionString = sqlConnection_textBox.Text;
             this.con = new SqlConnection(connectionString);
+        }
+
+
+        private void dataGridView10_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView10.Columns[e.ColumnIndex].HeaderText == "Удалить")
+            {
+                DeleteButtonTable(e, "UserAuthorization", "userLogincodeDataGridViewTextBoxColumn", "UserLogin_code", dataGridView10);
+            }
+            if (dataGridView10.Columns[e.ColumnIndex].HeaderText == "Изменить")
+            {
+                int id;
+                string user_login, user_password;
+
+                id = Convert.ToInt32(dataGridView10.Rows[e.RowIndex].Cells["userLogincodeDataGridViewTextBoxColumn"].Value);
+                user_login = Convert.ToString(dataGridView10.Rows[e.RowIndex].Cells["userLoginDataGridViewTextBoxColumn"].Value);
+                user_password = Convert.ToString(dataGridView10.Rows[e.RowIndex].Cells["userPasswordDataGridViewTextBoxColumn"].Value);
+
+
+                UpdateUserLoginForm updateForm = new UpdateUserLoginForm(id, user_login, user_password);
+                updateForm.ShowDialog();
+                UpdateTable("UserAuthorization", dataGridView10);
+            }
+        }
+
+        private void AddUserLoginButton_Click(object sender, EventArgs e)
+        {
+            AddUserLoginForm addUserLoginForm = new AddUserLoginForm();
+            addUserLoginForm.ShowDialog();
+            UpdateTable("UserAuthorization", dataGridView10);
         }
     }
 }
