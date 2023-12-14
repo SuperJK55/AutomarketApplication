@@ -22,17 +22,19 @@ namespace kursachBD
 {
     public partial class MainForm : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
+        SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adapt;
         PanelControl panelControl;
         List<Panel> panels;
+        string connectionString;
         public MainForm()
         {
             InitializeComponent();
             panels = new List<Panel> { PartPanel, CategoryPanel, ManufacturersPanel, ProvidersPanel, StockPanel, SalesPanel, ChecksPanel, BuyersPanel, SellersPanel, SettingsPanel };
             panelControl = new PanelControl(panels);
-
+            
+            //= new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;")
         }
         
         private void UpdateTable(string nameTable, DataGridView dataGridView)
@@ -158,7 +160,6 @@ namespace kursachBD
             this.categoryPartsTableAdapter.Fill(this.partShopDataSet3.CategoryParts);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet.Parts". При необходимости она может быть перемещена или удалена.
             this.partsTableAdapter.Fill(this.partShopDataSet.Parts);
-
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -440,6 +441,11 @@ namespace kursachBD
 
         }
 
-        
+        private void ConnectButton_Click(object sender, EventArgs e)
+        {
+            
+            connectionString = sqlConnection_textBox.Text;
+            this.con = new SqlConnection(connectionString);
+        }
     }
 }
