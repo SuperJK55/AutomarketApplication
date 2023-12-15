@@ -37,10 +37,6 @@ namespace kursachBD
             
             //= new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;")
         }
-        
-
-
-
 
         private void UpdateTable(string nameTable, DataGridView dataGridView)
         {
@@ -178,6 +174,8 @@ namespace kursachBD
             this.categoryPartsTableAdapter.Fill(this.partShopDataSet3.CategoryParts);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet.Parts". При необходимости она может быть перемещена или удалена.
             this.partsTableAdapter.Fill(this.partShopDataSet.Parts);
+            sqlConnection_textBox.Text = "Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;";
+            con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -494,6 +492,51 @@ namespace kursachBD
             AddUserLoginForm addUserLoginForm = new AddUserLoginForm();
             addUserLoginForm.ShowDialog();
             UpdateTable("UserAuthorization", dataGridView10);
+        }
+
+        private void CreateProcedureButton_Click(object sender, EventArgs e)
+        {
+            const string createProcedure = 
+                "CREATE PROCEDURE CheckLoginValidate @userLogin VARCHAR(max), @userPassword VARCHAR(max) AS " +
+                "BEGIN " +
+                "SELECT COUNT(*) FROM UserAuthorization WHERE UserLogin = @userLogin AND UserPassword = @userPassword " +
+                "END";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(createProcedure,con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK);
+            }
+        }
+
+        private void CreateTriggerButton_Click(object sender, EventArgs e)
+        {
+            const string createTrigger =
+                "CREATE TRIGGER PartCostRollback ON Parts AFTER INSERT AS " +
+                "BEGIN " +
+                "SET NOCOUNT ON; " +
+                "IF (SELECT Cost_part FROM inserted) < 0 " +
+                "BEGIN " +
+                "ROLLBACK " +
+                "PRINT 'Вы не можете установить отрицательную стоимость запчасти' " +
+                "END " +
+                "END";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(createTrigger, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK);
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace kursachBD.UserLoginForm
     {
         SqlConnection con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
         SqlCommand cmd;
+        SqlDataAdapter adapter;
         public AddUserLoginForm()
         {
             InitializeComponent();
@@ -27,17 +29,32 @@ namespace kursachBD.UserLoginForm
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO UserAuthorization(UserLogin, UserPassword) VALUES(@user_login, @user_password)", con);
 
-            con.Open();
+            adapter = new SqlDataAdapter($"SELECT COUNT(*) FROM UserAuthorization WHERE UserLogin = \'{UserLogin_textBox.Text}\'", con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            if (Convert.ToInt32(dt.Rows[0][0]) >= 1)
+            {
+                MessageBox.Show("Данный пользователь уже существует в базе данных.", "Ошибка добавления нового пользователя", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if ((UserLogin_textBox.Text.ToLower() == "admin") || UserLogin_textBox.Text.ToLower().Contains("admin"))
+            {
+                MessageBox.Show("Админ должен быть один.", "SoloAdminException", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                cmd = new SqlCommand("INSERT INTO UserAuthorization(UserLogin, UserPassword) VALUES(@user_login, @user_password)", con);
 
-            cmd.Parameters.AddWithValue("@user_login", UserLogin_textBox.Text);
-            cmd.Parameters.AddWithValue("@user_password", UserPassword_textBox.Text);
+                con.Open();
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.Parameters.AddWithValue("@user_login", UserLogin_textBox.Text);
+                cmd.Parameters.AddWithValue("@user_password", UserPassword_textBox.Text);
 
-            MessageBox.Show("Запись успешно добавлена");
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Запись успешно добавлена");
+            }
         }
     }
 }

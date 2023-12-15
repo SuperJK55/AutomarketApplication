@@ -22,9 +22,9 @@ namespace kursachBD
         private void signInButton_Click(object sender, EventArgs e)
         {
             if (isValidated())
-            {
+            { //"SELECT COUNT(*) FROM UserAuthorization WHERE UserLogin='" + loginTextBox.Text + "' AND UserPassword='" + passwordTextBox.Text + "'"
                 SqlConnection con = new SqlConnection(@"Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True");
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM UserAuthorization WHERE UserLogin='" + loginTextBox.Text + "' AND UserPassword='" + passwordTextBox.Text + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter($"EXEC CheckLoginValidate '{loginTextBox.Text}', '{passwordTextBox.Text}'", con);
                 DataTable dt = new DataTable(); 
                 sda.Fill(dt);
                 if (dt.Rows[0][0].ToString() == "1")
