@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PartsButton = new System.Windows.Forms.Button();
             this.CategoryPartsButton = new System.Windows.Forms.Button();
             this.ManufacturerButton = new System.Windows.Forms.Button();
@@ -88,8 +88,16 @@
             this.partsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partShopDataSet = new kursachBD.PartShopDataSet();
             this.PartButtonPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetPartButton = new System.Windows.Forms.Button();
+            this.SearchByCategory_comboBox = new System.Windows.Forms.ComboBox();
+            this.categoryPartsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.partShopDataSet4 = new kursachBD.PartShopDataSet4();
+            this.SearchByCategoryButton = new System.Windows.Forms.Button();
+            this.SearchByNameButton = new System.Windows.Forms.Button();
+            this.SearchByName_textBox = new System.Windows.Forms.TextBox();
+            this.SearchByIdButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.SearchById_textBox = new System.Windows.Forms.TextBox();
             this.partsTableAdapter = new kursachBD.PartShopDataSetTableAdapters.PartsTableAdapter();
             this.partShopDataSet3 = new kursachBD.PartShopDataSet3();
             this.categoryPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -102,7 +110,9 @@
             this.DeleteButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.categoryPartsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.CategoryButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetCategoryButton = new System.Windows.Forms.Button();
+            this.SearchCategoryByIdButton = new System.Windows.Forms.Button();
+            this.SearchCategoryById_textBox = new System.Windows.Forms.TextBox();
             this.AddCategoryButton = new System.Windows.Forms.Button();
             this.ManufacturersPanel = new System.Windows.Forms.Panel();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -115,7 +125,13 @@
             this.DeleteManufacturersButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ManufacturersButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetManufacturerButton = new System.Windows.Forms.Button();
+            this.SearchManufacturerByPhoneButton = new System.Windows.Forms.Button();
+            this.SearchManufacturerByPhone_textBox = new System.Windows.Forms.TextBox();
+            this.SearchManufacturerByNameButton = new System.Windows.Forms.Button();
+            this.SearchManufacturerByName_textBox = new System.Windows.Forms.TextBox();
+            this.SearchManufacturerByIdButton = new System.Windows.Forms.Button();
+            this.SearchManufacturerById_textBox = new System.Windows.Forms.TextBox();
             this.AddManufacturerButton = new System.Windows.Forms.Button();
             this.manufacturerTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ManufacturerTableAdapter();
             this.ProvidersPanel = new System.Windows.Forms.Panel();
@@ -129,7 +145,13 @@
             this.DeleteProviderButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ProvidersButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetProvidersButton = new System.Windows.Forms.Button();
+            this.SearchProviderByPhoneNumber_textBox = new System.Windows.Forms.TextBox();
+            this.SearchProviderByPhoneButton = new System.Windows.Forms.Button();
+            this.SearchProviderByName_textBox = new System.Windows.Forms.TextBox();
+            this.SearchProviderByNameButton = new System.Windows.Forms.Button();
+            this.SearchProviderByIdButton = new System.Windows.Forms.Button();
+            this.SearchProviderById_textBox = new System.Windows.Forms.TextBox();
             this.AddProvidersButton = new System.Windows.Forms.Button();
             this.providerPartsTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.ProviderPartsTableAdapter();
             this.StockPanel = new System.Windows.Forms.Panel();
@@ -142,7 +164,12 @@
             this.DeleteStockItemButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StockButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetStockButton = new System.Windows.Forms.Button();
+            this.SearchByPartCodeOnStock_comboBox = new System.Windows.Forms.ComboBox();
+            this.partsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.SearchByPartCodeOnStockButton = new System.Windows.Forms.Button();
+            this.SearchByCodeOnStockButton = new System.Windows.Forms.Button();
+            this.SearchByCodeOnStock_textBox = new System.Windows.Forms.TextBox();
             this.AddStockButton = new System.Windows.Forms.Button();
             this.stockTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.StockTableAdapter();
             this.SalesPanel = new System.Windows.Forms.Panel();
@@ -155,7 +182,9 @@
             this.DeleteSaleButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SalesButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetSalesButton = new System.Windows.Forms.Button();
+            this.SearchSaleByIdButton = new System.Windows.Forms.Button();
+            this.SearchSaleById_textBox = new System.Windows.Forms.TextBox();
             this.AddSalesButton = new System.Windows.Forms.Button();
             this.salesTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SalesTableAdapter();
             this.ChecksPanel = new System.Windows.Forms.Panel();
@@ -168,8 +197,13 @@
             this.DeleteCheckButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.salesItemListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChecksButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetCheckButton = new System.Windows.Forms.Button();
+            this.SearchCheckByOverallCodeButton = new System.Windows.Forms.Button();
+            this.SearchCheckByOverallCode_textBox = new System.Windows.Forms.TextBox();
+            this.SearchCheckByIdButton = new System.Windows.Forms.Button();
+            this.SearchCheckById_textBox = new System.Windows.Forms.TextBox();
             this.AddChecksButton = new System.Windows.Forms.Button();
+            this.ReportButton = new System.Windows.Forms.Button();
             this.salesItemListTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SalesItemListTableAdapter();
             this.BuyersPanel = new System.Windows.Forms.Panel();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
@@ -184,7 +218,13 @@
             this.DeleteBuyerButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.buyersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BuyersButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetBuyerButton = new System.Windows.Forms.Button();
+            this.SearchBuyerByMiddleName_textBox = new System.Windows.Forms.TextBox();
+            this.SearchBuyerByNameButton = new System.Windows.Forms.Button();
+            this.SearchBuyerBySurname_textBox = new System.Windows.Forms.TextBox();
+            this.SearchBuyerByName_textBox = new System.Windows.Forms.TextBox();
+            this.SearchBuyerByCodeButton = new System.Windows.Forms.Button();
+            this.SearchBuyerByCode_textBox = new System.Windows.Forms.TextBox();
             this.AddBuyersButton = new System.Windows.Forms.Button();
             this.buyersTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.BuyersTableAdapter();
             this.SellersPanel = new System.Windows.Forms.Panel();
@@ -197,7 +237,11 @@
             this.DeleteSellerButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.sellersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SellersButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetSellersButton = new System.Windows.Forms.Button();
+            this.SearchSellerBySurnameButton = new System.Windows.Forms.Button();
+            this.SearchSellerBySurname_textBox = new System.Windows.Forms.TextBox();
+            this.SearchSellerByIdButton = new System.Windows.Forms.Button();
+            this.SearchSellerById_textBox = new System.Windows.Forms.TextBox();
             this.AddSellersButton = new System.Windows.Forms.Button();
             this.sellersTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SellersTableAdapter();
             this.manufacturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -218,70 +262,67 @@
             this.UpdateUserLoginButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.DeleteUserLoginButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userAuthorizationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.partShopDataSet4 = new kursachBD.PartShopDataSet4();
             this.UserLoginButtonsPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ResetUserLoginButton = new System.Windows.Forms.Button();
+            this.SearchByUserLoginButton = new System.Windows.Forms.Button();
+            this.SearchByUserLogin_textBox = new System.Windows.Forms.TextBox();
+            this.SearchByUserLoginIdButton = new System.Windows.Forms.Button();
+            this.SeachByUserLoginId_textBox = new System.Windows.Forms.TextBox();
             this.AddUserLoginButton = new System.Windows.Forms.Button();
             this.userAuthorizationTableAdapter = new kursachBD.PartShopDataSet4TableAdapters.UserAuthorizationTableAdapter();
+            this.categoryPartsTableAdapter1 = new kursachBD.PartShopDataSet4TableAdapters.CategoryPartsTableAdapter();
+            this.partsTableAdapter2 = new kursachBD.PartShopDataSet4TableAdapters.PartsTableAdapter();
             this.flowLayoutPanel1.SuspendLayout();
             this.PartPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet)).BeginInit();
             this.PartButtonPanel.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).BeginInit();
             this.CategoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource1)).BeginInit();
             this.CategoryButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             this.ManufacturersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).BeginInit();
             this.ManufacturersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             this.ProvidersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).BeginInit();
             this.ProvidersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
             this.StockPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
             this.StockButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource2)).BeginInit();
             this.SalesPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
             this.SalesButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel7.SuspendLayout();
             this.ChecksPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesItemListBindingSource)).BeginInit();
             this.ChecksButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             this.BuyersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyersBindingSource)).BeginInit();
             this.BuyersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel9.SuspendLayout();
             this.SellersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellersBindingSource)).BeginInit();
             this.SellersButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource1)).BeginInit();
             this.SettingsPanel.SuspendLayout();
             this.UserLoginPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAuthorizationBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet4)).BeginInit();
             this.UserLoginButtonsPanel.SuspendLayout();
-            this.flowLayoutPanel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // PartsButton
@@ -466,14 +507,14 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle61.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codepartDataGridViewTextBoxColumn,
@@ -487,25 +528,25 @@
             this.UpdateColumnButton,
             this.DeleteColumnButton});
             this.dataGridView1.DataSource = this.partsBindingSource;
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridView1.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -590,27 +631,94 @@
             // PartButtonPanel
             // 
             this.PartButtonPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.PartButtonPanel.Controls.Add(this.flowLayoutPanel2);
+            this.PartButtonPanel.Controls.Add(this.ResetPartButton);
+            this.PartButtonPanel.Controls.Add(this.SearchByCategory_comboBox);
+            this.PartButtonPanel.Controls.Add(this.SearchByCategoryButton);
+            this.PartButtonPanel.Controls.Add(this.SearchByNameButton);
+            this.PartButtonPanel.Controls.Add(this.SearchByName_textBox);
+            this.PartButtonPanel.Controls.Add(this.SearchByIdButton);
+            this.PartButtonPanel.Controls.Add(this.button1);
+            this.PartButtonPanel.Controls.Add(this.SearchById_textBox);
             this.PartButtonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PartButtonPanel.Location = new System.Drawing.Point(0, 941);
             this.PartButtonPanel.Name = "PartButtonPanel";
             this.PartButtonPanel.Size = new System.Drawing.Size(1635, 100);
             this.PartButtonPanel.TabIndex = 0;
             // 
-            // flowLayoutPanel2
+            // ResetPartButton
             // 
-            this.flowLayoutPanel2.Controls.Add(this.button1);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel2.TabIndex = 0;
+            this.ResetPartButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetPartButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetPartButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetPartButton.Name = "ResetPartButton";
+            this.ResetPartButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetPartButton.TabIndex = 28;
+            this.ResetPartButton.Text = "Сбросить фильтры";
+            this.ResetPartButton.UseVisualStyleBackColor = true;
+            this.ResetPartButton.Click += new System.EventHandler(this.ResetPartButton_Click);
+            // 
+            // SearchByCategory_comboBox
+            // 
+            this.SearchByCategory_comboBox.DataSource = this.categoryPartsBindingSource2;
+            this.SearchByCategory_comboBox.DisplayMember = "Name_category";
+            this.SearchByCategory_comboBox.FormattingEnabled = true;
+            this.SearchByCategory_comboBox.Location = new System.Drawing.Point(509, 20);
+            this.SearchByCategory_comboBox.Name = "SearchByCategory_comboBox";
+            this.SearchByCategory_comboBox.Size = new System.Drawing.Size(194, 21);
+            this.SearchByCategory_comboBox.TabIndex = 10;
+            this.SearchByCategory_comboBox.ValueMember = "Code_category";
+            // 
+            // categoryPartsBindingSource2
+            // 
+            this.categoryPartsBindingSource2.DataMember = "CategoryParts";
+            this.categoryPartsBindingSource2.DataSource = this.partShopDataSet4;
+            // 
+            // partShopDataSet4
+            // 
+            this.partShopDataSet4.DataSetName = "PartShopDataSet4";
+            this.partShopDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // SearchByCategoryButton
+            // 
+            this.SearchByCategoryButton.Location = new System.Drawing.Point(509, 65);
+            this.SearchByCategoryButton.Name = "SearchByCategoryButton";
+            this.SearchByCategoryButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByCategoryButton.TabIndex = 7;
+            this.SearchByCategoryButton.Text = "Искать по категории";
+            this.SearchByCategoryButton.UseVisualStyleBackColor = true;
+            this.SearchByCategoryButton.Click += new System.EventHandler(this.SearchByCategoryButton_Click);
+            // 
+            // SearchByNameButton
+            // 
+            this.SearchByNameButton.Location = new System.Drawing.Point(270, 65);
+            this.SearchByNameButton.Name = "SearchByNameButton";
+            this.SearchByNameButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByNameButton.TabIndex = 4;
+            this.SearchByNameButton.Text = "Искать по имени";
+            this.SearchByNameButton.UseVisualStyleBackColor = true;
+            this.SearchByNameButton.Click += new System.EventHandler(this.SearchByNameButton_Click);
+            // 
+            // SearchByName_textBox
+            // 
+            this.SearchByName_textBox.Location = new System.Drawing.Point(270, 22);
+            this.SearchByName_textBox.Name = "SearchByName_textBox";
+            this.SearchByName_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchByName_textBox.TabIndex = 3;
+            // 
+            // SearchByIdButton
+            // 
+            this.SearchByIdButton.Location = new System.Drawing.Point(25, 65);
+            this.SearchByIdButton.Name = "SearchByIdButton";
+            this.SearchByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByIdButton.TabIndex = 2;
+            this.SearchByIdButton.Text = "Искать по ID";
+            this.SearchByIdButton.UseVisualStyleBackColor = true;
+            this.SearchByIdButton.Click += new System.EventHandler(this.SearchByIdButton_Click);
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(1512, 33);
+            this.button1.Location = new System.Drawing.Point(1503, 33);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 34);
@@ -618,6 +726,13 @@
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // SearchById_textBox
+            // 
+            this.SearchById_textBox.Location = new System.Drawing.Point(25, 22);
+            this.SearchById_textBox.Name = "SearchById_textBox";
+            this.SearchById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchById_textBox.TabIndex = 1;
             // 
             // partsTableAdapter
             // 
@@ -653,14 +768,14 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codecategoryDataGridViewTextBoxColumn,
@@ -668,25 +783,25 @@
             this.UpdateButtonColumn,
             this.DeleteButtonColumn});
             this.dataGridView2.DataSource = this.categoryPartsBindingSource1;
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridView2.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView2.TabIndex = 2;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
@@ -726,27 +841,49 @@
             // CategoryButtonsPanel
             // 
             this.CategoryButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.CategoryButtonsPanel.Controls.Add(this.flowLayoutPanel3);
+            this.CategoryButtonsPanel.Controls.Add(this.ResetCategoryButton);
+            this.CategoryButtonsPanel.Controls.Add(this.SearchCategoryByIdButton);
+            this.CategoryButtonsPanel.Controls.Add(this.SearchCategoryById_textBox);
+            this.CategoryButtonsPanel.Controls.Add(this.AddCategoryButton);
             this.CategoryButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CategoryButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.CategoryButtonsPanel.Name = "CategoryButtonsPanel";
             this.CategoryButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.CategoryButtonsPanel.TabIndex = 1;
             // 
-            // flowLayoutPanel3
+            // ResetCategoryButton
             // 
-            this.flowLayoutPanel3.Controls.Add(this.AddCategoryButton);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel3.TabIndex = 0;
+            this.ResetCategoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetCategoryButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetCategoryButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetCategoryButton.Name = "ResetCategoryButton";
+            this.ResetCategoryButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetCategoryButton.TabIndex = 28;
+            this.ResetCategoryButton.Text = "Сбросить фильтры";
+            this.ResetCategoryButton.UseVisualStyleBackColor = true;
+            this.ResetCategoryButton.Click += new System.EventHandler(this.ResetCategoryButton_Click);
+            // 
+            // SearchCategoryByIdButton
+            // 
+            this.SearchCategoryByIdButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchCategoryByIdButton.Name = "SearchCategoryByIdButton";
+            this.SearchCategoryByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchCategoryByIdButton.TabIndex = 11;
+            this.SearchCategoryByIdButton.Text = "Искать по ID";
+            this.SearchCategoryByIdButton.UseVisualStyleBackColor = true;
+            this.SearchCategoryByIdButton.Click += new System.EventHandler(this.SearchCategoryByIdButton_Click);
+            // 
+            // SearchCategoryById_textBox
+            // 
+            this.SearchCategoryById_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchCategoryById_textBox.Name = "SearchCategoryById_textBox";
+            this.SearchCategoryById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchCategoryById_textBox.TabIndex = 10;
             // 
             // AddCategoryButton
             // 
             this.AddCategoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddCategoryButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddCategoryButton.Location = new System.Drawing.Point(1503, 33);
             this.AddCategoryButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddCategoryButton.Name = "AddCategoryButton";
             this.AddCategoryButton.Size = new System.Drawing.Size(120, 34);
@@ -771,14 +908,14 @@
             this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle67.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle67.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle67.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codemanufacturerDataGridViewTextBoxColumn,
@@ -789,25 +926,25 @@
             this.UpdateManufacturersButton,
             this.DeleteManufacturersButton});
             this.dataGridView3.DataSource = this.manufacturerBindingSource;
-            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle68.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle68.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle38;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
             this.dataGridView3.Name = "dataGridView3";
-            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle69.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
             this.dataGridView3.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView3.TabIndex = 3;
             this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
@@ -867,27 +1004,87 @@
             // ManufacturersButtonsPanel
             // 
             this.ManufacturersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ManufacturersButtonsPanel.Controls.Add(this.flowLayoutPanel4);
+            this.ManufacturersButtonsPanel.Controls.Add(this.ResetManufacturerButton);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByPhoneButton);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByPhone_textBox);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByNameButton);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByName_textBox);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByIdButton);
+            this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerById_textBox);
+            this.ManufacturersButtonsPanel.Controls.Add(this.AddManufacturerButton);
             this.ManufacturersButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ManufacturersButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.ManufacturersButtonsPanel.Name = "ManufacturersButtonsPanel";
             this.ManufacturersButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.ManufacturersButtonsPanel.TabIndex = 2;
             // 
-            // flowLayoutPanel4
+            // ResetManufacturerButton
             // 
-            this.flowLayoutPanel4.Controls.Add(this.AddManufacturerButton);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel4.TabIndex = 0;
+            this.ResetManufacturerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetManufacturerButton.Location = new System.Drawing.Point(1363, 36);
+            this.ResetManufacturerButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetManufacturerButton.Name = "ResetManufacturerButton";
+            this.ResetManufacturerButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetManufacturerButton.TabIndex = 31;
+            this.ResetManufacturerButton.Text = "Сбросить фильтры";
+            this.ResetManufacturerButton.UseVisualStyleBackColor = true;
+            this.ResetManufacturerButton.Click += new System.EventHandler(this.ResetManufacturerButton_Click);
+            // 
+            // SearchManufacturerByPhoneButton
+            // 
+            this.SearchManufacturerByPhoneButton.Location = new System.Drawing.Point(542, 62);
+            this.SearchManufacturerByPhoneButton.Name = "SearchManufacturerByPhoneButton";
+            this.SearchManufacturerByPhoneButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchManufacturerByPhoneButton.TabIndex = 30;
+            this.SearchManufacturerByPhoneButton.Text = "Искать по номеру телефона";
+            this.SearchManufacturerByPhoneButton.UseVisualStyleBackColor = true;
+            this.SearchManufacturerByPhoneButton.Click += new System.EventHandler(this.SearchManufacturerByPhoneButton_Click);
+            // 
+            // SearchManufacturerByPhone_textBox
+            // 
+            this.SearchManufacturerByPhone_textBox.Location = new System.Drawing.Point(542, 19);
+            this.SearchManufacturerByPhone_textBox.Name = "SearchManufacturerByPhone_textBox";
+            this.SearchManufacturerByPhone_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchManufacturerByPhone_textBox.TabIndex = 29;
+            // 
+            // SearchManufacturerByNameButton
+            // 
+            this.SearchManufacturerByNameButton.Location = new System.Drawing.Point(295, 62);
+            this.SearchManufacturerByNameButton.Name = "SearchManufacturerByNameButton";
+            this.SearchManufacturerByNameButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchManufacturerByNameButton.TabIndex = 28;
+            this.SearchManufacturerByNameButton.Text = "Искать по производителю";
+            this.SearchManufacturerByNameButton.UseVisualStyleBackColor = true;
+            this.SearchManufacturerByNameButton.Click += new System.EventHandler(this.SearchManufacturerByNameButton_Click);
+            // 
+            // SearchManufacturerByName_textBox
+            // 
+            this.SearchManufacturerByName_textBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchManufacturerByName_textBox.Name = "SearchManufacturerByName_textBox";
+            this.SearchManufacturerByName_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchManufacturerByName_textBox.TabIndex = 27;
+            // 
+            // SearchManufacturerByIdButton
+            // 
+            this.SearchManufacturerByIdButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchManufacturerByIdButton.Name = "SearchManufacturerByIdButton";
+            this.SearchManufacturerByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchManufacturerByIdButton.TabIndex = 26;
+            this.SearchManufacturerByIdButton.Text = "Искать по коду производителя";
+            this.SearchManufacturerByIdButton.UseVisualStyleBackColor = true;
+            this.SearchManufacturerByIdButton.Click += new System.EventHandler(this.SearchManufacturerByIdButton_Click);
+            // 
+            // SearchManufacturerById_textBox
+            // 
+            this.SearchManufacturerById_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchManufacturerById_textBox.Name = "SearchManufacturerById_textBox";
+            this.SearchManufacturerById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchManufacturerById_textBox.TabIndex = 25;
             // 
             // AddManufacturerButton
             // 
             this.AddManufacturerButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddManufacturerButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddManufacturerButton.Location = new System.Drawing.Point(1503, 36);
             this.AddManufacturerButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddManufacturerButton.Name = "AddManufacturerButton";
             this.AddManufacturerButton.Size = new System.Drawing.Size(120, 34);
@@ -916,14 +1113,14 @@
             this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle70.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle70.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codeproviderDataGridViewTextBoxColumn,
@@ -934,25 +1131,25 @@
             this.UpdateProviderButton,
             this.DeleteProviderButton});
             this.dataGridView4.DataSource = this.providerPartsBindingSource;
-            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle71.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle71.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle41;
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.Location = new System.Drawing.Point(0, 0);
             this.dataGridView4.Name = "dataGridView4";
-            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle72.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridView4.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView4.TabIndex = 4;
             this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
@@ -1010,27 +1207,87 @@
             // ProvidersButtonsPanel
             // 
             this.ProvidersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ProvidersButtonsPanel.Controls.Add(this.flowLayoutPanel5);
+            this.ProvidersButtonsPanel.Controls.Add(this.ResetProvidersButton);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByPhoneNumber_textBox);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByPhoneButton);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByName_textBox);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByNameButton);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByIdButton);
+            this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderById_textBox);
+            this.ProvidersButtonsPanel.Controls.Add(this.AddProvidersButton);
             this.ProvidersButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ProvidersButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.ProvidersButtonsPanel.Name = "ProvidersButtonsPanel";
             this.ProvidersButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.ProvidersButtonsPanel.TabIndex = 3;
             // 
-            // flowLayoutPanel5
+            // ResetProvidersButton
             // 
-            this.flowLayoutPanel5.Controls.Add(this.AddProvidersButton);
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel5.TabIndex = 0;
+            this.ResetProvidersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetProvidersButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetProvidersButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetProvidersButton.Name = "ResetProvidersButton";
+            this.ResetProvidersButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetProvidersButton.TabIndex = 28;
+            this.ResetProvidersButton.Text = "Сбросить фильтры";
+            this.ResetProvidersButton.UseVisualStyleBackColor = true;
+            this.ResetProvidersButton.Click += new System.EventHandler(this.ResetProvidersButton_Click);
+            // 
+            // SearchProviderByPhoneNumber_textBox
+            // 
+            this.SearchProviderByPhoneNumber_textBox.Location = new System.Drawing.Point(542, 19);
+            this.SearchProviderByPhoneNumber_textBox.Name = "SearchProviderByPhoneNumber_textBox";
+            this.SearchProviderByPhoneNumber_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchProviderByPhoneNumber_textBox.TabIndex = 22;
+            // 
+            // SearchProviderByPhoneButton
+            // 
+            this.SearchProviderByPhoneButton.Location = new System.Drawing.Point(542, 62);
+            this.SearchProviderByPhoneButton.Name = "SearchProviderByPhoneButton";
+            this.SearchProviderByPhoneButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchProviderByPhoneButton.TabIndex = 21;
+            this.SearchProviderByPhoneButton.Text = "Искать по телефону поставщика";
+            this.SearchProviderByPhoneButton.UseVisualStyleBackColor = true;
+            this.SearchProviderByPhoneButton.Click += new System.EventHandler(this.SearchProviderByPhoneButton_Click);
+            // 
+            // SearchProviderByName_textBox
+            // 
+            this.SearchProviderByName_textBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchProviderByName_textBox.Name = "SearchProviderByName_textBox";
+            this.SearchProviderByName_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchProviderByName_textBox.TabIndex = 20;
+            // 
+            // SearchProviderByNameButton
+            // 
+            this.SearchProviderByNameButton.Location = new System.Drawing.Point(295, 62);
+            this.SearchProviderByNameButton.Name = "SearchProviderByNameButton";
+            this.SearchProviderByNameButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchProviderByNameButton.TabIndex = 19;
+            this.SearchProviderByNameButton.Text = "Искать по имени поставщика";
+            this.SearchProviderByNameButton.UseVisualStyleBackColor = true;
+            this.SearchProviderByNameButton.Click += new System.EventHandler(this.SearchProviderByNameButton_Click);
+            // 
+            // SearchProviderByIdButton
+            // 
+            this.SearchProviderByIdButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchProviderByIdButton.Name = "SearchProviderByIdButton";
+            this.SearchProviderByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchProviderByIdButton.TabIndex = 18;
+            this.SearchProviderByIdButton.Text = "Искать по коду поставщика";
+            this.SearchProviderByIdButton.UseVisualStyleBackColor = true;
+            this.SearchProviderByIdButton.Click += new System.EventHandler(this.SearchProviderByIdButton_Click);
+            // 
+            // SearchProviderById_textBox
+            // 
+            this.SearchProviderById_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchProviderById_textBox.Name = "SearchProviderById_textBox";
+            this.SearchProviderById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchProviderById_textBox.TabIndex = 17;
             // 
             // AddProvidersButton
             // 
             this.AddProvidersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddProvidersButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddProvidersButton.Location = new System.Drawing.Point(1503, 33);
             this.AddProvidersButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddProvidersButton.Name = "AddProvidersButton";
             this.AddProvidersButton.Size = new System.Drawing.Size(120, 34);
@@ -1059,14 +1316,14 @@
             this.dataGridView5.AutoGenerateColumns = false;
             this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle73.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle73.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codePartOnstockDataGridViewTextBoxColumn,
@@ -1075,25 +1332,25 @@
             this.UpdateStockItemButton,
             this.DeleteStockItemButton});
             this.dataGridView5.DataSource = this.stockBindingSource;
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle74.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView5.Location = new System.Drawing.Point(0, 0);
             this.dataGridView5.Name = "dataGridView5";
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle75.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle75.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle75.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.dataGridView5.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView5.TabIndex = 5;
             this.dataGridView5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellClick);
@@ -1154,27 +1411,77 @@
             // StockButtonsPanel
             // 
             this.StockButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.StockButtonsPanel.Controls.Add(this.flowLayoutPanel6);
+            this.StockButtonsPanel.Controls.Add(this.ResetStockButton);
+            this.StockButtonsPanel.Controls.Add(this.SearchByPartCodeOnStock_comboBox);
+            this.StockButtonsPanel.Controls.Add(this.SearchByPartCodeOnStockButton);
+            this.StockButtonsPanel.Controls.Add(this.SearchByCodeOnStockButton);
+            this.StockButtonsPanel.Controls.Add(this.SearchByCodeOnStock_textBox);
+            this.StockButtonsPanel.Controls.Add(this.AddStockButton);
             this.StockButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.StockButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.StockButtonsPanel.Name = "StockButtonsPanel";
             this.StockButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.StockButtonsPanel.TabIndex = 4;
             // 
-            // flowLayoutPanel6
+            // ResetStockButton
             // 
-            this.flowLayoutPanel6.Controls.Add(this.AddStockButton);
-            this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel6.TabIndex = 0;
+            this.ResetStockButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetStockButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetStockButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetStockButton.Name = "ResetStockButton";
+            this.ResetStockButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetStockButton.TabIndex = 28;
+            this.ResetStockButton.Text = "Сбросить фильтры";
+            this.ResetStockButton.UseVisualStyleBackColor = true;
+            this.ResetStockButton.Click += new System.EventHandler(this.ResetStockButton_Click);
+            // 
+            // SearchByPartCodeOnStock_comboBox
+            // 
+            this.SearchByPartCodeOnStock_comboBox.DataSource = this.partsBindingSource2;
+            this.SearchByPartCodeOnStock_comboBox.DisplayMember = "Name_part";
+            this.SearchByPartCodeOnStock_comboBox.FormattingEnabled = true;
+            this.SearchByPartCodeOnStock_comboBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchByPartCodeOnStock_comboBox.Name = "SearchByPartCodeOnStock_comboBox";
+            this.SearchByPartCodeOnStock_comboBox.Size = new System.Drawing.Size(194, 21);
+            this.SearchByPartCodeOnStock_comboBox.TabIndex = 16;
+            this.SearchByPartCodeOnStock_comboBox.ValueMember = "Code_part";
+            // 
+            // partsBindingSource2
+            // 
+            this.partsBindingSource2.DataMember = "Parts";
+            this.partsBindingSource2.DataSource = this.partShopDataSet4;
+            // 
+            // SearchByPartCodeOnStockButton
+            // 
+            this.SearchByPartCodeOnStockButton.Location = new System.Drawing.Point(295, 63);
+            this.SearchByPartCodeOnStockButton.Name = "SearchByPartCodeOnStockButton";
+            this.SearchByPartCodeOnStockButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByPartCodeOnStockButton.TabIndex = 15;
+            this.SearchByPartCodeOnStockButton.Text = "Искать по коду запчасти";
+            this.SearchByPartCodeOnStockButton.UseVisualStyleBackColor = true;
+            this.SearchByPartCodeOnStockButton.Click += new System.EventHandler(this.SearchByPartCodeOnStockButton_Click);
+            // 
+            // SearchByCodeOnStockButton
+            // 
+            this.SearchByCodeOnStockButton.Location = new System.Drawing.Point(50, 63);
+            this.SearchByCodeOnStockButton.Name = "SearchByCodeOnStockButton";
+            this.SearchByCodeOnStockButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByCodeOnStockButton.TabIndex = 13;
+            this.SearchByCodeOnStockButton.Text = "Искать по коду ячейки на складе";
+            this.SearchByCodeOnStockButton.UseVisualStyleBackColor = true;
+            this.SearchByCodeOnStockButton.Click += new System.EventHandler(this.SearchByCodeOnStockButton_Click);
+            // 
+            // SearchByCodeOnStock_textBox
+            // 
+            this.SearchByCodeOnStock_textBox.Location = new System.Drawing.Point(50, 20);
+            this.SearchByCodeOnStock_textBox.Name = "SearchByCodeOnStock_textBox";
+            this.SearchByCodeOnStock_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchByCodeOnStock_textBox.TabIndex = 12;
             // 
             // AddStockButton
             // 
             this.AddStockButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddStockButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddStockButton.Location = new System.Drawing.Point(1503, 33);
             this.AddStockButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddStockButton.Name = "AddStockButton";
             this.AddStockButton.Size = new System.Drawing.Size(120, 34);
@@ -1203,14 +1510,14 @@
             this.dataGridView6.AutoGenerateColumns = false;
             this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView6.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle76.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle76.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codesalesDataGridViewTextBoxColumn,
@@ -1220,25 +1527,25 @@
             this.UpdateSaleButton,
             this.DeleteSaleButton});
             this.dataGridView6.DataSource = this.salesBindingSource;
-            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle77.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle77.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle77.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle77.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle47;
             this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView6.Location = new System.Drawing.Point(0, 0);
             this.dataGridView6.Name = "dataGridView6";
-            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle78.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle78.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle78.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.dataGridView6.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView6.TabIndex = 6;
             this.dataGridView6.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellClick);
@@ -1290,27 +1597,49 @@
             // SalesButtonsPanel
             // 
             this.SalesButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.SalesButtonsPanel.Controls.Add(this.flowLayoutPanel7);
+            this.SalesButtonsPanel.Controls.Add(this.ResetSalesButton);
+            this.SalesButtonsPanel.Controls.Add(this.SearchSaleByIdButton);
+            this.SalesButtonsPanel.Controls.Add(this.SearchSaleById_textBox);
+            this.SalesButtonsPanel.Controls.Add(this.AddSalesButton);
             this.SalesButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SalesButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.SalesButtonsPanel.Name = "SalesButtonsPanel";
             this.SalesButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.SalesButtonsPanel.TabIndex = 5;
             // 
-            // flowLayoutPanel7
+            // ResetSalesButton
             // 
-            this.flowLayoutPanel7.Controls.Add(this.AddSalesButton);
-            this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel7.TabIndex = 0;
+            this.ResetSalesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetSalesButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetSalesButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetSalesButton.Name = "ResetSalesButton";
+            this.ResetSalesButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetSalesButton.TabIndex = 28;
+            this.ResetSalesButton.Text = "Сбросить фильтры";
+            this.ResetSalesButton.UseVisualStyleBackColor = true;
+            this.ResetSalesButton.Click += new System.EventHandler(this.ResetSalesButton_Click);
+            // 
+            // SearchSaleByIdButton
+            // 
+            this.SearchSaleByIdButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchSaleByIdButton.Name = "SearchSaleByIdButton";
+            this.SearchSaleByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchSaleByIdButton.TabIndex = 20;
+            this.SearchSaleByIdButton.Text = "Искать по коду продажи";
+            this.SearchSaleByIdButton.UseVisualStyleBackColor = true;
+            this.SearchSaleByIdButton.Click += new System.EventHandler(this.SearchSaleByIdButton_Click);
+            // 
+            // SearchSaleById_textBox
+            // 
+            this.SearchSaleById_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchSaleById_textBox.Name = "SearchSaleById_textBox";
+            this.SearchSaleById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchSaleById_textBox.TabIndex = 19;
             // 
             // AddSalesButton
             // 
             this.AddSalesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddSalesButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddSalesButton.Location = new System.Drawing.Point(1503, 33);
             this.AddSalesButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddSalesButton.Name = "AddSalesButton";
             this.AddSalesButton.Size = new System.Drawing.Size(120, 34);
@@ -1339,14 +1668,14 @@
             this.dataGridView7.AutoGenerateColumns = false;
             this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView7.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle79.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle79.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle79.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle79.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle79.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle79.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle79;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codesalesItemDataGridViewTextBoxColumn,
@@ -1356,25 +1685,25 @@
             this.UpdateCheckButton,
             this.DeleteCheckButton});
             this.dataGridView7.DataSource = this.salesItemListBindingSource;
-            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle80.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle80.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle80.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle80.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle80.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle80.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle80;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle50;
             this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView7.Location = new System.Drawing.Point(0, 0);
             this.dataGridView7.Name = "dataGridView7";
-            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle81.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle81.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle81.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle81.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle81.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle81.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle81;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle51;
             this.dataGridView7.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView7.TabIndex = 7;
             this.dataGridView7.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellClick);
@@ -1389,7 +1718,7 @@
             // codesalesDataGridViewTextBoxColumn1
             // 
             this.codesalesDataGridViewTextBoxColumn1.DataPropertyName = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Код продажи";
+            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Код общего чека";
             this.codesalesDataGridViewTextBoxColumn1.Name = "codesalesDataGridViewTextBoxColumn1";
             // 
             // codepartDataGridViewTextBoxColumn2
@@ -1417,6 +1746,8 @@
             // 
             this.DeleteCheckButton.HeaderText = "Удалить";
             this.DeleteCheckButton.Name = "DeleteCheckButton";
+            this.DeleteCheckButton.Text = "Удалить";
+            this.DeleteCheckButton.UseColumnTextForButtonValue = true;
             // 
             // salesItemListBindingSource
             // 
@@ -1426,22 +1757,64 @@
             // ChecksButtonsPanel
             // 
             this.ChecksButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ChecksButtonsPanel.Controls.Add(this.flowLayoutPanel8);
+            this.ChecksButtonsPanel.Controls.Add(this.ResetCheckButton);
+            this.ChecksButtonsPanel.Controls.Add(this.SearchCheckByOverallCodeButton);
+            this.ChecksButtonsPanel.Controls.Add(this.SearchCheckByOverallCode_textBox);
+            this.ChecksButtonsPanel.Controls.Add(this.SearchCheckByIdButton);
+            this.ChecksButtonsPanel.Controls.Add(this.SearchCheckById_textBox);
+            this.ChecksButtonsPanel.Controls.Add(this.AddChecksButton);
+            this.ChecksButtonsPanel.Controls.Add(this.ReportButton);
             this.ChecksButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ChecksButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.ChecksButtonsPanel.Name = "ChecksButtonsPanel";
             this.ChecksButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.ChecksButtonsPanel.TabIndex = 6;
             // 
-            // flowLayoutPanel8
+            // ResetCheckButton
             // 
-            this.flowLayoutPanel8.Controls.Add(this.AddChecksButton);
-            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel8.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel8.TabIndex = 0;
+            this.ResetCheckButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetCheckButton.Location = new System.Drawing.Point(1237, 33);
+            this.ResetCheckButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetCheckButton.Name = "ResetCheckButton";
+            this.ResetCheckButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetCheckButton.TabIndex = 28;
+            this.ResetCheckButton.Text = "Сбросить фильтры";
+            this.ResetCheckButton.UseVisualStyleBackColor = true;
+            this.ResetCheckButton.Click += new System.EventHandler(this.ResetCheckButton_Click);
+            // 
+            // SearchCheckByOverallCodeButton
+            // 
+            this.SearchCheckByOverallCodeButton.Location = new System.Drawing.Point(270, 64);
+            this.SearchCheckByOverallCodeButton.Name = "SearchCheckByOverallCodeButton";
+            this.SearchCheckByOverallCodeButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchCheckByOverallCodeButton.TabIndex = 7;
+            this.SearchCheckByOverallCodeButton.Text = "Искать по коду общего чека";
+            this.SearchCheckByOverallCodeButton.UseVisualStyleBackColor = true;
+            this.SearchCheckByOverallCodeButton.Click += new System.EventHandler(this.SearchCheckByOverallCodeButton_Click);
+            // 
+            // SearchCheckByOverallCode_textBox
+            // 
+            this.SearchCheckByOverallCode_textBox.Location = new System.Drawing.Point(270, 21);
+            this.SearchCheckByOverallCode_textBox.Name = "SearchCheckByOverallCode_textBox";
+            this.SearchCheckByOverallCode_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchCheckByOverallCode_textBox.TabIndex = 6;
+            // 
+            // SearchCheckByIdButton
+            // 
+            this.SearchCheckByIdButton.Location = new System.Drawing.Point(25, 65);
+            this.SearchCheckByIdButton.Name = "SearchCheckByIdButton";
+            this.SearchCheckByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchCheckByIdButton.TabIndex = 5;
+            this.SearchCheckByIdButton.Text = "Искать по ID";
+            this.SearchCheckByIdButton.UseVisualStyleBackColor = true;
+            this.SearchCheckByIdButton.Click += new System.EventHandler(this.SearchCheckByIdButton_Click);
+            // 
+            // SearchCheckById_textBox
+            // 
+            this.SearchCheckById_textBox.Location = new System.Drawing.Point(25, 22);
+            this.SearchCheckById_textBox.Name = "SearchCheckById_textBox";
+            this.SearchCheckById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchCheckById_textBox.TabIndex = 4;
             // 
             // AddChecksButton
             // 
@@ -1454,6 +1827,18 @@
             this.AddChecksButton.Text = "Добавить";
             this.AddChecksButton.UseVisualStyleBackColor = true;
             this.AddChecksButton.Click += new System.EventHandler(this.AddChecksButton_Click);
+            // 
+            // ReportButton
+            // 
+            this.ReportButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReportButton.Location = new System.Drawing.Point(1377, 33);
+            this.ReportButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ReportButton.Name = "ReportButton";
+            this.ReportButton.Size = new System.Drawing.Size(120, 34);
+            this.ReportButton.TabIndex = 1;
+            this.ReportButton.Text = "Отчет";
+            this.ReportButton.UseVisualStyleBackColor = true;
+            this.ReportButton.Click += new System.EventHandler(this.ReportButton_Click);
             // 
             // salesItemListTableAdapter
             // 
@@ -1475,14 +1860,14 @@
             this.dataGridView8.AutoGenerateColumns = false;
             this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView8.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle82.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle82.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle82.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView8.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle82;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView8.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codebuyerDataGridViewTextBoxColumn1,
@@ -1495,25 +1880,25 @@
             this.UpdateBuyerButton,
             this.DeleteBuyerButton});
             this.dataGridView8.DataSource = this.buyersBindingSource;
-            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle83.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle83;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle53;
             this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView8.Location = new System.Drawing.Point(0, 0);
             this.dataGridView8.Name = "dataGridView8";
-            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle84.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle84.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle84.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle84.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView8.RowHeadersDefaultCellStyle = dataGridViewCellStyle84;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView8.RowHeadersDefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridView8.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView8.TabIndex = 8;
             this.dataGridView8.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView8_CellClick);
@@ -1583,27 +1968,84 @@
             // BuyersButtonsPanel
             // 
             this.BuyersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.BuyersButtonsPanel.Controls.Add(this.flowLayoutPanel9);
+            this.BuyersButtonsPanel.Controls.Add(this.ResetBuyerButton);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByMiddleName_textBox);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByNameButton);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerBySurname_textBox);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByName_textBox);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByCodeButton);
+            this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByCode_textBox);
+            this.BuyersButtonsPanel.Controls.Add(this.AddBuyersButton);
             this.BuyersButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BuyersButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.BuyersButtonsPanel.Name = "BuyersButtonsPanel";
             this.BuyersButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.BuyersButtonsPanel.TabIndex = 7;
             // 
-            // flowLayoutPanel9
+            // ResetBuyerButton
             // 
-            this.flowLayoutPanel9.Controls.Add(this.AddBuyersButton);
-            this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel9.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel9.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
-            this.flowLayoutPanel9.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel9.TabIndex = 0;
+            this.ResetBuyerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetBuyerButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetBuyerButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetBuyerButton.Name = "ResetBuyerButton";
+            this.ResetBuyerButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetBuyerButton.TabIndex = 28;
+            this.ResetBuyerButton.Text = "Сбросить фильтры";
+            this.ResetBuyerButton.UseVisualStyleBackColor = true;
+            this.ResetBuyerButton.Click += new System.EventHandler(this.ResetBuyerButton_Click);
+            // 
+            // SearchBuyerByMiddleName_textBox
+            // 
+            this.SearchBuyerByMiddleName_textBox.Location = new System.Drawing.Point(793, 19);
+            this.SearchBuyerByMiddleName_textBox.Name = "SearchBuyerByMiddleName_textBox";
+            this.SearchBuyerByMiddleName_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchBuyerByMiddleName_textBox.TabIndex = 27;
+            // 
+            // SearchBuyerByNameButton
+            // 
+            this.SearchBuyerByNameButton.Location = new System.Drawing.Point(295, 62);
+            this.SearchBuyerByNameButton.Name = "SearchBuyerByNameButton";
+            this.SearchBuyerByNameButton.Size = new System.Drawing.Size(692, 23);
+            this.SearchBuyerByNameButton.TabIndex = 26;
+            this.SearchBuyerByNameButton.Text = "Искать по полному имени покупателя";
+            this.SearchBuyerByNameButton.UseVisualStyleBackColor = true;
+            this.SearchBuyerByNameButton.Click += new System.EventHandler(this.SearchBuyerByNameButton_Click);
+            // 
+            // SearchBuyerBySurname_textBox
+            // 
+            this.SearchBuyerBySurname_textBox.Location = new System.Drawing.Point(542, 19);
+            this.SearchBuyerBySurname_textBox.Name = "SearchBuyerBySurname_textBox";
+            this.SearchBuyerBySurname_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchBuyerBySurname_textBox.TabIndex = 25;
+            // 
+            // SearchBuyerByName_textBox
+            // 
+            this.SearchBuyerByName_textBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchBuyerByName_textBox.Name = "SearchBuyerByName_textBox";
+            this.SearchBuyerByName_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchBuyerByName_textBox.TabIndex = 23;
+            // 
+            // SearchBuyerByCodeButton
+            // 
+            this.SearchBuyerByCodeButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchBuyerByCodeButton.Name = "SearchBuyerByCodeButton";
+            this.SearchBuyerByCodeButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchBuyerByCodeButton.TabIndex = 22;
+            this.SearchBuyerByCodeButton.Text = "Искать по коду покупателя";
+            this.SearchBuyerByCodeButton.UseVisualStyleBackColor = true;
+            this.SearchBuyerByCodeButton.Click += new System.EventHandler(this.SearchBuyerByCodeButton_Click);
+            // 
+            // SearchBuyerByCode_textBox
+            // 
+            this.SearchBuyerByCode_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchBuyerByCode_textBox.Name = "SearchBuyerByCode_textBox";
+            this.SearchBuyerByCode_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchBuyerByCode_textBox.TabIndex = 21;
             // 
             // AddBuyersButton
             // 
             this.AddBuyersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddBuyersButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddBuyersButton.Location = new System.Drawing.Point(1503, 33);
             this.AddBuyersButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddBuyersButton.Name = "AddBuyersButton";
             this.AddBuyersButton.Size = new System.Drawing.Size(120, 34);
@@ -1632,14 +2074,14 @@
             this.dataGridView9.AutoGenerateColumns = false;
             this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView9.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle85.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle85.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle85.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle85.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle85.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView9.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle85;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView9.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codesellerDataGridViewTextBoxColumn1,
@@ -1649,25 +2091,25 @@
             this.UpdateSellerButton,
             this.DeleteSellerButton});
             this.dataGridView9.DataSource = this.sellersBindingSource;
-            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle86.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle86.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle86.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView9.DefaultCellStyle = dataGridViewCellStyle86;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView9.DefaultCellStyle = dataGridViewCellStyle56;
             this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView9.Location = new System.Drawing.Point(0, 0);
             this.dataGridView9.Name = "dataGridView9";
-            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle87.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle87.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle87.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView9.RowHeadersDefaultCellStyle = dataGridViewCellStyle87;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle57.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView9.RowHeadersDefaultCellStyle = dataGridViewCellStyle57;
             this.dataGridView9.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView9.TabIndex = 9;
             this.dataGridView9.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView9_CellClick);
@@ -1723,27 +2165,68 @@
             // SellersButtonsPanel
             // 
             this.SellersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.SellersButtonsPanel.Controls.Add(this.flowLayoutPanel10);
+            this.SellersButtonsPanel.Controls.Add(this.ResetSellersButton);
+            this.SellersButtonsPanel.Controls.Add(this.SearchSellerBySurnameButton);
+            this.SellersButtonsPanel.Controls.Add(this.SearchSellerBySurname_textBox);
+            this.SellersButtonsPanel.Controls.Add(this.SearchSellerByIdButton);
+            this.SellersButtonsPanel.Controls.Add(this.SearchSellerById_textBox);
+            this.SellersButtonsPanel.Controls.Add(this.AddSellersButton);
             this.SellersButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SellersButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.SellersButtonsPanel.Name = "SellersButtonsPanel";
             this.SellersButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.SellersButtonsPanel.TabIndex = 8;
             // 
-            // flowLayoutPanel10
+            // ResetSellersButton
             // 
-            this.flowLayoutPanel10.Controls.Add(this.AddSellersButton);
-            this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel10.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel10.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
-            this.flowLayoutPanel10.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel10.TabIndex = 0;
+            this.ResetSellersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetSellersButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetSellersButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetSellersButton.Name = "ResetSellersButton";
+            this.ResetSellersButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetSellersButton.TabIndex = 27;
+            this.ResetSellersButton.Text = "Сбросить фильтры";
+            this.ResetSellersButton.UseVisualStyleBackColor = true;
+            this.ResetSellersButton.Click += new System.EventHandler(this.ResetSellersButton_Click);
+            // 
+            // SearchSellerBySurnameButton
+            // 
+            this.SearchSellerBySurnameButton.Location = new System.Drawing.Point(295, 62);
+            this.SearchSellerBySurnameButton.Name = "SearchSellerBySurnameButton";
+            this.SearchSellerBySurnameButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchSellerBySurnameButton.TabIndex = 26;
+            this.SearchSellerBySurnameButton.Text = "Искать по фамилии продавца";
+            this.SearchSellerBySurnameButton.UseVisualStyleBackColor = true;
+            this.SearchSellerBySurnameButton.Click += new System.EventHandler(this.SearchSellerBySurnameButton_Click);
+            // 
+            // SearchSellerBySurname_textBox
+            // 
+            this.SearchSellerBySurname_textBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchSellerBySurname_textBox.Name = "SearchSellerBySurname_textBox";
+            this.SearchSellerBySurname_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchSellerBySurname_textBox.TabIndex = 25;
+            // 
+            // SearchSellerByIdButton
+            // 
+            this.SearchSellerByIdButton.Location = new System.Drawing.Point(50, 62);
+            this.SearchSellerByIdButton.Name = "SearchSellerByIdButton";
+            this.SearchSellerByIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchSellerByIdButton.TabIndex = 24;
+            this.SearchSellerByIdButton.Text = "Искать по коду продавца";
+            this.SearchSellerByIdButton.UseVisualStyleBackColor = true;
+            this.SearchSellerByIdButton.Click += new System.EventHandler(this.SearchSellerByIdButton_Click);
+            // 
+            // SearchSellerById_textBox
+            // 
+            this.SearchSellerById_textBox.Location = new System.Drawing.Point(50, 19);
+            this.SearchSellerById_textBox.Name = "SearchSellerById_textBox";
+            this.SearchSellerById_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchSellerById_textBox.TabIndex = 23;
             // 
             // AddSellersButton
             // 
             this.AddSellersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddSellersButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddSellersButton.Location = new System.Drawing.Point(1503, 33);
             this.AddSellersButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddSellersButton.Name = "AddSellersButton";
             this.AddSellersButton.Size = new System.Drawing.Size(120, 34);
@@ -1861,14 +2344,14 @@
             this.dataGridView10.AutoGenerateColumns = false;
             this.dataGridView10.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView10.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle88.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle88.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle88.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle88.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView10.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle88;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView10.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
             this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userLogincodeDataGridViewTextBoxColumn,
@@ -1877,25 +2360,25 @@
             this.UpdateUserLoginButton,
             this.DeleteUserLoginButton});
             this.dataGridView10.DataSource = this.userAuthorizationBindingSource;
-            dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle89.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle89.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle89.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle89.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle89.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle89.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView10.DefaultCellStyle = dataGridViewCellStyle89;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView10.DefaultCellStyle = dataGridViewCellStyle59;
             this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView10.Location = new System.Drawing.Point(0, 0);
             this.dataGridView10.Name = "dataGridView10";
-            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle90.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle90.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle90.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle90.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle90.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle90.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView10.RowHeadersDefaultCellStyle = dataGridViewCellStyle90;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle60.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView10.RowHeadersDefaultCellStyle = dataGridViewCellStyle60;
             this.dataGridView10.Size = new System.Drawing.Size(1635, 941);
             this.dataGridView10.TabIndex = 6;
             this.dataGridView10.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView10_CellClick);
@@ -1938,35 +2421,69 @@
             this.userAuthorizationBindingSource.DataMember = "UserAuthorization";
             this.userAuthorizationBindingSource.DataSource = this.partShopDataSet4;
             // 
-            // partShopDataSet4
-            // 
-            this.partShopDataSet4.DataSetName = "PartShopDataSet4";
-            this.partShopDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // UserLoginButtonsPanel
             // 
             this.UserLoginButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.UserLoginButtonsPanel.Controls.Add(this.flowLayoutPanel11);
+            this.UserLoginButtonsPanel.Controls.Add(this.ResetUserLoginButton);
+            this.UserLoginButtonsPanel.Controls.Add(this.SearchByUserLoginButton);
+            this.UserLoginButtonsPanel.Controls.Add(this.SearchByUserLogin_textBox);
+            this.UserLoginButtonsPanel.Controls.Add(this.SearchByUserLoginIdButton);
+            this.UserLoginButtonsPanel.Controls.Add(this.SeachByUserLoginId_textBox);
+            this.UserLoginButtonsPanel.Controls.Add(this.AddUserLoginButton);
             this.UserLoginButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.UserLoginButtonsPanel.Location = new System.Drawing.Point(0, 941);
             this.UserLoginButtonsPanel.Name = "UserLoginButtonsPanel";
             this.UserLoginButtonsPanel.Size = new System.Drawing.Size(1635, 100);
             this.UserLoginButtonsPanel.TabIndex = 5;
             // 
-            // flowLayoutPanel11
+            // ResetUserLoginButton
             // 
-            this.flowLayoutPanel11.Controls.Add(this.AddUserLoginButton);
-            this.flowLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel11.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel11.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
-            this.flowLayoutPanel11.Size = new System.Drawing.Size(1635, 100);
-            this.flowLayoutPanel11.TabIndex = 0;
+            this.ResetUserLoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetUserLoginButton.Location = new System.Drawing.Point(1363, 33);
+            this.ResetUserLoginButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
+            this.ResetUserLoginButton.Name = "ResetUserLoginButton";
+            this.ResetUserLoginButton.Size = new System.Drawing.Size(120, 34);
+            this.ResetUserLoginButton.TabIndex = 28;
+            this.ResetUserLoginButton.Text = "Сбросить фильтры";
+            this.ResetUserLoginButton.UseVisualStyleBackColor = true;
+            this.ResetUserLoginButton.Click += new System.EventHandler(this.ResetUserLoginButton_Click);
+            // 
+            // SearchByUserLoginButton
+            // 
+            this.SearchByUserLoginButton.Location = new System.Drawing.Point(295, 62);
+            this.SearchByUserLoginButton.Name = "SearchByUserLoginButton";
+            this.SearchByUserLoginButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByUserLoginButton.TabIndex = 11;
+            this.SearchByUserLoginButton.Text = "Искать по логину учетной записи";
+            this.SearchByUserLoginButton.UseVisualStyleBackColor = true;
+            // 
+            // SearchByUserLogin_textBox
+            // 
+            this.SearchByUserLogin_textBox.Location = new System.Drawing.Point(295, 19);
+            this.SearchByUserLogin_textBox.Name = "SearchByUserLogin_textBox";
+            this.SearchByUserLogin_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SearchByUserLogin_textBox.TabIndex = 10;
+            // 
+            // SearchByUserLoginIdButton
+            // 
+            this.SearchByUserLoginIdButton.Location = new System.Drawing.Point(50, 63);
+            this.SearchByUserLoginIdButton.Name = "SearchByUserLoginIdButton";
+            this.SearchByUserLoginIdButton.Size = new System.Drawing.Size(194, 23);
+            this.SearchByUserLoginIdButton.TabIndex = 9;
+            this.SearchByUserLoginIdButton.Text = "Искать по ID";
+            this.SearchByUserLoginIdButton.UseVisualStyleBackColor = true;
+            // 
+            // SeachByUserLoginId_textBox
+            // 
+            this.SeachByUserLoginId_textBox.Location = new System.Drawing.Point(50, 20);
+            this.SeachByUserLoginId_textBox.Name = "SeachByUserLoginId_textBox";
+            this.SeachByUserLoginId_textBox.Size = new System.Drawing.Size(194, 20);
+            this.SeachByUserLoginId_textBox.TabIndex = 8;
             // 
             // AddUserLoginButton
             // 
             this.AddUserLoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddUserLoginButton.Location = new System.Drawing.Point(1512, 33);
+            this.AddUserLoginButton.Location = new System.Drawing.Point(1503, 33);
             this.AddUserLoginButton.Margin = new System.Windows.Forms.Padding(3, 33, 3, 3);
             this.AddUserLoginButton.Name = "AddUserLoginButton";
             this.AddUserLoginButton.Size = new System.Drawing.Size(120, 34);
@@ -1979,22 +2496,30 @@
             // 
             this.userAuthorizationTableAdapter.ClearBeforeFill = true;
             // 
+            // categoryPartsTableAdapter1
+            // 
+            this.categoryPartsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // partsTableAdapter2
+            // 
+            this.partsTableAdapter2.ClearBeforeFill = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.SettingsPanel);
+            this.Controls.Add(this.PartPanel);
             this.Controls.Add(this.UserLoginPanel);
-            this.Controls.Add(this.StockPanel);
+            this.Controls.Add(this.CategoryPanel);
+            this.Controls.Add(this.ManufacturersPanel);
             this.Controls.Add(this.ProvidersPanel);
+            this.Controls.Add(this.StockPanel);
             this.Controls.Add(this.SalesPanel);
             this.Controls.Add(this.ChecksPanel);
             this.Controls.Add(this.BuyersPanel);
             this.Controls.Add(this.SellersPanel);
-            this.Controls.Add(this.ManufacturersPanel);
-            this.Controls.Add(this.CategoryPanel);
-            this.Controls.Add(this.PartPanel);
+            this.Controls.Add(this.SettingsPanel);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -2008,50 +2533,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet)).EndInit();
             this.PartButtonPanel.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.PartButtonPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).EndInit();
             this.CategoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource1)).EndInit();
             this.CategoryButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.CategoryButtonsPanel.PerformLayout();
             this.ManufacturersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource)).EndInit();
             this.ManufacturersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
+            this.ManufacturersButtonsPanel.PerformLayout();
             this.ProvidersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource)).EndInit();
             this.ProvidersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
+            this.ProvidersButtonsPanel.PerformLayout();
             this.StockPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).EndInit();
             this.StockButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
+            this.StockButtonsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource2)).EndInit();
             this.SalesPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
             this.SalesButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel7.ResumeLayout(false);
+            this.SalesButtonsPanel.PerformLayout();
             this.ChecksPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesItemListBindingSource)).EndInit();
             this.ChecksButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel8.ResumeLayout(false);
+            this.ChecksButtonsPanel.PerformLayout();
             this.BuyersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyersBindingSource)).EndInit();
             this.BuyersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel9.ResumeLayout(false);
+            this.BuyersButtonsPanel.PerformLayout();
             this.SellersPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellersBindingSource)).EndInit();
             this.SellersButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel10.ResumeLayout(false);
+            this.SellersButtonsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.manufacturerBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerPartsBindingSource1)).EndInit();
             this.SettingsPanel.ResumeLayout(false);
@@ -2059,9 +2587,8 @@
             this.UserLoginPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAuthorizationBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet4)).EndInit();
             this.UserLoginButtonsPanel.ResumeLayout(false);
-            this.flowLayoutPanel11.ResumeLayout(false);
+            this.UserLoginButtonsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2084,7 +2611,6 @@
         private PartShopDataSet partShopDataSet;
         private System.Windows.Forms.BindingSource partsBindingSource;
         private PartShopDataSetTableAdapters.PartsTableAdapter partsTableAdapter;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Button endProgramButton;
@@ -2093,32 +2619,27 @@
         private PartShopDataSet3TableAdapters.CategoryPartsTableAdapter categoryPartsTableAdapter;
         private System.Windows.Forms.Panel CategoryPanel;
         private System.Windows.Forms.Panel CategoryButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource categoryPartsBindingSource1;
         private System.Windows.Forms.Panel ManufacturersPanel;
         private System.Windows.Forms.Panel ManufacturersButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.BindingSource manufacturerBindingSource;
         private PartShopDataSet3TableAdapters.ManufacturerTableAdapter manufacturerTableAdapter;
         private System.Windows.Forms.Panel ProvidersPanel;
         private System.Windows.Forms.Panel ProvidersButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Button AddProvidersButton;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.BindingSource providerPartsBindingSource;
         private PartShopDataSet3TableAdapters.ProviderPartsTableAdapter providerPartsTableAdapter;
         private System.Windows.Forms.Panel StockPanel;
         private System.Windows.Forms.Panel StockButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.Button AddStockButton;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.BindingSource stockBindingSource;
         private PartShopDataSet3TableAdapters.StockTableAdapter stockTableAdapter;
         private System.Windows.Forms.Panel SalesPanel;
         private System.Windows.Forms.Panel SalesButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.Button AddSalesButton;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.BindingSource salesBindingSource;
@@ -2126,13 +2647,10 @@
         private System.Windows.Forms.Panel ChecksPanel;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.Panel ChecksButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
-        private System.Windows.Forms.Button AddChecksButton;
         private System.Windows.Forms.BindingSource salesItemListBindingSource;
         private PartShopDataSet3TableAdapters.SalesItemListTableAdapter salesItemListTableAdapter;
         private System.Windows.Forms.Panel BuyersPanel;
         private System.Windows.Forms.Panel BuyersButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private System.Windows.Forms.Button AddBuyersButton;
         private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.BindingSource buyersBindingSource;
@@ -2140,7 +2658,6 @@
         private System.Windows.Forms.Panel SellersPanel;
         private System.Windows.Forms.DataGridView dataGridView9;
         private System.Windows.Forms.Panel SellersButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
         private System.Windows.Forms.Button AddSellersButton;
         private System.Windows.Forms.BindingSource sellersBindingSource;
         private PartShopDataSet3TableAdapters.SellersTableAdapter sellersTableAdapter;
@@ -2209,17 +2726,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn codesellerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn UpdateSaleButton;
         private System.Windows.Forms.DataGridViewButtonColumn DeleteSaleButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesItemDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codepartDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partamountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn UpdateCheckButton;
-        private System.Windows.Forms.DataGridViewButtonColumn DeleteCheckButton;
         private System.Windows.Forms.Button ConnectButton;
         private System.Windows.Forms.Button UserLoginButton;
         private System.Windows.Forms.Panel UserLoginPanel;
         private System.Windows.Forms.Panel UserLoginButtonsPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.Button AddUserLoginButton;
         private System.Windows.Forms.DataGridView dataGridView10;
         private PartShopDataSet4 partShopDataSet4;
@@ -2232,5 +2742,71 @@
         private System.Windows.Forms.DataGridViewButtonColumn DeleteUserLoginButton;
         private System.Windows.Forms.Button CreateTriggerButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button AddChecksButton;
+        private System.Windows.Forms.Button ReportButton;
+        private System.Windows.Forms.Button SearchByIdButton;
+        private System.Windows.Forms.TextBox SearchById_textBox;
+        private System.Windows.Forms.TextBox SearchByName_textBox;
+        private System.Windows.Forms.ComboBox SearchByCategory_comboBox;
+        private System.Windows.Forms.Button SearchByCategoryButton;
+        private System.Windows.Forms.Button SearchByNameButton;
+        private System.Windows.Forms.BindingSource categoryPartsBindingSource2;
+        private PartShopDataSet4TableAdapters.CategoryPartsTableAdapter categoryPartsTableAdapter1;
+        private System.Windows.Forms.TextBox SearchCheckById_textBox;
+        private System.Windows.Forms.Button SearchCheckByIdButton;
+        private System.Windows.Forms.Button SearchCheckByOverallCodeButton;
+        private System.Windows.Forms.TextBox SearchCheckByOverallCode_textBox;
+        private System.Windows.Forms.Button SearchByUserLoginButton;
+        private System.Windows.Forms.TextBox SearchByUserLogin_textBox;
+        private System.Windows.Forms.Button SearchByUserLoginIdButton;
+        private System.Windows.Forms.TextBox SeachByUserLoginId_textBox;
+        private System.Windows.Forms.Button SearchCategoryByIdButton;
+        private System.Windows.Forms.TextBox SearchCategoryById_textBox;
+        private System.Windows.Forms.Button SearchByCodeOnStockButton;
+        private System.Windows.Forms.TextBox SearchByCodeOnStock_textBox;
+        private System.Windows.Forms.ComboBox SearchByPartCodeOnStock_comboBox;
+        private System.Windows.Forms.Button SearchByPartCodeOnStockButton;
+        private System.Windows.Forms.BindingSource partsBindingSource2;
+        private PartShopDataSet4TableAdapters.PartsTableAdapter partsTableAdapter2;
+        private System.Windows.Forms.TextBox SearchProviderByName_textBox;
+        private System.Windows.Forms.Button SearchProviderByNameButton;
+        private System.Windows.Forms.Button SearchProviderByIdButton;
+        private System.Windows.Forms.TextBox SearchProviderById_textBox;
+        private System.Windows.Forms.TextBox SearchProviderByPhoneNumber_textBox;
+        private System.Windows.Forms.Button SearchProviderByPhoneButton;
+        private System.Windows.Forms.Button SearchSaleByIdButton;
+        private System.Windows.Forms.TextBox SearchSaleById_textBox;
+        private System.Windows.Forms.Button SearchBuyerByCodeButton;
+        private System.Windows.Forms.TextBox SearchBuyerByCode_textBox;
+        private System.Windows.Forms.TextBox SearchBuyerByMiddleName_textBox;
+        private System.Windows.Forms.Button SearchBuyerByNameButton;
+        private System.Windows.Forms.TextBox SearchBuyerBySurname_textBox;
+        private System.Windows.Forms.TextBox SearchBuyerByName_textBox;
+        private System.Windows.Forms.Button SearchSellerByIdButton;
+        private System.Windows.Forms.TextBox SearchSellerById_textBox;
+        private System.Windows.Forms.Button SearchSellerBySurnameButton;
+        private System.Windows.Forms.TextBox SearchSellerBySurname_textBox;
+        private System.Windows.Forms.Button SearchManufacturerByIdButton;
+        private System.Windows.Forms.TextBox SearchManufacturerById_textBox;
+        private System.Windows.Forms.Button SearchManufacturerByPhoneButton;
+        private System.Windows.Forms.TextBox SearchManufacturerByPhone_textBox;
+        private System.Windows.Forms.Button SearchManufacturerByNameButton;
+        private System.Windows.Forms.TextBox SearchManufacturerByName_textBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesItemDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codepartDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partamountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn UpdateCheckButton;
+        private System.Windows.Forms.DataGridViewButtonColumn DeleteCheckButton;
+        private System.Windows.Forms.Button ResetCategoryButton;
+        private System.Windows.Forms.Button ResetManufacturerButton;
+        private System.Windows.Forms.Button ResetProvidersButton;
+        private System.Windows.Forms.Button ResetStockButton;
+        private System.Windows.Forms.Button ResetSalesButton;
+        private System.Windows.Forms.Button ResetCheckButton;
+        private System.Windows.Forms.Button ResetBuyerButton;
+        private System.Windows.Forms.Button ResetSellersButton;
+        private System.Windows.Forms.Button ResetUserLoginButton;
+        private System.Windows.Forms.Button ResetPartButton;
     }
 }

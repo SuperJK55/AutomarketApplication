@@ -18,6 +18,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Word;
+using DataTable = System.Data.DataTable;
+using System.Xml;
 
 namespace kursachBD
 {
@@ -86,6 +89,22 @@ namespace kursachBD
             
         }
 
+        private void SearchDataInTable(string nameTable, string columnName, string filterQuery, DataGridView dataGridView)
+        {
+            try
+            {
+                cmd = new SqlCommand($"SELECT * FROM {nameTable} WHERE {columnName} LIKE '%{filterQuery}%'", con);
+                adapt = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка подключения к бд. Подробности:{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void PartsButton_Click(object sender, EventArgs e)
         {
             panelControl.HidePanels();
@@ -152,6 +171,10 @@ namespace kursachBD
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Parts". При необходимости она может быть перемещена или удалена.
+            this.partsTableAdapter2.Fill(this.partShopDataSet4.Parts);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.CategoryParts". При необходимости она может быть перемещена или удалена.
+            this.categoryPartsTableAdapter1.Fill(this.partShopDataSet4.CategoryParts);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.UserAuthorization". При необходимости она может быть перемещена или удалена.
             this.userAuthorizationTableAdapter.Fill(this.partShopDataSet4.UserAuthorization);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet3.Parts". При необходимости она может быть перемещена или удалена.
@@ -191,7 +214,7 @@ namespace kursachBD
             res = MessageBox.Show("Вы действительно хотите завершить работу приложения?", "Завершение работы", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (res == DialogResult.Yes)
             {
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             else this.Show();
             
@@ -229,7 +252,22 @@ namespace kursachBD
             addPartForm.ShowDialog();
             UpdateTable("Parts", dataGridView1);
         }
-
+        private void SearchByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Parts", "Code_part", SearchById_textBox.Text, dataGridView1);
+        }
+        private void SearchByNameButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Parts", "Name_part", SearchByName_textBox.Text, dataGridView1);
+        }
+        private void SearchByCategoryButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Parts", "Category_part", SearchByCategory_comboBox.SelectedValue.ToString(), dataGridView1);
+        }
+        private void ResetPartButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("Parts", dataGridView1);
+        }
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "Удалить")
@@ -253,6 +291,14 @@ namespace kursachBD
         {
             AddCategoryPartsForm addCategoryPartsForm = new AddCategoryPartsForm();
             addCategoryPartsForm.ShowDialog();
+            UpdateTable("CategoryParts", dataGridView2);
+        }
+        private void SearchCategoryByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("CategoryParts", "Code_category", SearchCategoryById_textBox.Text, dataGridView2);
+        }
+        private void ResetCategoryButton_Click(object sender, EventArgs e)
+        {
             UpdateTable("CategoryParts", dataGridView2);
         }
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -283,7 +329,22 @@ namespace kursachBD
             addManufacturerForm.ShowDialog();
             UpdateTable("Manufacturer", dataGridView3);
         }
-
+        private void SearchManufacturerByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Manufacturer", "Code_manufacturer", SearchManufacturerById_textBox.Text, dataGridView3);
+        }
+        private void SearchManufacturerByNameButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Manufacturer", "Name_manufacturer", SearchManufacturerByName_textBox.Text, dataGridView3);
+        }
+        private void SearchManufacturerByPhoneButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Manufacturer", "PhoneNumber_manufacturer", SearchManufacturerByPhone_textBox.Text, dataGridView3);
+        }
+        private void ResetManufacturerButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("Manufacturer", dataGridView3);
+        }
         private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView4.Columns[e.ColumnIndex].HeaderText == "Удалить")
@@ -312,6 +373,22 @@ namespace kursachBD
             addProviderForm.ShowDialog();
             UpdateTable("ProviderParts", dataGridView4);
         }
+        private void SearchProviderByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("ProviderParts", "Code_provider", SearchProviderById_textBox.Text, dataGridView4);
+        }
+        private void SearchProviderByNameButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("ProviderParts", "Name_provider", SearchProviderByName_textBox.Text, dataGridView4);
+        }
+        private void SearchProviderByPhoneButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("ProviderParts", "PhoneNumber_provider", SearchProviderByPhoneNumber_textBox.Text, dataGridView4);
+        }
+        private void ResetProvidersButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("ProviderParts", dataGridView4);
+        }
         private void dataGridView5_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView5.Columns[e.ColumnIndex].HeaderText == "Удалить")
@@ -335,6 +412,19 @@ namespace kursachBD
         {
             AddStockItemForm addStockItemForm = new AddStockItemForm();
             addStockItemForm.ShowDialog();
+            UpdateTable("Stock", dataGridView5);
+        }
+        private void SearchByCodeOnStockButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Stock", "CodePartOn_stock", SearchByCodeOnStock_textBox.Text, dataGridView5);
+        }
+
+        private void SearchByPartCodeOnStockButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Stock", "CodePartOn_stock", SearchByPartCodeOnStock_comboBox.SelectedValue.ToString(), dataGridView5);
+        }
+        private void ResetStockButton_Click(object sender, EventArgs e)
+        {
             UpdateTable("Stock", dataGridView5);
         }
 
@@ -366,6 +456,14 @@ namespace kursachBD
             addSaleForm.ShowDialog();
             UpdateTable("Sales", dataGridView6);
         }
+        private void SearchSaleByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Sales", "Code_sales", SearchSaleById_textBox.Text, dataGridView6);
+        }
+        private void ResetSalesButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("Sales", dataGridView6);
+        }
 
         private void dataGridView7_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -388,10 +486,56 @@ namespace kursachBD
                 UpdateTable("SalesItemList", dataGridView7);
             }
         }
+        private void ReportButton_Click(object sender, EventArgs e)
+        {
+            adapt = new SqlDataAdapter("SELECT * FROM SalesItemList", con);
+            DataTable dt = new DataTable();
+            adapt.Fill(dt);
+            dataGridView7.DataSource = dt;
+            Microsoft.Office.Interop.Word._Application wordApp = new Microsoft.Office.Interop.Word.Application();
+
+            for (int k = 0; k < dt.Rows.Count; k++)
+            {
+                Document doc = wordApp.Documents.Add();
+                Table table = doc.Tables.Add(Range: doc.Range(), NumRows: 2, NumColumns: dt.Columns.Count, DefaultTableBehavior: WdDefaultTableBehavior.wdWord9TableBehavior, AutoFitBehavior: WdAutoFitBehavior.wdAutoFitContent);
+
+                // Add headers to the table
+                for (int i = 0; i < dt.Columns.Count; i++)
+                {
+                    table.Cell(1, i + 1).Range.Text = dt.Columns[i].ColumnName;
+                }
+
+                // Add data to the table
+                for (int j = 0; j < dt.Columns.Count; j++)
+                {
+                    table.Cell(2, j + 1).Range.Text = dt.Rows[k][j].ToString();
+                }
+
+                object fileName = "K:\\Report" + (k + 1) + ".docx";
+                doc.SaveAs2(ref fileName);
+                doc.Close();
+            }
+
+            wordApp.Quit();
+
+        }
         private void AddChecksButton_Click(object sender, EventArgs e)
         {
             AddChecksForm addChecksForm = new AddChecksForm();
             addChecksForm.ShowDialog();
+            UpdateTable("SalesItemList", dataGridView7);
+        }
+        private void SearchCheckByIdButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("SalesItemList", "Code_salesItem", SearchCheckById_textBox.Text, dataGridView7);
+        }
+
+        private void SearchCheckByOverallCodeButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("SalesItemList", "Code_sales", SearchCheckByOverallCode_textBox.Text, dataGridView7);
+        }
+        private void ResetCheckButton_Click(object sender, EventArgs e)
+        {
             UpdateTable("SalesItemList", dataGridView7);
         }
 
@@ -399,7 +543,7 @@ namespace kursachBD
         {
             if (dataGridView8.Columns[e.ColumnIndex].HeaderText == "Удалить")
             {
-                DeleteButtonTable(e, "SalesItemList", "codesalesItemDataGridViewTextBoxColumn", "Code_salesItem", dataGridView8);
+                DeleteButtonTable(e, "Buyers", "codebuyerDataGridViewTextBoxColumn1", "Code_buyer", dataGridView8);
             }
             if (dataGridView8.Columns[e.ColumnIndex].HeaderText == "Изменить")
             {
@@ -424,6 +568,29 @@ namespace kursachBD
         {
             AddBuyerForm addBuyerForm = new AddBuyerForm();
             addBuyerForm.ShowDialog();
+            UpdateTable("Buyers", dataGridView8);
+        }
+        private void SearchBuyerByCodeButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Buyers", "Code_buyer", SearchBuyerByCode_textBox.Text, dataGridView8);
+        }
+        private void SearchBuyerByNameButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cmd = new SqlCommand($"SELECT * FROM Buyers WHERE LastName_buyer LIKE '%{SearchBuyerByName_textBox.Text}%' AND FirstName_buyer LIKE '%{SearchBuyerBySurname_textBox.Text}%' AND MiddleName_buyer LIKE '%{SearchBuyerByMiddleName_textBox.Text}%'", con);
+                adapt = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapt.Fill(dt);
+                dataGridView8.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка подключения к бд. Подробности:{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ResetBuyerButton_Click(object sender, EventArgs e)
+        {
             UpdateTable("Buyers", dataGridView8);
         }
 
@@ -456,14 +623,19 @@ namespace kursachBD
             UpdateTable("Sellers", dataGridView9);
 
         }
-
-        private void ConnectButton_Click(object sender, EventArgs e)
+        private void SearchSellerByIdButton_Click(object sender, EventArgs e)
         {
-            
-            connectionString = sqlConnection_textBox.Text;
-            this.con = new SqlConnection(connectionString);
+            SearchDataInTable("Sellers", "Code_seller", SearchSellerByIdButton.Text, dataGridView9);
         }
 
+        private void SearchSellerBySurnameButton_Click(object sender, EventArgs e)
+        {
+            SearchDataInTable("Sellers", "LastName_seller", SearchSellerBySurname_textBox.Text, dataGridView9);
+        }
+        private void ResetSellersButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("Sellers", dataGridView9);
+        }
 
         private void dataGridView10_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -493,7 +665,15 @@ namespace kursachBD
             addUserLoginForm.ShowDialog();
             UpdateTable("UserAuthorization", dataGridView10);
         }
-
+        private void ResetUserLoginButton_Click(object sender, EventArgs e)
+        {
+            UpdateTable("UserAuthorization", dataGridView10);
+        }
+        private void ConnectButton_Click(object sender, EventArgs e)
+        {
+            connectionString = sqlConnection_textBox.Text;
+            this.con = new SqlConnection(connectionString);
+        }
         private void CreateProcedureButton_Click(object sender, EventArgs e)
         {
             const string createProcedure = 

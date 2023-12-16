@@ -36,13 +36,13 @@ namespace kursachBD.Check
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO (Code_sales, Code_part, Part_amount) " +
+            cmd = new SqlCommand("INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) " +
                 "VALUES (@code_sales, @code_part, @part_amount)", con);
             con.Open();
 
-            cmd.Parameters.AddWithValue("@code_sales", codeSales_comboBox.SelectedIndex + 1);
+            cmd.Parameters.AddWithValue("@code_sales", codeSales_comboBox.SelectedIndex + 2);
             cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@part_amount", amountSalelsItem_textBox.Text);
+            cmd.Parameters.AddWithValue("@part_amount", Convert.ToInt32(amountSalelsItem_textBox.Text));
 
             cmd.ExecuteNonQuery();
             con.Close();
