@@ -27,9 +27,14 @@ namespace kursachBD
                 SqlDataAdapter sda = new SqlDataAdapter($"EXEC CheckLoginValidate '{loginTextBox.Text}', '{passwordTextBox.Text}'", con);
                 DataTable dt = new DataTable(); 
                 sda.Fill(dt);
-                if (dt.Rows[0][0].ToString() == "1")
+                if ((dt.Rows[0][0].ToString() == "1") && (loginTextBox.Text == "Admin"))
                 {
                     new MainForm().ShowDialog();
+                    this.Close();
+                }
+                else if (dt.Rows[0][0].ToString() == "1")
+                {
+                    new SellerAuthorizatedForm().ShowDialog();
                     this.Close();
                 }
                 else
