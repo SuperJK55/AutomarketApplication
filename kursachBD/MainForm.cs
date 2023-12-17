@@ -718,5 +718,90 @@ namespace kursachBD
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK);
             }
         }
+
+        private void CreateDataBaseButton_Click(object sender, EventArgs e)
+        {
+            const string createDB =
+                "CREATE TABLE Sellers(Code_seller INT PRIMARY KEY IDENTITY(1,1), LastName_seller VARCHAR(max), FirstName_seller VARCHAR(max), MiddleName_seller VARCHAR(max)) " +
+                "CREATE TABLE Buyers(Code_buyer INT PRIMARY KEY IDENTITY(1,1), LastName_buyer VARCHAR(max), FirstName_buyer VARCHAR(max), MiddleName_buyer VARCHAR(max), DateBirthday_buyer DateTime, NumberPhone_buyer VARCHAR(max), Email_buyer VARCHAR(max)) " +
+                "CREATE TABLE CategoryParts(Code_category INT PRIMARY KEY IDENTITY(1,1), Name_category VARCHAR(max)) " +
+                "CREATE TABLE Manufacturer(Code_manufacturer INT PRIMARY KEY IDENTITY(1,1), Name_manufacturer VARCHAR(max), Address_manufacturer VARCHAR(max), PhoneNumber_manufacturer VARCHAR(max), Email_manufacturer VARCHAR(max)) " +
+                "CREATE TABLE ProviderParts(Code_provider INT PRIMARY KEY IDENTITY(1,1), Name_provider VARCHAR(max), Address_provider VARCHAR(max), PhoneNumber_provider VARCHAR(max), Email_provider VARCHAR(max)) " +
+                "CREATE TABLE Parts(Code_part INT PRIMARY KEY IDENTITY(1,1), Name_part VARCHAR(max), Type_part VARCHAR(MAX), Category_part INT FOREIGN KEY REFERENCES CategoryParts(Code_category),Cost_part DECIMAL(18,2), Manufacturer INT FOREIGN KEY REFERENCES Manufacturer(Code_manufacturer), Provider_parts INT FOREIGN KEY REFERENCES ProviderParts(Code_provider), Description_part VARCHAR(max)) " +
+                "CREATE TABLE Stock(CodePartOn_stock INT PRIMARY KEY IDENTITY(1,1), Code_part INT FOREIGN KEY REFERENCES Parts(Code_part), Count_parts INT) " +
+                "CREATE TABLE Sales(Code_sales INT PRIMARY KEY IDENTITY(1,1), Sales_date DATETIME, Code_buyer INT FOREIGN KEY REFERENCES Buyers(Code_buyer), Code_seller INT FOREIGN KEY REFERENCES Sellers(Code_seller)) " +
+                "CREATE TABLE SalesItemList(Code_salesItem INT PRIMARY KEY IDENTITY(1,1), Code_sales INT FOREIGN KEY REFERENCES Sales(Code_sales), Code_part INT FOREIGN KEY REFERENCES Parts(Code_part), Part_amount INT) " +
+                "CREATE TABLE UserAuthorization(UserLogin_code INT PRIMARY KEY IDENTITY(1,1), UserLogin VARCHAR(max), UserPassword VARCHAR(max)) ";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(createDB, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Таблицы успешно созданы", "OK", MessageBoxButtons.OK);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK);
+            }
+        }
+
+        private void LoadDataInTableButton_Click(object sender, EventArgs e)
+        {
+            const string createData =
+                "INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller) VALUES('Иванов', 'Иван', 'Иванович') " +
+                "INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller) VALUES('Петров', 'Петр', 'Петрович') " +
+                "INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller) VALUES('Федоров', 'Федор', 'Федорович') " +
+                "INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller) VALUES('Семенов', 'Глеб', 'Владимирович') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Силкин', 'Артур', 'Максимович', '2003/13/7', '+79990000001', 'artur2003@mail.ru') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Коленкин', 'Степан', 'Евгеньевич', '2003/23/7', '+79990000002', 'stepan2003@mail.ru') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Прохоров', 'Андрей', 'Евгеньевич', '2003/15/9', '+79990000003', 'andrey2003@mail.ru') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Даниленко', 'Кирилл', 'Андреевич', '2003/15/2', '+79990000004', 'kirill2003@mail.ru') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Семенов', 'Глеб', 'Владимирович', '2003/23/7', '+79990000321', 'gleb2003@mail.ru') " +
+                "INSERT INTO Buyers(LastName_buyer, FirstName_buyer, MiddleName_buyer, DateBirthday_buyer, NumberPhone_buyer, Email_buyer) VALUES('Петров', 'Петр', 'Петрович', '2003/23/7', '+79990000323', 'petrov2003@mail.ru') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Двигатель') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Детали подвески') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Детали кузова') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Детали интерьера') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Тюнинг') " +
+                "INSERT INTO CategoryParts(Name_category) VALUES('Масла и технические жидкости') " +
+                "INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) VALUES('ИП Иванов', 'проспект Мира, 46, Омск, 644050', '+79131231223', 'ivanov@mail.ru') " +
+                "INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) VALUES('ИП Петров', 'проспект Мира, 47, Омск, 644050', '+79131231224', 'petrov@mail.ru') " +
+                "INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) VALUES('ИП Федоров', 'проспект Мира, 48, Омск, 644050', '+79131231225', 'fedorov@mail.ru') " +
+                "INSERT INTO ProviderParts(Name_provider, Address_provider, PhoneNumber_provider, Email_provider) VALUES('ИП Семенов', 'проспект Мира, 49, Омск, 644050', '+79131231211', 'ivanov@mail.ru') " +
+                "INSERT INTO ProviderParts(Name_provider, Address_provider, PhoneNumber_provider, Email_provider) VALUES('ИП Прохоров', 'проспект Мира, 50, Омск, 644050', '+79131232222', 'prohorov@mail.ru') " +
+                "INSERT INTO ProviderParts(Name_provider, Address_provider, PhoneNumber_provider, Email_provider) VALUES('ООО Запчасти', 'проспект Мира, 51, Омск, 644050', '+79131231123', 'ooo.zapchasti@mail.ru') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('2JZ-GTE', 'Двигатель в сборе', 1, 650000, 1, 2, 'Двигатель в хорошем состоянии') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('3S-GTE', 'Двигатель в сборе', 1, 500000, 1, 2, 'Двигатель в хорошем состоянии') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('1NZ-FE', 'Двигатель в сборе', 1, 80000, 1, 2, 'Двигатель в хорошем состоянии') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('Диск кованный R16 4x100', 'Колесный диск', 2, 10000, 2, 1, 'Колесный диск новый кованный') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('Диск кованный R17 4x100', 'Колесный диск', 2, 15000, 2, 1, 'Колесный диск новый кованный') " +
+                "INSERT INTO Parts(Name_part, Type_part, Category_part, Cost_part, Manufacturer, Provider_parts, Description_part) VALUES('Диск кованный R18 4x100', 'Колесный диск', 2, 20000, 2, 1, 'Колесный диск новый кованный') " +
+                "INSERT INTO Stock(Code_part, Count_parts) VALUES(1, 5) " +
+                "INSERT INTO Stock(Code_part, Count_parts) VALUES(2, 15) " +
+                "INSERT INTO Stock(Code_part, Count_parts) VALUES(6, 50) " +
+                "INSERT INTO Stock(Code_part, Count_parts) VALUES(4, 100) " +
+                "INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) VALUES('2023/23/11', 1, 1) " +
+                "INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) VALUES('2023/23/11', 2, 2) " +
+                "INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) VALUES('2023/23/11', 3, 1) " +
+                "INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) VALUES('2023/23/11', 4, 2) " +
+                "INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) VALUES(1, 1, 2) " +
+                "INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) VALUES(2, 3, 4) " +
+                "INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) VALUES(1, 4, 8) " +
+                "INSERT INTO UserAuthorization(UserLogin, UserPassword) VALUES('Admin', '1234') " +
+                "INSERT INTO UserAuthorization(UserLogin, UserPassword) VALUES('Seller', '1111') ";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(createData, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Строки успешно созданы", "OK", MessageBoxButtons.OK);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK);
+            }
+        }
     }
 }

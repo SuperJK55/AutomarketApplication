@@ -104,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(223)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(378, 425);
             this.Controls.Add(this.clearTextButton);
             this.Controls.Add(this.passwordTextBox);

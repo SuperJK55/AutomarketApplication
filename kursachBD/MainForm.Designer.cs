@@ -75,6 +75,16 @@
             this.endProgramButton = new System.Windows.Forms.Button();
             this.PartPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.codepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorypartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costpartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.providerpartsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionpartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UpdateColumnButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteColumnButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.partsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partShopDataSet = new kursachBD.PartShopDataSet();
             this.PartButtonPanel = new System.Windows.Forms.Panel();
@@ -179,12 +189,6 @@
             this.salesTableAdapter = new kursachBD.PartShopDataSet3TableAdapters.SalesTableAdapter();
             this.ChecksPanel = new System.Windows.Forms.Panel();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.codesalesItemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codesalesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codepartDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.partamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UpdateCheckButton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.DeleteCheckButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.salesItemListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChecksButtonsPanel = new System.Windows.Forms.Panel();
             this.ResetCheckButton = new System.Windows.Forms.Button();
@@ -262,16 +266,15 @@
             this.userAuthorizationTableAdapter = new kursachBD.PartShopDataSet4TableAdapters.UserAuthorizationTableAdapter();
             this.categoryPartsTableAdapter1 = new kursachBD.PartShopDataSet4TableAdapters.CategoryPartsTableAdapter();
             this.partsTableAdapter2 = new kursachBD.PartShopDataSet4TableAdapters.PartsTableAdapter();
-            this.DeleteColumnButton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.UpdateColumnButton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.descriptionpartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.providerpartsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costpartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categorypartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codepartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CreateDataBaseButton = new System.Windows.Forms.Button();
+            this.LoadDataInTableButton = new System.Windows.Forms.Button();
+            this.partsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.codesalesItemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codesalesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codepartDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.partamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UpdateCheckButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteCheckButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.flowLayoutPanel1.SuspendLayout();
             this.PartPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -323,6 +326,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAuthorizationBindingSource)).BeginInit();
             this.UserLoginButtonsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // PartsButton
@@ -426,7 +430,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(223)))), ((int)(((byte)(197)))));
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.PartsButton);
             this.flowLayoutPanel1.Controls.Add(this.CategoryPartsButton);
@@ -551,6 +555,73 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // codepartDataGridViewTextBoxColumn
+            // 
+            this.codepartDataGridViewTextBoxColumn.DataPropertyName = "Code_part";
+            this.codepartDataGridViewTextBoxColumn.HeaderText = "Код запчасти";
+            this.codepartDataGridViewTextBoxColumn.Name = "codepartDataGridViewTextBoxColumn";
+            this.codepartDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // namepartDataGridViewTextBoxColumn
+            // 
+            this.namepartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.namepartDataGridViewTextBoxColumn.DataPropertyName = "Name_part";
+            this.namepartDataGridViewTextBoxColumn.HeaderText = "Название запчасти";
+            this.namepartDataGridViewTextBoxColumn.Name = "namepartDataGridViewTextBoxColumn";
+            // 
+            // typepartDataGridViewTextBoxColumn
+            // 
+            this.typepartDataGridViewTextBoxColumn.DataPropertyName = "Type_part";
+            this.typepartDataGridViewTextBoxColumn.HeaderText = "Тип запчасти";
+            this.typepartDataGridViewTextBoxColumn.Name = "typepartDataGridViewTextBoxColumn";
+            // 
+            // categorypartDataGridViewTextBoxColumn
+            // 
+            this.categorypartDataGridViewTextBoxColumn.DataPropertyName = "Category_part";
+            this.categorypartDataGridViewTextBoxColumn.HeaderText = "Категория запчасти";
+            this.categorypartDataGridViewTextBoxColumn.Name = "categorypartDataGridViewTextBoxColumn";
+            // 
+            // costpartDataGridViewTextBoxColumn
+            // 
+            this.costpartDataGridViewTextBoxColumn.DataPropertyName = "Cost_part";
+            this.costpartDataGridViewTextBoxColumn.HeaderText = "Цена";
+            this.costpartDataGridViewTextBoxColumn.Name = "costpartDataGridViewTextBoxColumn";
+            // 
+            // manufacturerDataGridViewTextBoxColumn
+            // 
+            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
+            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель";
+            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
+            this.manufacturerDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // providerpartsDataGridViewTextBoxColumn
+            // 
+            this.providerpartsDataGridViewTextBoxColumn.DataPropertyName = "Provider_parts";
+            this.providerpartsDataGridViewTextBoxColumn.HeaderText = "Поставщик";
+            this.providerpartsDataGridViewTextBoxColumn.Name = "providerpartsDataGridViewTextBoxColumn";
+            this.providerpartsDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // descriptionpartDataGridViewTextBoxColumn
+            // 
+            this.descriptionpartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descriptionpartDataGridViewTextBoxColumn.DataPropertyName = "Description_part";
+            this.descriptionpartDataGridViewTextBoxColumn.HeaderText = "Описание";
+            this.descriptionpartDataGridViewTextBoxColumn.Name = "descriptionpartDataGridViewTextBoxColumn";
+            // 
+            // UpdateColumnButton
+            // 
+            this.UpdateColumnButton.HeaderText = "Изменить";
+            this.UpdateColumnButton.Name = "UpdateColumnButton";
+            this.UpdateColumnButton.Text = "Изменить";
+            this.UpdateColumnButton.UseColumnTextForButtonValue = true;
+            // 
+            // DeleteColumnButton
+            // 
+            this.DeleteColumnButton.HeaderText = "Удалить";
+            this.DeleteColumnButton.Name = "DeleteColumnButton";
+            this.DeleteColumnButton.Text = "Удалить";
+            this.DeleteColumnButton.UseColumnTextForButtonValue = true;
+            // 
             // partsBindingSource
             // 
             this.partsBindingSource.DataMember = "Parts";
@@ -563,7 +634,7 @@
             // 
             // PartButtonPanel
             // 
-            this.PartButtonPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.PartButtonPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.PartButtonPanel.Controls.Add(this.ResetPartButton);
             this.PartButtonPanel.Controls.Add(this.SearchByCategory_comboBox);
             this.PartButtonPanel.Controls.Add(this.SearchByCategoryButton);
@@ -773,7 +844,7 @@
             // 
             // CategoryButtonsPanel
             // 
-            this.CategoryButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.CategoryButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.CategoryButtonsPanel.Controls.Add(this.ResetCategoryButton);
             this.CategoryButtonsPanel.Controls.Add(this.SearchCategoryByIdButton);
             this.CategoryButtonsPanel.Controls.Add(this.SearchCategoryById_textBox);
@@ -936,7 +1007,7 @@
             // 
             // ManufacturersButtonsPanel
             // 
-            this.ManufacturersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ManufacturersButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.ManufacturersButtonsPanel.Controls.Add(this.ResetManufacturerButton);
             this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByPhoneButton);
             this.ManufacturersButtonsPanel.Controls.Add(this.SearchManufacturerByPhone_textBox);
@@ -1139,7 +1210,7 @@
             // 
             // ProvidersButtonsPanel
             // 
-            this.ProvidersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ProvidersButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.ProvidersButtonsPanel.Controls.Add(this.ResetProvidersButton);
             this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByPhoneNumber_textBox);
             this.ProvidersButtonsPanel.Controls.Add(this.SearchProviderByPhoneButton);
@@ -1343,7 +1414,7 @@
             // 
             // StockButtonsPanel
             // 
-            this.StockButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.StockButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.StockButtonsPanel.Controls.Add(this.ResetStockButton);
             this.StockButtonsPanel.Controls.Add(this.SearchByPartCodeOnStock_comboBox);
             this.StockButtonsPanel.Controls.Add(this.SearchByPartCodeOnStockButton);
@@ -1529,7 +1600,7 @@
             // 
             // SalesButtonsPanel
             // 
-            this.SalesButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.SalesButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.SalesButtonsPanel.Controls.Add(this.ResetSalesButton);
             this.SalesButtonsPanel.Controls.Add(this.SearchSaleByIdButton);
             this.SalesButtonsPanel.Controls.Add(this.SearchSaleById_textBox);
@@ -1641,47 +1712,6 @@
             this.dataGridView7.TabIndex = 7;
             this.dataGridView7.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellClick);
             // 
-            // codesalesItemDataGridViewTextBoxColumn
-            // 
-            this.codesalesItemDataGridViewTextBoxColumn.DataPropertyName = "Code_salesItem";
-            this.codesalesItemDataGridViewTextBoxColumn.HeaderText = "Код продажи предмета";
-            this.codesalesItemDataGridViewTextBoxColumn.Name = "codesalesItemDataGridViewTextBoxColumn";
-            this.codesalesItemDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codesalesDataGridViewTextBoxColumn1
-            // 
-            this.codesalesDataGridViewTextBoxColumn1.DataPropertyName = "Code_sales";
-            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Код общего чека";
-            this.codesalesDataGridViewTextBoxColumn1.Name = "codesalesDataGridViewTextBoxColumn1";
-            // 
-            // codepartDataGridViewTextBoxColumn2
-            // 
-            this.codepartDataGridViewTextBoxColumn2.DataPropertyName = "Code_part";
-            this.codepartDataGridViewTextBoxColumn2.HeaderText = "Код запчасти";
-            this.codepartDataGridViewTextBoxColumn2.Name = "codepartDataGridViewTextBoxColumn2";
-            // 
-            // partamountDataGridViewTextBoxColumn
-            // 
-            this.partamountDataGridViewTextBoxColumn.DataPropertyName = "Part_amount";
-            this.partamountDataGridViewTextBoxColumn.HeaderText = "Количество запчастей";
-            this.partamountDataGridViewTextBoxColumn.Name = "partamountDataGridViewTextBoxColumn";
-            // 
-            // UpdateCheckButton
-            // 
-            this.UpdateCheckButton.HeaderText = "Изменить";
-            this.UpdateCheckButton.Name = "UpdateCheckButton";
-            this.UpdateCheckButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.UpdateCheckButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.UpdateCheckButton.Text = "Изменить";
-            this.UpdateCheckButton.UseColumnTextForButtonValue = true;
-            // 
-            // DeleteCheckButton
-            // 
-            this.DeleteCheckButton.HeaderText = "Удалить";
-            this.DeleteCheckButton.Name = "DeleteCheckButton";
-            this.DeleteCheckButton.Text = "Удалить";
-            this.DeleteCheckButton.UseColumnTextForButtonValue = true;
-            // 
             // salesItemListBindingSource
             // 
             this.salesItemListBindingSource.DataMember = "SalesItemList";
@@ -1689,7 +1719,7 @@
             // 
             // ChecksButtonsPanel
             // 
-            this.ChecksButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ChecksButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.ChecksButtonsPanel.Controls.Add(this.ResetCheckButton);
             this.ChecksButtonsPanel.Controls.Add(this.SearchCheckByOverallCodeButton);
             this.ChecksButtonsPanel.Controls.Add(this.SearchCheckByOverallCode_textBox);
@@ -1900,7 +1930,7 @@
             // 
             // BuyersButtonsPanel
             // 
-            this.BuyersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BuyersButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.BuyersButtonsPanel.Controls.Add(this.ResetBuyerButton);
             this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByMiddleName_textBox);
             this.BuyersButtonsPanel.Controls.Add(this.SearchBuyerByNameButton);
@@ -2097,7 +2127,7 @@
             // 
             // SellersButtonsPanel
             // 
-            this.SellersButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.SellersButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.SellersButtonsPanel.Controls.Add(this.ResetSellersButton);
             this.SellersButtonsPanel.Controls.Add(this.SearchSellerBySurnameButton);
             this.SellersButtonsPanel.Controls.Add(this.SearchSellerBySurname_textBox);
@@ -2188,6 +2218,9 @@
             // 
             // SettingsPanel
             // 
+            this.SettingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
+            this.SettingsPanel.Controls.Add(this.LoadDataInTableButton);
+            this.SettingsPanel.Controls.Add(this.CreateDataBaseButton);
             this.SettingsPanel.Controls.Add(this.CreateTriggerButton);
             this.SettingsPanel.Controls.Add(this.label2);
             this.SettingsPanel.Controls.Add(this.ConnectButton);
@@ -2204,7 +2237,7 @@
             // CreateTriggerButton
             // 
             this.CreateTriggerButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CreateTriggerButton.Location = new System.Drawing.Point(10, 190);
+            this.CreateTriggerButton.Location = new System.Drawing.Point(10, 187);
             this.CreateTriggerButton.Name = "CreateTriggerButton";
             this.CreateTriggerButton.Size = new System.Drawing.Size(259, 56);
             this.CreateTriggerButton.TabIndex = 6;
@@ -2253,7 +2286,7 @@
             // CreateProcedureButton
             // 
             this.CreateProcedureButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CreateProcedureButton.Location = new System.Drawing.Point(6, 128);
+            this.CreateProcedureButton.Location = new System.Drawing.Point(10, 125);
             this.CreateProcedureButton.Name = "CreateProcedureButton";
             this.CreateProcedureButton.Size = new System.Drawing.Size(259, 56);
             this.CreateProcedureButton.TabIndex = 1;
@@ -2356,7 +2389,7 @@
             // 
             // UserLoginButtonsPanel
             // 
-            this.UserLoginButtonsPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.UserLoginButtonsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
             this.UserLoginButtonsPanel.Controls.Add(this.ResetUserLoginButton);
             this.UserLoginButtonsPanel.Controls.Add(this.SearchByUserLoginButton);
             this.UserLoginButtonsPanel.Controls.Add(this.SearchByUserLogin_textBox);
@@ -2437,78 +2470,87 @@
             // 
             this.partsTableAdapter2.ClearBeforeFill = true;
             // 
-            // DeleteColumnButton
+            // CreateDataBaseButton
             // 
-            this.DeleteColumnButton.HeaderText = "Удалить";
-            this.DeleteColumnButton.Name = "DeleteColumnButton";
-            this.DeleteColumnButton.Text = "Удалить";
-            this.DeleteColumnButton.UseColumnTextForButtonValue = true;
+            this.CreateDataBaseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateDataBaseButton.Location = new System.Drawing.Point(10, 249);
+            this.CreateDataBaseButton.Name = "CreateDataBaseButton";
+            this.CreateDataBaseButton.Size = new System.Drawing.Size(259, 56);
+            this.CreateDataBaseButton.TabIndex = 7;
+            this.CreateDataBaseButton.Text = "Создать таблицы";
+            this.CreateDataBaseButton.UseVisualStyleBackColor = true;
+            this.CreateDataBaseButton.Click += new System.EventHandler(this.CreateDataBaseButton_Click);
             // 
-            // UpdateColumnButton
+            // LoadDataInTableButton
             // 
-            this.UpdateColumnButton.HeaderText = "Изменить";
-            this.UpdateColumnButton.Name = "UpdateColumnButton";
-            this.UpdateColumnButton.Text = "Изменить";
-            this.UpdateColumnButton.UseColumnTextForButtonValue = true;
+            this.LoadDataInTableButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoadDataInTableButton.Location = new System.Drawing.Point(10, 314);
+            this.LoadDataInTableButton.Name = "LoadDataInTableButton";
+            this.LoadDataInTableButton.Size = new System.Drawing.Size(259, 56);
+            this.LoadDataInTableButton.TabIndex = 8;
+            this.LoadDataInTableButton.Text = "Заполнить таблицу тестовыми строками";
+            this.LoadDataInTableButton.UseVisualStyleBackColor = true;
+            this.LoadDataInTableButton.Click += new System.EventHandler(this.LoadDataInTableButton_Click);
             // 
-            // descriptionpartDataGridViewTextBoxColumn
+            // partsBindingSource3
             // 
-            this.descriptionpartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descriptionpartDataGridViewTextBoxColumn.DataPropertyName = "Description_part";
-            this.descriptionpartDataGridViewTextBoxColumn.HeaderText = "Описание";
-            this.descriptionpartDataGridViewTextBoxColumn.Name = "descriptionpartDataGridViewTextBoxColumn";
+            this.partsBindingSource3.DataMember = "Parts";
+            this.partsBindingSource3.DataSource = this.partShopDataSet4;
             // 
-            // providerpartsDataGridViewTextBoxColumn
+            // codesalesItemDataGridViewTextBoxColumn
             // 
-            this.providerpartsDataGridViewTextBoxColumn.DataPropertyName = "Provider_parts";
-            this.providerpartsDataGridViewTextBoxColumn.HeaderText = "Поставщик";
-            this.providerpartsDataGridViewTextBoxColumn.Name = "providerpartsDataGridViewTextBoxColumn";
-            this.providerpartsDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.codesalesItemDataGridViewTextBoxColumn.DataPropertyName = "Code_salesItem";
+            this.codesalesItemDataGridViewTextBoxColumn.HeaderText = "Код продажи предмета";
+            this.codesalesItemDataGridViewTextBoxColumn.Name = "codesalesItemDataGridViewTextBoxColumn";
+            this.codesalesItemDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // manufacturerDataGridViewTextBoxColumn
+            // codesalesDataGridViewTextBoxColumn1
             // 
-            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
-            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Производитель";
-            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
-            this.manufacturerDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.codesalesDataGridViewTextBoxColumn1.DataPropertyName = "Code_sales";
+            this.codesalesDataGridViewTextBoxColumn1.HeaderText = "Код общего чека";
+            this.codesalesDataGridViewTextBoxColumn1.Name = "codesalesDataGridViewTextBoxColumn1";
             // 
-            // costpartDataGridViewTextBoxColumn
+            // codepartDataGridViewTextBoxColumn2
             // 
-            this.costpartDataGridViewTextBoxColumn.DataPropertyName = "Cost_part";
-            this.costpartDataGridViewTextBoxColumn.HeaderText = "Цена";
-            this.costpartDataGridViewTextBoxColumn.Name = "costpartDataGridViewTextBoxColumn";
+            this.codepartDataGridViewTextBoxColumn2.DataPropertyName = "Code_part";
+            this.codepartDataGridViewTextBoxColumn2.DataSource = this.partsBindingSource3;
+            this.codepartDataGridViewTextBoxColumn2.DisplayMember = "Name_part";
+            this.codepartDataGridViewTextBoxColumn2.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.codepartDataGridViewTextBoxColumn2.HeaderText = "Код запчасти";
+            this.codepartDataGridViewTextBoxColumn2.Name = "codepartDataGridViewTextBoxColumn2";
+            this.codepartDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.codepartDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.codepartDataGridViewTextBoxColumn2.ValueMember = "Code_part";
             // 
-            // categorypartDataGridViewTextBoxColumn
+            // partamountDataGridViewTextBoxColumn
             // 
-            this.categorypartDataGridViewTextBoxColumn.DataPropertyName = "Category_part";
-            this.categorypartDataGridViewTextBoxColumn.HeaderText = "Категория запчасти";
-            this.categorypartDataGridViewTextBoxColumn.Name = "categorypartDataGridViewTextBoxColumn";
+            this.partamountDataGridViewTextBoxColumn.DataPropertyName = "Part_amount";
+            this.partamountDataGridViewTextBoxColumn.HeaderText = "Количество запчастей";
+            this.partamountDataGridViewTextBoxColumn.Name = "partamountDataGridViewTextBoxColumn";
             // 
-            // typepartDataGridViewTextBoxColumn
+            // UpdateCheckButton
             // 
-            this.typepartDataGridViewTextBoxColumn.DataPropertyName = "Type_part";
-            this.typepartDataGridViewTextBoxColumn.HeaderText = "Тип запчасти";
-            this.typepartDataGridViewTextBoxColumn.Name = "typepartDataGridViewTextBoxColumn";
+            this.UpdateCheckButton.HeaderText = "Изменить";
+            this.UpdateCheckButton.Name = "UpdateCheckButton";
+            this.UpdateCheckButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.UpdateCheckButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.UpdateCheckButton.Text = "Изменить";
+            this.UpdateCheckButton.UseColumnTextForButtonValue = true;
             // 
-            // namepartDataGridViewTextBoxColumn
+            // DeleteCheckButton
             // 
-            this.namepartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.namepartDataGridViewTextBoxColumn.DataPropertyName = "Name_part";
-            this.namepartDataGridViewTextBoxColumn.HeaderText = "Название запчасти";
-            this.namepartDataGridViewTextBoxColumn.Name = "namepartDataGridViewTextBoxColumn";
-            // 
-            // codepartDataGridViewTextBoxColumn
-            // 
-            this.codepartDataGridViewTextBoxColumn.DataPropertyName = "Code_part";
-            this.codepartDataGridViewTextBoxColumn.HeaderText = "Код запчасти";
-            this.codepartDataGridViewTextBoxColumn.Name = "codepartDataGridViewTextBoxColumn";
-            this.codepartDataGridViewTextBoxColumn.ReadOnly = true;
+            this.DeleteCheckButton.HeaderText = "Удалить";
+            this.DeleteCheckButton.Name = "DeleteCheckButton";
+            this.DeleteCheckButton.Text = "Удалить";
+            this.DeleteCheckButton.UseColumnTextForButtonValue = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.ChecksPanel);
+            this.Controls.Add(this.SettingsPanel);
             this.Controls.Add(this.PartPanel);
             this.Controls.Add(this.UserLoginPanel);
             this.Controls.Add(this.CategoryPanel);
@@ -2516,10 +2558,8 @@
             this.Controls.Add(this.ProvidersPanel);
             this.Controls.Add(this.StockPanel);
             this.Controls.Add(this.SalesPanel);
-            this.Controls.Add(this.ChecksPanel);
             this.Controls.Add(this.BuyersPanel);
             this.Controls.Add(this.SellersPanel);
-            this.Controls.Add(this.SettingsPanel);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -2589,6 +2629,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userAuthorizationBindingSource)).EndInit();
             this.UserLoginButtonsPanel.ResumeLayout(false);
             this.UserLoginButtonsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2782,12 +2823,6 @@
         private System.Windows.Forms.TextBox SearchManufacturerByPhone_textBox;
         private System.Windows.Forms.Button SearchManufacturerByNameButton;
         private System.Windows.Forms.TextBox SearchManufacturerByName_textBox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesItemDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codepartDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partamountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn UpdateCheckButton;
-        private System.Windows.Forms.DataGridViewButtonColumn DeleteCheckButton;
         private System.Windows.Forms.Button ResetCategoryButton;
         private System.Windows.Forms.Button ResetManufacturerButton;
         private System.Windows.Forms.Button ResetProvidersButton;
@@ -2808,5 +2843,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionpartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn UpdateColumnButton;
         private System.Windows.Forms.DataGridViewButtonColumn DeleteColumnButton;
+        private System.Windows.Forms.Button CreateDataBaseButton;
+        private System.Windows.Forms.Button LoadDataInTableButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesItemDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codesalesDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn codepartDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource partsBindingSource3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partamountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn UpdateCheckButton;
+        private System.Windows.Forms.DataGridViewButtonColumn DeleteCheckButton;
     }
 }
