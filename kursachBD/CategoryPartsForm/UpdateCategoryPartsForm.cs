@@ -36,17 +36,26 @@ namespace kursachBD.CategoryPartsForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE CategoryParts SET Name_category = @name_categoryParts WHERE Code_category = @id", con);
-            con.Open();
+            try
+            {
+                cmd = new SqlCommand("UPDATE CategoryParts SET Name_category = @name_categoryParts WHERE Code_category = @id", con);
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@name_categoryParts", categoryPartsName_textBox.Text);
-            cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
+                cmd.Parameters.AddWithValue("@name_categoryParts", categoryPartsName_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно изменена");
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
-
     }
 }

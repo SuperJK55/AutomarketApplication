@@ -23,13 +23,23 @@ namespace kursachBD.CategoryPartsForm
 
         private void InsertButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO CategoryParts(Name_category) VALUES(@name_categoryParts)", con);
-            con.Open();
-            cmd.Parameters.AddWithValue("@name_categoryParts", categoryPartsName_textBox.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO CategoryParts(Name_category) VALUES(@name_categoryParts)", con);
+                con.Open();
+                cmd.Parameters.AddWithValue("@name_categoryParts", categoryPartsName_textBox.Text);
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно добавлена");
+                MessageBox.Show("Запись успешно добавлена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

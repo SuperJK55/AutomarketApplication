@@ -40,18 +40,47 @@ namespace kursachBD.UserLoginForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE UserAuthorization SET UserLogin = @user_login, UserPassword = @user_password " +
-               "WHERE UserLogin_code = @id", con);
-            con.Open();
+            try 
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter($"SELECT COUNT(*) FROM UserAuthorization WHERE UserLogin = \'{UserLogin_textBox.Text}\'", con);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                if (Convert.ToInt32(dt.Rows[0][0]) >= 1)
+                {
+                    MessageBox.Show("Данный пользователь уже существует в базе данных.", "Ошибка добавления нового пользователя", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if ((UserLogin_textBox.Text.ToLower() == "admin") || UserLogin_textBox.Text.ToLower().Contains("admin"))
+                {
+                    MessageBox.Show("Админ должен быть один.", "SoloAdminException", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if ((UserLogin_textBox.Text.ToLower() == "seller") || UserLogin_textBox.Text.ToLower().Contains("seller"))
+                    {
+                        cmd = new SqlCommand("UPDATE UserAuthorization SET UserLogin = @user_login, UserPassword = @user_password " +
+                           "WHERE UserLogin_code = @id", con);
+                        con.Open();
 
-            cmd.Parameters.AddWithValue("@id", IdUserLogin_textBox.Text);
-            cmd.Parameters.AddWithValue("@user_login", UserLogin_textBox.Text);
-            cmd.Parameters.AddWithValue("@user_password", UserPassword_textBox.Text);
+                        cmd.Parameters.AddWithValue("@id", IdUserLogin_textBox.Text);
+                        cmd.Parameters.AddWithValue("@user_login", UserLogin_textBox.Text);
+                        cmd.Parameters.AddWithValue("@user_password", UserPassword_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                        cmd.ExecuteNonQuery();
+                        
 
-            MessageBox.Show("Запись успешно изменена");
+                        MessageBox.Show("Запись успешно изменена");
+                    }
+                    else MessageBox.Show("Введено неверное имя пользователя для добавления.", "Ошибка добавления нового пользователя", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

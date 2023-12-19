@@ -22,18 +22,28 @@ namespace kursachBD.ManufacturerForm
 
         private void InsertButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) " +
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Manufacturer(Name_manufacturer, Address_manufacturer, PhoneNumber_manufacturer, Email_manufacturer) " +
                 "VALUES (@name_manufacturer, @address_manufacturer, @phone_manufacturer, @email_manufacturer)", con);
-            con.Open();
-            cmd.Parameters.AddWithValue("@name_manufacturer", nameManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@address_manufacturer", addressManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@phone_manufacturer", phoneNumberManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@email_manufacturer", emailManufacturer_textBox.Text);
+                con.Open();
+                cmd.Parameters.AddWithValue("@name_manufacturer", nameManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@address_manufacturer", addressManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@phone_manufacturer", phoneNumberManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@email_manufacturer", emailManufacturer_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно добавлена");
+                MessageBox.Show("Запись успешно добавлена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

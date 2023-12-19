@@ -51,7 +51,6 @@ namespace kursachBD
                 cmd.Parameters.AddWithValue("@provider_parts", providerParts_comboBox.SelectedIndex + 1);
                 cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
                 cmd.ExecuteNonQuery();
-                
 
                 MessageBox.Show("Запись успешно добавлена");
             }

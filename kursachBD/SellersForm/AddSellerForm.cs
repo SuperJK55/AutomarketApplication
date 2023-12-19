@@ -27,18 +27,28 @@ namespace kursachBD.SellerForm
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller)" +
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Sellers(LastName_seller, FirstName_seller, MiddleName_seller)" +
                 "VALUES (@lastName_seller, @firstName_seller, @middleName_seller)", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@lastName_seller", firstNameSeller_textBox.Text);
-            cmd.Parameters.AddWithValue("@firstName_seller", lastNameSeller_textBox.Text);
-            cmd.Parameters.AddWithValue("@middleName_seller", middleNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@lastName_seller", firstNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@firstName_seller", lastNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@middleName_seller", middleNameSeller_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно изменена");
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

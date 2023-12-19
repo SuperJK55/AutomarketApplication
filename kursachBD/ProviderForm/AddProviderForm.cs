@@ -27,17 +27,27 @@ namespace kursachBD.ProviderForm
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO ProviderParts(Name_provider, Address_provider, PhoneNumber_provider, Email_provider) " +
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO ProviderParts(Name_provider, Address_provider, PhoneNumber_provider, Email_provider) " +
                "VALUES (@name_provider, @address_provider, @phoneNumber_provider, @email_provider)", con);
-            con.Open();
-            cmd.Parameters.AddWithValue("@name_provider", nameProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@address_provider", addressProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@phoneNumber_provider", phoneProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@email_provider", emailProvider_textBox.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
+                con.Open();
+                cmd.Parameters.AddWithValue("@name_provider", nameProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@address_provider", addressProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@phoneNumber_provider", phoneProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@email_provider", emailProvider_textBox.Text);
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно добавлена");
+                MessageBox.Show("Запись успешно добавлена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

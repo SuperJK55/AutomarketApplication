@@ -35,17 +35,26 @@ namespace kursachBD.StockForm
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO Stock(Code_part, Count_parts) VALUES(@code_part, @count_parts)", con);
-            
-            con.Open();
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Stock(Code_part, Count_parts) VALUES(@code_part, @count_parts)", con);
 
-            cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@count_parts", countParts_textBox.Text);
-            
-            cmd.ExecuteNonQuery();
-            con.Close();
+                con.Open();
 
-            MessageBox.Show("Запись успешно добавлена");
+                cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@count_parts", countParts_textBox.Text);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно добавлена");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

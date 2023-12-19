@@ -37,19 +37,28 @@ namespace kursachBD.SellerForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE Sellers SET LastName_seller = @lastName_seller, FirstName_seller = @firstName_seller, MiddleName_seller = @middleName_seller " +
+            try
+            {
+                cmd = new SqlCommand("UPDATE Sellers SET LastName_seller = @lastName_seller, FirstName_seller = @firstName_seller, MiddleName_seller = @middleName_seller " +
                 "WHERE Code_seller = @id", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@id", IdSeller_textBox.Text);
-            cmd.Parameters.AddWithValue("@lastName_seller", lastNameSeller_textBox.Text);
-            cmd.Parameters.AddWithValue("@firstName_seller", firstNameSeller_textBox.Text);
-            cmd.Parameters.AddWithValue("@middleName_seller", middleNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", IdSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@lastName_seller", lastNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@firstName_seller", firstNameSeller_textBox.Text);
+                cmd.Parameters.AddWithValue("@middleName_seller", middleNameSeller_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-            MessageBox.Show("Запись успешно изменена");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно изменена");
+            }            
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void ClosedButton_Click(object sender, EventArgs e)

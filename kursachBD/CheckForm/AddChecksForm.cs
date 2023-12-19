@@ -36,18 +36,28 @@ namespace kursachBD.Check
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) " +
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO SalesItemList(Code_sales, Code_part, Part_amount) " +
                 "VALUES (@code_sales, @code_part, @part_amount)", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@code_sales", codeSales_comboBox.SelectedIndex + 2);
-            cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@part_amount", Convert.ToInt32(amountSalelsItem_textBox.Text));
+                cmd.Parameters.AddWithValue("@code_sales", codeSales_comboBox.SelectedIndex + 2);
+                cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@part_amount", Convert.ToInt32(amountSalelsItem_textBox.Text));
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно изменена");
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

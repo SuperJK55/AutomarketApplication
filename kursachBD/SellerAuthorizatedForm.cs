@@ -25,7 +25,6 @@ namespace kursachBD
         SqlDataAdapter adapt;
         PanelControl panelControl;
         List<Panel> panels;
-        string connectionString;
         public SellerAuthorizatedForm()
         {
             InitializeComponent();
@@ -35,26 +34,34 @@ namespace kursachBD
         }
         private void SellerForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Sellers". При необходимости она может быть перемещена или удалена.
-            this.sellersTableAdapter.Fill(this.partShopDataSet4.Sellers);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Buyers". При необходимости она может быть перемещена или удалена.
-            this.buyersTableAdapter.Fill(this.partShopDataSet4.Buyers);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.SalesItemList". При необходимости она может быть перемещена или удалена.
-            this.salesItemListTableAdapter.Fill(this.partShopDataSet4.SalesItemList);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Sales". При необходимости она может быть перемещена или удалена.
-            this.salesTableAdapter.Fill(this.partShopDataSet4.Sales);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Stock". При необходимости она может быть перемещена или удалена.
-            this.stockTableAdapter.Fill(this.partShopDataSet4.Stock);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.ProviderParts". При необходимости она может быть перемещена или удалена.
-            this.providerPartsTableAdapter.Fill(this.partShopDataSet4.ProviderParts);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Manufacturer". При необходимости она может быть перемещена или удалена.
-            this.manufacturerTableAdapter.Fill(this.partShopDataSet4.Manufacturer);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.CategoryParts". При необходимости она может быть перемещена или удалена.
-            this.categoryPartsTableAdapter.Fill(this.partShopDataSet4.CategoryParts);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Parts". При необходимости она может быть перемещена или удалена.
-            this.partsTableAdapter.Fill(this.partShopDataSet4.Parts);
-            con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
+            try
+            {
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Sellers". При необходимости она может быть перемещена или удалена.
+                this.sellersTableAdapter.Fill(this.partShopDataSet4.Sellers);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Buyers". При необходимости она может быть перемещена или удалена.
+                this.buyersTableAdapter.Fill(this.partShopDataSet4.Buyers);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.SalesItemList". При необходимости она может быть перемещена или удалена.
+                this.salesItemListTableAdapter.Fill(this.partShopDataSet4.SalesItemList);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Sales". При необходимости она может быть перемещена или удалена.
+                this.salesTableAdapter.Fill(this.partShopDataSet4.Sales);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Stock". При необходимости она может быть перемещена или удалена.
+                this.stockTableAdapter.Fill(this.partShopDataSet4.Stock);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.ProviderParts". При необходимости она может быть перемещена или удалена.
+                this.providerPartsTableAdapter.Fill(this.partShopDataSet4.ProviderParts);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Manufacturer". При необходимости она может быть перемещена или удалена.
+                this.manufacturerTableAdapter.Fill(this.partShopDataSet4.Manufacturer);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.CategoryParts". При необходимости она может быть перемещена или удалена.
+                this.categoryPartsTableAdapter.Fill(this.partShopDataSet4.CategoryParts);
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "partShopDataSet4.Parts". При необходимости она может быть перемещена или удалена.
+                this.partsTableAdapter.Fill(this.partShopDataSet4.Parts);
+                con = new SqlConnection("Data Source=SUPERJK;Initial Catalog=PartShop;Integrated Security=True;");
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        
         private void UpdateTable(string nameTable, DataGridView dataGridView)
         {
             try
@@ -142,14 +149,20 @@ namespace kursachBD
 
         private void endProgramButton_Click(object sender, EventArgs e)
         {
-            DialogResult res;
-            res = MessageBox.Show("Вы действительно хотите завершить работу приложения?", "Завершение работы", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (res == DialogResult.Yes)
+            try
             {
-                System.Windows.Forms.Application.Exit();
+                DialogResult res;
+                res = MessageBox.Show("Вы действительно хотите завершить работу приложения?", "Завершение работы", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res == DialogResult.Yes)
+                {
+                    System.Windows.Forms.Application.Exit();
+                }
+                else this.Show();
             }
-            else this.Show();
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AddPartButton_Click(object sender, EventArgs e)

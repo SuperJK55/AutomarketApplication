@@ -51,22 +51,32 @@ namespace kursachBD.BuyersForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE Buyers SET LastName_buyer = @lastName_buyer, FirstName_buyer = @firstName_buyer, MiddleName_buyer = @middleName_buyer, DateBirthday_buyer = @dateBirthday_buyer, NumberPhone_buyer = @numberPhone_buyer, Email_buyer = @email_buyer " +
+            try
+            {
+                cmd = new SqlCommand("UPDATE Buyers SET LastName_buyer = @lastName_buyer, FirstName_buyer = @firstName_buyer, MiddleName_buyer = @middleName_buyer, DateBirthday_buyer = @dateBirthday_buyer, NumberPhone_buyer = @numberPhone_buyer, Email_buyer = @email_buyer " +
                 "WHERE Code_buyer = @id", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@id", IdBuyer_textBox.Text);
-            cmd.Parameters.AddWithValue("@lastName_buyer", firstNameBuyer_textBox.Text);
-            cmd.Parameters.AddWithValue("@firstName_buyer", lastNameBuyer_textBox.Text);
-            cmd.Parameters.AddWithValue("@middleName_buyer", middleNameBuyer_textBox.Text);
-            cmd.Parameters.AddWithValue("@dateBirthday_buyer", dateBirthday_dateTimePicker.Value);
-            cmd.Parameters.AddWithValue("@numberPhone_buyer", numberPhone_textBox.Text);
-            cmd.Parameters.AddWithValue("@email_buyer", emailBuyer_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", IdBuyer_textBox.Text);
+                cmd.Parameters.AddWithValue("@lastName_buyer", firstNameBuyer_textBox.Text);
+                cmd.Parameters.AddWithValue("@firstName_buyer", lastNameBuyer_textBox.Text);
+                cmd.Parameters.AddWithValue("@middleName_buyer", middleNameBuyer_textBox.Text);
+                cmd.Parameters.AddWithValue("@dateBirthday_buyer", dateBirthday_dateTimePicker.Value);
+                cmd.Parameters.AddWithValue("@numberPhone_buyer", numberPhone_textBox.Text);
+                cmd.Parameters.AddWithValue("@email_buyer", emailBuyer_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно изменена");
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

@@ -27,18 +27,27 @@ namespace kursachBD.SalesForm
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) " +
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Sales(Sales_date, Code_buyer, Code_seller) " +
                 "VALUES (@sales_date, @code_buyer, @code_seller)", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@sales_date", dateSale_dateTimePicker.Value);
-            cmd.Parameters.AddWithValue("@code_buyer", codeBuyer_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@code_seller", codeSeller_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@sales_date", dateSale_dateTimePicker.Value);
+                cmd.Parameters.AddWithValue("@code_buyer", codeBuyer_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@code_seller", codeSeller_comboBox.SelectedIndex + 1);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-            MessageBox.Show("Запись успешно добавлена");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно добавлена");
+            }            
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void AddSaleForm_Load(object sender, EventArgs e)

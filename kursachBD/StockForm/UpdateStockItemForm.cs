@@ -41,18 +41,27 @@ namespace kursachBD.StockForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE Stock SET Code_part = @code_part, Count_parts = @count_parts " +
+            try
+            {
+                cmd = new SqlCommand("UPDATE Stock SET Code_part = @code_part, Count_parts = @count_parts " +
                 "WHERE CodePartOn_stock = @id", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@id", IdStockItem_textBox.Text);
-            cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@count_parts", countParts_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", IdStockItem_textBox.Text);
+                cmd.Parameters.AddWithValue("@code_part", codePart_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@count_parts", countParts_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-            MessageBox.Show("Запись успешно изменена");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

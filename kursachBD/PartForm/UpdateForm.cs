@@ -41,24 +41,33 @@ namespace kursachBD
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE Parts SET Name_part = @name_part, Type_part = @type_part, Category_part = @category_part, Cost_part = @cost_part, Manufacturer = @manufacturer, Provider_parts = @provider_parts, Description_part = @desc_part " +
+            try
+            {
+                cmd = new SqlCommand("UPDATE Parts SET Name_part = @name_part, Type_part = @type_part, Category_part = @category_part, Cost_part = @cost_part, Manufacturer = @manufacturer, Provider_parts = @provider_parts, Description_part = @desc_part " +
                 "WHERE Code_part = @id", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@name_part", namePart_textBox.Text);
-            cmd.Parameters.AddWithValue("@type_part", typePart_textBox.Text);
-            cmd.Parameters.AddWithValue("@category_part", categoryPart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@cost_part", decimal.Parse(costPart_textBox.Text));
-            cmd.Parameters.AddWithValue("@manufacturer", manufacturerPart_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@provider_parts", providerParts_comboBox.SelectedIndex + 1);
-            cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
-            cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
-            
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.Parameters.AddWithValue("@name_part", namePart_textBox.Text);
+                cmd.Parameters.AddWithValue("@type_part", typePart_textBox.Text);
+                cmd.Parameters.AddWithValue("@category_part", categoryPart_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@cost_part", decimal.Parse(costPart_textBox.Text));
+                cmd.Parameters.AddWithValue("@manufacturer", manufacturerPart_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@provider_parts", providerParts_comboBox.SelectedIndex + 1);
+                cmd.Parameters.AddWithValue("@desc_part", descPart_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", ID_comboBox.SelectedValue);
 
-            MessageBox.Show("Запись успешно изменена");
+                cmd.ExecuteNonQuery();
 
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void UpdateForm_Load(object sender, EventArgs e)

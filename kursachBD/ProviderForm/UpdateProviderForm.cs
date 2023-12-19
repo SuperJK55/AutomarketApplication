@@ -45,20 +45,30 @@ namespace kursachBD.ProviderForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE ProviderParts SET Name_provider = @name_provider, Address_provider = @address_provider, PhoneNumber_provider = @phoneNumber_provider, Email_provider = @email_provider " +
+            try
+            {
+                cmd = new SqlCommand("UPDATE ProviderParts SET Name_provider = @name_provider, Address_provider = @address_provider, PhoneNumber_provider = @phoneNumber_provider, Email_provider = @email_provider " +
                "WHERE Code_provider = @id", con);
-            con.Open();
+                con.Open();
 
-            cmd.Parameters.AddWithValue("@id", IdProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@name_provider", nameProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@address_provider", addressProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@phoneNumber_provider", phoneProvider_textBox.Text);
-            cmd.Parameters.AddWithValue("@email_provider", emailProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@id", IdProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@name_provider", nameProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@address_provider", addressProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@phoneNumber_provider", phoneProvider_textBox.Text);
+                cmd.Parameters.AddWithValue("@email_provider", emailProvider_textBox.Text);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Запись успешно изменена");
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

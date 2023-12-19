@@ -41,20 +41,31 @@ namespace kursachBD.ManufacturerForm
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("UPDATE Manufacturer SET Name_manufacturer = @name_manufacturer, Address_manufacturer = @address_manufacturer, PhoneNumber_manufacturer = @phoneNumber_manufacturer, Email_manufacturer = @email_manufacturer " +
-                "WHERE Code_manufacturer = @id", con);
-            con.Open();
             
-            cmd.Parameters.AddWithValue("@id", IdManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@name_manufacturer", nameManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@address_manufacturer", addressManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@phoneNumber_manufacturer", phoneManufacturer_textBox.Text);
-            cmd.Parameters.AddWithValue("@email_manufacturer", emailManufacturer_textBox.Text);
+            try
+            {
+                cmd = new SqlCommand("UPDATE Manufacturer SET Name_manufacturer = @name_manufacturer, Address_manufacturer = @address_manufacturer, PhoneNumber_manufacturer = @phoneNumber_manufacturer, Email_manufacturer = @email_manufacturer " +
+                "WHERE Code_manufacturer = @id", con);
+                con.Open();
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.Parameters.AddWithValue("@id", IdManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@name_manufacturer", nameManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@address_manufacturer", addressManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@phoneNumber_manufacturer", phoneManufacturer_textBox.Text);
+                cmd.Parameters.AddWithValue("@email_manufacturer", emailManufacturer_textBox.Text);
 
-            MessageBox.Show("Запись успешно изменена");
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Запись успешно изменена");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void ClosedButton_Click(object sender, EventArgs e)
