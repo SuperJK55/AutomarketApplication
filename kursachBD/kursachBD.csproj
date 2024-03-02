@@ -46,11 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPartForm.cs">
+    <Compile Include="BuyersForm\AddBuyerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPartForm.Designer.cs">
+    <Compile Include="BuyersForm\AddBuyerForm.Designer.cs">
+      <DependentUpon>AddBuyerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyersForm\UpdateBuyerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyersForm\UpdateBuyerForm.Designer.cs">
+      <DependentUpon>UpdateBuyerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryPartsForm\AddCategoryPartsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryPartsForm\AddCategoryPartsForm.Designer.cs">
+      <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryPartsForm\UpdateCategoryPartsForm.Designer.cs">
+      <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForm\AddChecksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForm\AddChecksForm.Designer.cs">
+      <DependentUpon>AddChecksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForm\UpdateChecksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForm\UpdateChecksForm.Designer.cs">
+      <DependentUpon>UpdateChecksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturerForm\AddManufacturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturerForm\AddManufacturerForm.Designer.cs">
+      <DependentUpon>AddManufacturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturerForm\UpdateManufacturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturerForm\UpdateManufacturerForm.Designer.cs">
+      <DependentUpon>UpdateManufacturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartForm\AddPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartForm\AddPartForm.Designer.cs">
       <DependentUpon>AddPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -58,6 +112,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelControl.cs" />
     <Compile Include="PartShopDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,10 +133,114 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PartShopDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PartShopDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartShopDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddPartForm.resx">
+    <Compile Include="PartForm\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartForm\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderForm\AddProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProviderForm\AddProviderForm.Designer.cs">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderForm\UpdateProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProviderForm\UpdateProviderForm.Designer.cs">
+      <DependentUpon>UpdateProviderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesForm\AddSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm\AddSaleForm.Designer.cs">
+      <DependentUpon>AddSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesForm\UpdateSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm\UpdateSaleForm.Designer.cs">
+      <DependentUpon>UpdateSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerAuthorizatedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerAuthorizatedForm.Designer.cs">
+      <DependentUpon>SellerAuthorizatedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellersForm\AddSellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellersForm\AddSellerForm.Designer.cs">
+      <DependentUpon>AddSellerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellersForm\UpdateSellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellersForm\UpdateSellerForm.Designer.cs">
+      <DependentUpon>UpdateSellerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\AddStockItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\AddStockItemForm.Designer.cs">
+      <DependentUpon>AddStockItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\UpdateStockItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\UpdateStockItemForm.Designer.cs">
+      <DependentUpon>UpdateStockItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginForm\AddUserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginForm\AddUserLoginForm.Designer.cs">
+      <DependentUpon>AddUserLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginForm\UpdateUserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginForm\UpdateUserLoginForm.Designer.cs">
+      <DependentUpon>UpdateUserLoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuyersForm\AddBuyerForm.resx">
+      <DependentUpon>AddBuyerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyersForm\UpdateBuyerForm.resx">
+      <DependentUpon>UpdateBuyerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryPartsForm\AddCategoryPartsForm.resx">
+      <DependentUpon>AddCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryPartsForm\UpdateCategoryPartsForm.resx">
+      <DependentUpon>UpdateCategoryPartsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForm\AddChecksForm.resx">
+      <DependentUpon>AddChecksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForm\UpdateChecksForm.resx">
+      <DependentUpon>UpdateChecksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturerForm\AddManufacturerForm.resx">
+      <DependentUpon>AddManufacturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturerForm\UpdateManufacturerForm.resx">
+      <DependentUpon>UpdateManufacturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartForm\AddPartForm.resx">
       <DependentUpon>AddPartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -94,7 +253,44 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PartForm\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProviderForm\AddProviderForm.resx">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProviderForm\UpdateProviderForm.resx">
+      <DependentUpon>UpdateProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm\AddSaleForm.resx">
+      <DependentUpon>AddSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm\UpdateSaleForm.resx">
+      <DependentUpon>UpdateSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerAuthorizatedForm.resx">
+      <DependentUpon>SellerAuthorizatedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellersForm\AddSellerForm.resx">
+      <DependentUpon>AddSellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellersForm\UpdateSellerForm.resx">
+      <DependentUpon>UpdateSellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\AddStockItemForm.resx">
+      <DependentUpon>AddStockItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\UpdateStockItemForm.resx">
+      <DependentUpon>UpdateStockItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm\AddUserLoginForm.resx">
+      <DependentUpon>AddUserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm\UpdateUserLoginForm.resx">
+      <DependentUpon>UpdateUserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="PartShopDataSet.xsc">
       <DependentUpon>PartShopDataSet.xsd</DependentUpon>
     </None>
@@ -139,6 +335,17 @@
     <None Include="PartShopDataSet3.xss">
       <DependentUpon>PartShopDataSet3.xsd</DependentUpon>
     </None>
+    <None Include="PartShopDataSet4.xsc">
+      <DependentUpon>PartShopDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PartShopDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartShopDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartShopDataSet4.xss">
+      <DependentUpon>PartShopDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,6 +358,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

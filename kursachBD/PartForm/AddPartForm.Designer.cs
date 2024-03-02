@@ -36,22 +36,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.namePart_textBox = new System.Windows.Forms.TextBox();
+            this.descPart_textBox = new System.Windows.Forms.TextBox();
+            this.typePart_textBox = new System.Windows.Forms.TextBox();
+            this.categoryPart_comboBox = new System.Windows.Forms.ComboBox();
             this.categoryPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partShopDataSet1 = new kursachBD.PartShopDataSet1();
             this.categoryPartsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.costPart_textBox = new System.Windows.Forms.TextBox();
+            this.manufacturerPart_comboBox = new System.Windows.Forms.ComboBox();
             this.manufacturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partShopDataSet3 = new kursachBD.PartShopDataSet3();
             this.manufacturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.providerParts_comboBox = new System.Windows.Forms.ComboBox();
             this.providerPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.providerPartsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.InsertButton = new System.Windows.Forms.Button();
             this.partShopDataSet = new kursachBD.PartShopDataSet();
             this.partsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.partsTableAdapter = new kursachBD.PartShopDataSetTableAdapters.PartsTableAdapter();
@@ -135,39 +135,39 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Описание";
             // 
-            // textBox1
+            // namePart_textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 20);
-            this.textBox1.TabIndex = 7;
+            this.namePart_textBox.Location = new System.Drawing.Point(129, 19);
+            this.namePart_textBox.Name = "namePart_textBox";
+            this.namePart_textBox.Size = new System.Drawing.Size(256, 20);
+            this.namePart_textBox.TabIndex = 7;
             // 
-            // textBox2
+            // descPart_textBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 178);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 20);
-            this.textBox2.TabIndex = 8;
+            this.descPart_textBox.Location = new System.Drawing.Point(129, 178);
+            this.descPart_textBox.Multiline = true;
+            this.descPart_textBox.Name = "descPart_textBox";
+            this.descPart_textBox.Size = new System.Drawing.Size(256, 20);
+            this.descPart_textBox.TabIndex = 8;
             // 
-            // textBox3
+            // typePart_textBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 20);
-            this.textBox3.TabIndex = 9;
+            this.typePart_textBox.Location = new System.Drawing.Point(129, 45);
+            this.typePart_textBox.Name = "typePart_textBox";
+            this.typePart_textBox.Size = new System.Drawing.Size(256, 20);
+            this.typePart_textBox.TabIndex = 9;
             // 
-            // comboBox1
+            // categoryPart_comboBox
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoryPartsBindingSource, "Code_category", true));
-            this.comboBox1.DataSource = this.categoryPartsBindingSource2;
-            this.comboBox1.DisplayMember = "Name_category";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(129, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(256, 21);
-            this.comboBox1.TabIndex = 10;
-            this.comboBox1.ValueMember = "Code_category";
+            this.categoryPart_comboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoryPartsBindingSource, "Code_category", true));
+            this.categoryPart_comboBox.DataSource = this.categoryPartsBindingSource2;
+            this.categoryPart_comboBox.DisplayMember = "Name_category";
+            this.categoryPart_comboBox.FormattingEnabled = true;
+            this.categoryPart_comboBox.Location = new System.Drawing.Point(129, 71);
+            this.categoryPart_comboBox.Name = "categoryPart_comboBox";
+            this.categoryPart_comboBox.Size = new System.Drawing.Size(256, 21);
+            this.categoryPart_comboBox.TabIndex = 10;
+            this.categoryPart_comboBox.ValueMember = "Code_category";
             // 
             // categoryPartsBindingSource
             // 
@@ -184,24 +184,24 @@
             this.categoryPartsBindingSource2.DataMember = "CategoryParts";
             this.categoryPartsBindingSource2.DataSource = this.partShopDataSet1;
             // 
-            // textBox4
+            // costPart_textBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 20);
-            this.textBox4.TabIndex = 11;
+            this.costPart_textBox.Location = new System.Drawing.Point(129, 98);
+            this.costPart_textBox.Name = "costPart_textBox";
+            this.costPart_textBox.Size = new System.Drawing.Size(256, 20);
+            this.costPart_textBox.TabIndex = 11;
             // 
-            // comboBox2
+            // manufacturerPart_comboBox
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.manufacturerBindingSource, "Code_manufacturer", true));
-            this.comboBox2.DataSource = this.manufacturerBindingSource1;
-            this.comboBox2.DisplayMember = "Name_manufacturer";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(129, 124);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(256, 21);
-            this.comboBox2.TabIndex = 12;
-            this.comboBox2.ValueMember = "Code_manufacturer";
+            this.manufacturerPart_comboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.manufacturerBindingSource, "Code_manufacturer", true));
+            this.manufacturerPart_comboBox.DataSource = this.manufacturerBindingSource1;
+            this.manufacturerPart_comboBox.DisplayMember = "Name_manufacturer";
+            this.manufacturerPart_comboBox.FormattingEnabled = true;
+            this.manufacturerPart_comboBox.Location = new System.Drawing.Point(129, 124);
+            this.manufacturerPart_comboBox.Name = "manufacturerPart_comboBox";
+            this.manufacturerPart_comboBox.Size = new System.Drawing.Size(256, 21);
+            this.manufacturerPart_comboBox.TabIndex = 12;
+            this.manufacturerPart_comboBox.ValueMember = "Code_manufacturer";
             // 
             // manufacturerBindingSource
             // 
@@ -218,17 +218,17 @@
             this.manufacturerBindingSource1.DataMember = "Manufacturer";
             this.manufacturerBindingSource1.DataSource = this.partShopDataSet3;
             // 
-            // comboBox3
+            // providerParts_comboBox
             // 
-            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.providerPartsBindingSource, "Code_provider", true));
-            this.comboBox3.DataSource = this.providerPartsBindingSource1;
-            this.comboBox3.DisplayMember = "Name_provider";
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(129, 151);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(256, 21);
-            this.comboBox3.TabIndex = 13;
-            this.comboBox3.ValueMember = "Code_provider";
+            this.providerParts_comboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.providerPartsBindingSource, "Code_provider", true));
+            this.providerParts_comboBox.DataSource = this.providerPartsBindingSource1;
+            this.providerParts_comboBox.DisplayMember = "Name_provider";
+            this.providerParts_comboBox.FormattingEnabled = true;
+            this.providerParts_comboBox.Location = new System.Drawing.Point(129, 151);
+            this.providerParts_comboBox.Name = "providerParts_comboBox";
+            this.providerParts_comboBox.Size = new System.Drawing.Size(256, 21);
+            this.providerParts_comboBox.TabIndex = 13;
+            this.providerParts_comboBox.ValueMember = "Code_provider";
             // 
             // providerPartsBindingSource
             // 
@@ -240,15 +240,15 @@
             this.providerPartsBindingSource1.DataMember = "ProviderParts";
             this.providerPartsBindingSource1.DataSource = this.partShopDataSet3;
             // 
-            // button1
+            // InsertButton
             // 
-            this.button1.Location = new System.Drawing.Point(241, 210);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 56);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.InsertButton.Location = new System.Drawing.Point(241, 210);
+            this.InsertButton.Name = "InsertButton";
+            this.InsertButton.Size = new System.Drawing.Size(144, 56);
+            this.InsertButton.TabIndex = 14;
+            this.InsertButton.Text = "Добавить";
+            this.InsertButton.UseVisualStyleBackColor = true;
+            this.InsertButton.Click += new System.EventHandler(this.InsertButton_Click);
             // 
             // partShopDataSet
             // 
@@ -286,14 +286,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 278);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InsertButton);
+            this.Controls.Add(this.providerParts_comboBox);
+            this.Controls.Add(this.manufacturerPart_comboBox);
+            this.Controls.Add(this.costPart_textBox);
+            this.Controls.Add(this.categoryPart_comboBox);
+            this.Controls.Add(this.typePart_textBox);
+            this.Controls.Add(this.descPart_textBox);
+            this.Controls.Add(this.namePart_textBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -302,7 +302,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddPartForm";
-            this.Text = "PartForm - Добавление запчасти";
+            this.Text = "PartForm - Добавление записи";
             this.Load += new System.EventHandler(this.AddPartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoryPartsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partShopDataSet1)).EndInit();
@@ -329,14 +329,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox namePart_textBox;
+        private System.Windows.Forms.TextBox descPart_textBox;
+        private System.Windows.Forms.TextBox typePart_textBox;
+        private System.Windows.Forms.ComboBox categoryPart_comboBox;
+        private System.Windows.Forms.TextBox costPart_textBox;
+        private System.Windows.Forms.ComboBox manufacturerPart_comboBox;
+        private System.Windows.Forms.ComboBox providerParts_comboBox;
+        private System.Windows.Forms.Button InsertButton;
         private PartShopDataSet partShopDataSet;
         private System.Windows.Forms.BindingSource partsBindingSource;
         private PartShopDataSetTableAdapters.PartsTableAdapter partsTableAdapter;
